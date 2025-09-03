@@ -1,0 +1,30 @@
+[
+    {
+        "callsign": "FLIGHT1",
+        "typecode": "B737",
+        "latitude": 25.096390690299273,
+        "longitude": -170.99572074440803,
+        "altitude (feet)": 16200,
+        "heading (degrees)": 140,
+        "track (degrees)": 140.0,
+        "TAS (knots)": 115,
+        "groundspeed (knots)": 115,
+        "CAS (knots)": 90,
+        "mach": 0.1852131517026924,
+        "vertical_rate (feet/minute)": 0
+    },
+    {
+        "callsign": "FLIGHT2",
+        "typecode": "B777",
+        "latitude": 24.67990311224034,
+        "longitude": -170.60981123725836,
+        "altitude (feet)": 16200,
+        "heading (degrees)": 320,
+        "track (degrees)": 320.0,
+        "TAS (knots)": 217,
+        "groundspeed (knots)": 217,
+        "CAS (knots)": 169,
+        "mach": 0.34814043367064273,
+        "vertical_rate (feet/minute)": 0
+    }
+]

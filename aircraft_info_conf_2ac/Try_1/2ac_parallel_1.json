@@ -1,0 +1,30 @@
+[
+    {
+        "callsign": "FLIGHT1",
+        "typecode": "B747",
+        "latitude": 22.939380416404312,
+        "longitude": 105.14787450767882,
+        "altitude (feet)": 25200,
+        "heading (degrees)": 216,
+        "track (degrees)": 216.0,
+        "TAS (knots)": 245,
+        "groundspeed (knots)": 245,
+        "CAS (knots)": 165,
+        "mach": 0.40848963513743886,
+        "vertical_rate (feet/minute)": 0
+    },
+    {
+        "callsign": "FLIGHT2",
+        "typecode": "A330",
+        "latitude": 23.193672402978535,
+        "longitude": 105.34849294191797,
+        "altitude (feet)": 25200,
+        "heading (degrees)": 216,
+        "track (degrees)": 216.0,
+        "TAS (knots)": 412,
+        "groundspeed (knots)": 412,
+        "CAS (knots)": 284,
+        "mach": 0.6859893851890804,
+        "vertical_rate (feet/minute)": 0
+    }
+]

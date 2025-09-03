@@ -1,0 +1,14 @@
+[
+    {
+        "conflict pairs": [
+            "FLIGHT1",
+            "FLIGHT2"
+        ],
+        "distance (nautical miles)": 15.172564679499937,
+        "altitude difference (feet)": 1093.8718503936989,
+        "qdr (degrees)": 93.77532258151575,
+        "tlos (seconds)": 299.68274831850033,
+        "dcpa (meters)": 3.3423042558747094,
+        "tcpa (seconds)": 446.9822405342914
+    }
+]
