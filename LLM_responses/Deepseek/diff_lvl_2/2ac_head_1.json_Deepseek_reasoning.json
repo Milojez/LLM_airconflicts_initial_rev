@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": null,
+            "reasoning": "Aircraft are at the same altitude and their current headings and speeds could bring them closer than 5 nautical miles.",
+            "issued_command": "FLIGHT1, climb and maintain 17000 feet."
+        }
+    ]
+}

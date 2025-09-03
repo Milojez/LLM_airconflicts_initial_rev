@@ -1,0 +1,71 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontally and vertically) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Convert Coordinates to a Common Unit
+First, let's convert all coordinates to meters for simplicity. The y and x coordinates are already given in meters.
+
+### Step 2: Calculate Current Horizontal Distance
+To find the horizontal distance, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given:
+- \(x_1 = 515164.8003772175\) meters
+- \(y_1 = 2536821.8152077296\) meters
+- \(x_2 = 528537.7081951243\) meters
+- \(y_2 = 2555190.981629861\) meters
+
+\[d = \sqrt{(528537.7081951243 - 515164.8003772175)^2 + (2555190.981629861 - 2536821.8152077296)^2}\]
+\[d = \sqrt{(13372.9078179068)^2 + (18369.1664221314)^2}\]
+\[d = \sqrt{178911115.195 + 337551111.39}\]
+\[d = \sqrt{516462226.585}\]
+\[d \approx 22715.77 \text{ meters}\]
+
+To convert meters to nautical miles, we use the conversion factor: \(1 \text{ nautical mile} = 1852 \text{ meters}\).
+
+\[d \approx \frac{22715.77}{1852} \approx 12.27 \text{ nautical miles}\]
+
+### Step 3: Calculate Current Vertical Distance
+Given:
+- Altitude of FLIGHT1 = 22200 feet
+- Altitude of FLIGHT2 = 24196 feet
+
+\[ \text{Vertical distance} = |24196 - 22200| = 1996 \text{ feet} \]
+
+### Step 4: Determine Current Separation Status
+- Horizontal distance \(\approx 12.27\) nautical miles, which is greater than 5 nautical miles.
+- Vertical distance \(= 1996\) feet, which is less than 1000 feet.
+
+Currently, the aircraft do not meet the criteria for loss of separation because the horizontal distance is greater than 5 nautical miles.
+
+### Step 5: Predict Future Positions
+To predict if they will meet the loss of separation criteria, we need to consider their movements.
+
+Given:
+- FLIGHT1's speed = 233 knots, heading = 216 degrees, vertical rate = 0 feet/min.
+- FLIGHT2's speed = 365 knots, heading = 215 degrees, vertical rate = -200 feet/min.
+
+First, convert speeds to meters per second for uniformity:
+- \(1 \text{ knot} = 0.51444 \text{ m/s}\)
+- FLIGHT1's speed \(\approx 233 \times 0.51444 \approx 119.83 \text{ m/s}\)
+- FLIGHT2's speed \(\approx 365 \times 0.51444 \approx 187.77 \text{ m/s}\)
+
+Since both aircraft are heading in approximately the same direction (216 degrees and 215 degrees), we can consider their relative speed along the line connecting them. However, to simplify, we'll look at their closing speed and vertical separation change.
+
+### Step 6: Calculate Closing Speed
+The closing speed is the speed at which they are approaching each other. Given their similar headings, we can approximate the closing speed by subtracting their speeds if they were directly approaching each other, but since they're not, we need to consider the component of their speeds that contributes to closing the distance between them.
+
+However, without the exact vector components, we simplify by noting that since they're flying nearly parallel, the horizontal closing speed will be relatively small compared to their ground speeds, and the primary concern is the vertical separation and any potential convergence due to FLIGHT2's descent.
+
+### Step 7: Consider Vertical Separation Change
+FLIGHT2 is descending at 200 feet/min. To find out how long it would take for the vertical separation to become less than 1000 feet, considering FLIGHT1 is not changing altitude:
+
+\[ \text{Time to reduce vertical separation} = \frac{1996}{200} \approx 9.98 \text{ minutes} \]
+
+However, this calculation assumes a constant descent rate and does not account for any potential horizontal movement that could increase or decrease the separation.
+
+### Step 8: Determine Necessary Commands
+Given the current separation and predicted movements, the primary concern is the decreasing vertical separation due to FLIGHT2's descent. To maintain safe separation, a command to adjust FLIGHT2's vertical rate could be necessary. However, since the horizontal distance is currently greater than 5 nautical miles and they are flying nearly parallel, immediate action may not be required unless their projected paths indicate a potential for both vertical and horizontal separation criteria to be met.
+
+A possible command could be to instruct FLIGHT2 to level off or reduce its descent rate to maintain a safe vertical separation until the horizontal distance can be reassessed for any potential convergence.
+
+### Conclusion
+Based on the provided data, there is no immediate loss of separation. However, due to FLIGHT2's descent, there is a potential for the vertical separation to decrease below 1000 feet within approximately 10 minutes. Monitoring their positions and considering adjustments to FLIGHT2's altitude or descent rate may be necessary to maintain safe separation. No immediate action is required for heading or speed modifications based on the information provided.

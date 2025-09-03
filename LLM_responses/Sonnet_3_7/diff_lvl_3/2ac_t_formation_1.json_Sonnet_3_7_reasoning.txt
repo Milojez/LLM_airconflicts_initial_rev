@@ -1,0 +1,23 @@
+# Air Traffic Control Response - Loss of Separation Alert
+
+## Situation Analysis
+- FLIGHT1 (A330) and FLIGHT2 (A320) are both at 20,800 feet
+- Current separation: 44.54 NM horizontally, 0 feet vertically
+- Predicted closest point of approach: 193.24 meters (0.1 NM) in 337.3 seconds
+- This is well below the minimum required separation (typically 5 NM horizontally or 1,000 feet vertically)
+- Aircraft are converging with FLIGHT2 moving faster (392 kts vs 268 kts)
+- FLIGHT1 heading 071°, FLIGHT2 heading 161°
+
+## Command Decision
+Since the aircraft are at the same altitude with a predicted very close horizontal approach, immediate action is required. A vertical separation is the most efficient solution.
+
+## ATC Instructions
+
+"FLIGHT1, Air Traffic Control. For traffic separation, climb immediately to flight level two three zero. Maintain present heading."
+
+## Rationale
+1. Altitude change provides the quickest and most effective separation
+2. 2,000 feet of vertical separation exceeds the required minimum of 1,000 feet
+3. FLIGHT1 was selected for the climb as it's the slower aircraft and already on a climbing profile
+4. The climb instruction allows both aircraft to maintain their current routes and speeds
+5. The vertical separation will be established well before the closest point of approach

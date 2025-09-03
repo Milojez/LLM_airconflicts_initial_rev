@@ -1,0 +1,56 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time, considering their current positions, speeds, headings, and vertical rates.
+
+### Step 1: Initial Vertical and Horizontal Distances
+
+1. **Vertical Distance:**
+   - FLIGHT1 altitude: 22,200 feet
+   - FLIGHT2 altitude: 24,196 feet
+   - Initial vertical distance = 24,196 - 22,200 = 1,996 feet
+
+2. **Horizontal Distance:**
+   - Convert the coordinates from meters to nautical miles (1 nautical mile = 1852 meters).
+   - FLIGHT1 position: (515164.8003772175 m, 2536821.8152077296 m)
+   - FLIGHT2 position: (528537.7081951243 m, 2555190.981629861 m)
+   - Horizontal distance in meters = √((528537.7081951243 - 515164.8003772175)² + (2555190.981629861 - 2536821.8152077296)²)
+   - Horizontal distance in meters = √((13372.9078179068)² + (18369.1664221314)²)
+   - Horizontal distance in meters ≈ 22647.5 meters
+   - Horizontal distance in nautical miles = 22647.5 / 1852 ≈ 12.23 nautical miles
+
+### Step 2: Determine Relative Motion
+
+1. **Relative Vertical Motion:**
+   - FLIGHT1 vertical rate: 0 feet/min
+   - FLIGHT2 vertical rate: -200 feet/min
+   - Relative vertical rate = 0 - (-200) = 200 feet/min
+   - Time to reach vertical separation of 1000 feet = (1996 - 1000) / 200 = 4.98 minutes
+
+2. **Relative Horizontal Motion:**
+   - Convert ground speeds from knots to meters per second (1 knot = 0.514444 m/s).
+   - FLIGHT1 speed: 233 knots = 119.9 m/s
+   - FLIGHT2 speed: 365 knots = 187.8 m/s
+   - Calculate the components of velocity in the x and y directions using the heading.
+   - FLIGHT1 heading: 216 degrees
+     - x-component = 119.9 * cos(216°) ≈ -96.8 m/s
+     - y-component = 119.9 * sin(216°) ≈ -71.9 m/s
+   - FLIGHT2 heading: 215 degrees
+     - x-component = 187.8 * cos(215°) ≈ -153.8 m/s
+     - y-component = 187.8 * sin(215°) ≈ -77.1 m/s
+   - Relative velocity in x-direction = -96.8 - (-153.8) = 57 m/s
+   - Relative velocity in y-direction = -71.9 - (-77.1) = 5.2 m/s
+   - Relative horizontal speed = √(57² + 5.2²) ≈ 57.2 m/s
+   - Time to reach horizontal separation of 5 nautical miles = (12.23 - 5) * 1852 / 57.2 ≈ 230.5 seconds ≈ 3.84 minutes
+
+### Step 3: Determine Potential Loss of Separation
+
+- Vertical separation will be less than 1000 feet in approximately 4.98 minutes.
+- Horizontal separation will be less than 5 nautical miles in approximately 3.84 minutes.
+
+Since the horizontal separation will be breached before the vertical separation, there will be no loss of separation as both conditions are not met simultaneously.
+
+### Step 4: Recommended Commands
+
+To ensure continued safe separation, we can issue the following command:
+
+- **FLIGHT2 (A330):** Adjust vertical rate to descend more slowly or level off to maintain a vertical separation greater than 1000 feet. Alternatively, adjust heading slightly to increase horizontal separation.
+
+By adjusting the vertical rate or heading of FLIGHT2, we can ensure that the aircraft maintain safe separation throughout their flight paths.

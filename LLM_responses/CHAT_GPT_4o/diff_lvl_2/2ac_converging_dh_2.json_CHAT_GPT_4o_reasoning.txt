@@ -1,0 +1,115 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze their current positions, headings, speeds, and vertical rates. We'll calculate their future positions and check if they meet the conditions for loss of separation.
+
+### Step 1: Convert Speeds and Headings to Components
+
+First, convert the ground speeds and headings of both aircraft into x and y components.
+
+- **FLIGHT1:**
+  - Speed: 242 knots
+  - Heading: 319 degrees
+
+  Convert heading to radians:  
+  \[
+  \text{Heading in radians} = 319 \times \frac{\pi}{180} = 5.569 \text{ radians}
+  \]
+
+  Calculate x and y components of velocity:  
+  \[
+  V_{x1} = 242 \times \cos(5.569) = 242 \times 0.777 = 187.934 \text{ knots}
+  \]
+  \[
+  V_{y1} = 242 \times \sin(5.569) = 242 \times (-0.629) = -152.318 \text{ knots}
+  \]
+
+- **FLIGHT2:**
+  - Speed: 290 knots
+  - Heading: 304 degrees
+
+  Convert heading to radians:  
+  \[
+  \text{Heading in radians} = 304 \times \frac{\pi}{180} = 5.305 \text{ radians}
+  \]
+
+  Calculate x and y components of velocity:  
+  \[
+  V_{x2} = 290 \times \cos(5.305) = 290 \times 0.587 = 170.23 \text{ knots}
+  \]
+  \[
+  V_{y2} = 290 \times \sin(5.305) = 290 \times (-0.809) = -234.61 \text{ knots}
+  \]
+
+### Step 2: Calculate Relative Velocity
+
+Calculate the relative velocity between the two aircraft:
+
+\[
+V_{x\_rel} = V_{x2} - V_{x1} = 170.23 - 187.934 = -17.704 \text{ knots}
+\]
+\[
+V_{y\_rel} = V_{y2} - V_{y1} = -234.61 + 152.318 = -82.292 \text{ knots}
+\]
+
+### Step 3: Calculate Initial Horizontal and Vertical Distances
+
+Convert the initial positions from meters to nautical miles (1 nautical mile = 1852 meters):
+
+- **FLIGHT1:**
+  - \(x_1 = 472740.45661512355 \text{ meters} = \frac{472740.45661512355}{1852} = 255.24 \text{ nm}\)
+  - \(y_1 = 8971043.142510712 \text{ meters} = \frac{8971043.142510712}{1852} = 4843.92 \text{ nm}\)
+
+- **FLIGHT2:**
+  - \(x_2 = 490200.0303957684 \text{ meters} = \frac{490200.0303957684}{1852} = 264.73 \text{ nm}\)
+  - \(y_2 = 8975136.890057335 \text{ meters} = \frac{8975136.890057335}{1852} = 4846.92 \text{ nm}\)
+
+Calculate the initial horizontal distance:
+
+\[
+\text{Horizontal distance} = \sqrt{(264.73 - 255.24)^2 + (4846.92 - 4843.92)^2} = \sqrt{(9.49)^2 + (3)^2} = \sqrt{89.9801 + 9} = \sqrt{98.9801} \approx 9.95 \text{ nm}
+\]
+
+Calculate the initial vertical distance:
+
+\[
+\text{Vertical distance} = |18084 - 16000| = 2084 \text{ feet}
+\]
+
+### Step 4: Determine Time to Potential Loss of Separation
+
+Since the initial horizontal distance is greater than 5 nm and the vertical distance is greater than 1000 feet, there is no immediate loss of separation. We need to determine if the aircraft will converge to a point where both conditions are met.
+
+Calculate the rate of change of horizontal distance:
+
+\[
+\text{Rate of change of horizontal distance} = \sqrt{(-17.704)^2 + (-82.292)^2} = \sqrt{313.25 + 6763.92} = \sqrt{7077.17} \approx 84.12 \text{ knots}
+\]
+
+Calculate the time to reach 5 nm horizontal separation:
+
+\[
+\text{Time to 5 nm separation} = \frac{9.95 - 5}{84.12} \approx \frac{4.95}{84.12} \approx 0.0588 \text{ hours} \approx 3.53 \text{ minutes}
+\]
+
+Calculate the rate of change of vertical distance:
+
+\[
+\text{Rate of change of vertical distance} = 657 \text{ feet/min}
+\]
+
+Calculate the time to reach 1000 feet vertical separation:
+
+\[
+\text{Time to 1000 feet separation} = \frac{2084 - 1000}{657} \approx \frac{1084}{657} \approx 1.65 \text{ minutes}
+\]
+
+### Step 5: Conclusion
+
+The vertical separation will be less than 1000 feet in approximately 1.65 minutes, while the horizontal separation will be less than 5 nm in approximately 3.53 minutes. Since these times do not coincide, there will be no loss of separation.
+
+### Step 6: Recommendations
+
+To ensure continued safe separation, consider issuing the following commands:
+
+- **FLIGHT2:** Reduce descent rate to maintain vertical separation or adjust heading slightly to increase horizontal separation.
+- **FLIGHT1:** Maintain current altitude and heading, as no immediate action is required.
+
+These adjustments will help maintain safe separation and prevent any potential conflicts.

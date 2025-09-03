@@ -1,0 +1,66 @@
+# Air Traffic Control Separation Analysis
+
+## Initial Data
+- **FLIGHT1 (B737)**
+  - Position: (500490.0444m E, 2775551.6227m N)
+  - Altitude: 16,800 feet
+  - Speed: 292 knots
+  - Heading: 140°
+  - Vertical rate: 0 feet/min
+
+- **FLIGHT2 (B777)**
+  - Position: (558201.6043m E, 2707616.2070m N)
+  - Altitude: 18,298 feet
+  - Speed: 227 knots
+  - Heading: 320°
+  - Vertical rate: -100 feet/min
+
+## Step 1: Calculate Initial Separation
+
+### Horizontal Separation
+Distance = √[(x₂-x₁)² + (y₂-y₁)²]
+Distance = √[(558201.6043-500490.0444)² + (2707616.2070-2775551.6227)²]
+Distance = √[(57711.5599)² + (-67935.4157)²]
+Distance = √(3330624177.3 + 4615222599.5)
+Distance = √7945846776.8
+Distance = 89139.9 meters
+Distance in NM = 89139.9 / 1852 = 48.13 NM
+
+### Vertical Separation
+Vertical separation = |18,298 - 16,800| = 1,498 feet
+
+## Step 2: Analyze Aircraft Trajectories
+The aircraft are on converging courses with FLIGHT1 heading 140° and FLIGHT2 heading 320°.
+
+Converting speeds and headings to velocity components:
+- FLIGHT1: 292 knots at 140°
+  - Vx = 292 × sin(140°) = 292 × 0.6428 = 187.7 knots eastward
+  - Vy = 292 × -cos(140°) = 292 × -0.7660 = -223.7 knots northward
+
+- FLIGHT2: 227 knots at 320°
+  - Vx = 227 × sin(320°) = 227 × -0.6428 = -145.9 knots eastward
+  - Vy = 227 × cos(320°) = 227 × 0.7660 = 173.9 knots northward
+
+Relative velocity:
+- Vx_rel = 187.7 - (-145.9) = 333.6 knots
+- Vy_rel = -223.7 - 173.9 = -397.6 knots
+
+## Step 3: Determine Closest Point of Approach (CPA)
+The aircraft are moving away from each other horizontally, as their initial separation is 48.13 NM and they're on diverging courses.
+
+## Step 4: Analyze Vertical Separation
+Initial vertical separation: 1,498 feet
+FLIGHT2 is descending at 100 feet/min, while FLIGHT1 maintains altitude.
+
+Time to reach vertical separation of 1,000 feet:
+(1,498 - 1,000) / 100 = 4.98 minutes
+
+## Conclusion
+No loss of separation will occur because:
+1. The aircraft are already horizontally separated by 48.13 NM, which is well beyond the 5 NM minimum.
+2. The aircraft are on diverging courses horizontally.
+3. The vertical separation is already 1,498 feet, which exceeds the 1,000 feet minimum.
+4. Even though FLIGHT2 is descending, the aircraft will remain horizontally separated.
+
+## Recommendation
+No immediate action is required as both aircraft maintain safe separation. Continue to monitor both flights normally.

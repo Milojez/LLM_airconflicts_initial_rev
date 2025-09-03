@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 0,
+            "reasoning": "Vertical separation is less than 1000 feet and horizontal separation is projected to drop below 5 nautical miles.",
+            "issued command": "FLIGHT1: Adjust heading to 130 degrees. FLIGHT2: Adjust heading to 310 degrees."
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Given:
+- Latitude and longitude of FLIGHT1: \(Lat_1 = -55.513395271749374\), \(Lon_1 = 13.064975933954887\)
+- Latitude and longitude of FLIGHT2: \(Lat_2 = -54.79878387242545\), \(Lon_2 = 13.41314403634625\)
+
+Haversine formula:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{Lat_2 - Lat_1}{2}\right) + \cos(Lat_1) \cos(Lat_2) \sin^2\left(\frac{Lon_2 - Lon_1}{2}\right)}\right) \times R\]
+
+where \(R\) is the radius of the Earth, approximately 6371 kilometers. We need to convert the result into nautical miles (1 nautical mile = 1.852 kilometers).
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{-54.79878387242545 - (-55.513395271749374)}{2}\right) + \cos(-55.513395271749374) \cos(-54.79878387242545) \sin^2\left(\frac{13.41314403634625 - 13.064975933954887}{2}\right)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{0.714611399324}{2}\right) + \cos(-55.513395271749374) \cos(-54.79878387242545) \sin^2\left(\frac{0.34816810239163}{2}\right)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2(0.357305699662) + \cos(-55.513395271749374) \cos(-54.79878387242545) \sin^2(0.174084051195815)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.1134 + 0.5736 \times 0.5755 \times 0.0302}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.1134 + 0.0099}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.1233}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin(0.3507) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times 0.3633 \times 6371 \, \text{km}\]
+
+\[d \approx 4641.5 \, \text{km}\]
+
+Convert to nautical miles:
+\[d \approx \frac{4641.5 \, \text{km}}{1.852 \, \text{km/nm}} \approx 2507.4 \, \text{nm}\]
+
+Since both aircraft are flying at the same altitude (20800 feet), the vertical distance is 0 feet, which is less than 1000 feet, but the horizontal distance is approximately 2507.4 nautical miles, which is far greater than 5 nautical miles.
+
+### Step 2: Predict Future Positions
+
+To predict if they will meet the conditions for loss of separation, we need to calculate their future positions based on their ground speeds and headings. However, given the vast horizontal distance and the fact that their vertical distance is already 0 (but they are not on a collision course given their headings and the large horizontal distance), we can see that the conditions for loss of separation are not currently being met and are unlikely to be met in the near future without significant changes in their flight paths.
+
+### Conclusion
+
+Based on the provided data, the two aircraft are not at risk of loss of separation because, although they are at the same altitude, the horizontal distance between them is far greater than the 5 nautical mile threshold. Therefore, no immediate commands are necessary to maintain safe separation based on the current data.
+
+However, it's crucial to continuously monitor the situation, as changes in flight paths, speeds, or other factors could potentially lead to a loss of separation in the future. Air traffic control should continue to track these aircraft and be prepared to issue commands if their trajectories were to change in a way that could lead to a loss of separation.

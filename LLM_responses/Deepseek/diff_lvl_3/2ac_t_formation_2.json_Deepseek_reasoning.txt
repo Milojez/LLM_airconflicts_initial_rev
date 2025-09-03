@@ -1,0 +1,31 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation. Based on the provided data, here's a step-by-step analysis:
+
+1. **Current Situation**:
+	* FLIGHT1 (A330) is at 20,200 feet, heading 071°, and ground speed 266 knots.
+	* FLIGHT2 (A320) is at 22,290 feet, heading 161°, and ground speed 381 knots.
+	* Horizontal distance: 24.28 nautical miles.
+	* Altitude difference: 2,091.3 feet.
+	* Azimuthal direction (QDR) from FLIGHT1 to FLIGHT2: 015.98°.
+2. **Conflict Analysis**:
+	* The estimated time to loss of separation (TLOS) is 149.3 seconds, indicating a potential violation of minimum separation criteria.
+	* The predicted closest point of approach (DCPA) is 56.85 meters, expected to occur in 188.0 seconds.
+3. **Resolution Options**:
+	* **Altitude Adjustment**: FLIGHT2 is descending at 550 feet/min. To increase the altitude difference, we could instruct FLIGHT2 to level off or climb. However, this might not be sufficient to resolve the conflict, given the relatively small altitude difference.
+	* **Heading Change**: FLIGHT1 is heading 071°, while FLIGHT2 is heading 161°. A heading change for either aircraft could help increase the horizontal distance. However, FLIGHT2's high ground speed (381 knots) might make it more challenging to achieve a significant increase in horizontal distance through a heading change alone.
+	* **Speed Modification**: FLIGHT2's high ground speed (381 knots) is a contributing factor to the conflict. Reducing FLIGHT2's speed could help decrease the rate of closure and increase the time available to resolve the conflict.
+
+**Recommended Command**:
+
+Based on the analysis, the most effective way to maintain safe separation is to issue a speed modification command to FLIGHT2. Reducing FLIGHT2's speed will decrease the rate of closure and provide more time to resolve the conflict.
+
+**Command**:
+
+"FLIGHT2, reduce speed to 280 knots. Report passing 22,000 feet."
+
+This command aims to reduce FLIGHT2's ground speed, which will help decrease the rate of closure and increase the time available to resolve the conflict. By reducing the speed, we can also reduce the predicted closest point of approach (DCPA) and increase the horizontal distance between the two aircraft.
+
+**Monitoring and Follow-up**:
+
+After issuing the command, closely monitor the situation and adjust the command as necessary to ensure safe separation is maintained. If the conflict persists, consider additional commands, such as altitude adjustments or heading changes, to further mitigate the risk of a loss of separation.

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 200,
+            "reasoning": "Predicted simultaneous violation of vertical (<1000 ft) and horizontal (<5 NM) separation minima between approximately 3.3 and 4.7 minutes from now due to FLIGHT2's descent and converging tracks.",
+            "issued_command": "FLIGHT2, LEVEL OFF IMMEDIATELY, MAINTAIN FLIGHT LEVEL ONE EIGHT ZERO."
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+# Air Traffic Control Response - Loss of Separation Alert
+
+## Situation Analysis
+- FLIGHT1 (B747) and FLIGHT2 (A330) are both at 25,200 feet
+- Both aircraft are on the same heading (216°)
+- FLIGHT2 is faster (412 knots) than FLIGHT1 (245 knots)
+- FLIGHT2 is behind FLIGHT1 and overtaking
+- Loss of separation predicted in approximately 5 minutes (299.1 seconds)
+- Extremely close CPA predicted (15.73 meters)
+- This is an overtaking scenario on the same track
+
+## Recommended Control Instructions
+
+Given the urgency of the situation and the aircraft parameters, I would issue the following instructions:
+
+**To FLIGHT2 (A330):**
+"FLIGHT2, traffic alert. FLIGHT1 is ahead of you on the same track. Turn right heading 230 degrees immediately to maintain separation."
+
+**To FLIGHT1 (B747):**
+"FLIGHT1, traffic alert. For separation from traffic behind you, descend immediately to flight level 240, maintain present heading."
+
+## Rationale
+1. The vertical separation (1,000 feet) provides immediate conflict resolution
+2. The heading change for FLIGHT2 creates lateral separation
+3. This solution minimizes disruption while ensuring safe separation
+4. Assigning altitude change to FLIGHT1 and heading change to FLIGHT2 distributes the control burden
+
+I'll continue to monitor the situation and may issue additional instructions if separation does not improve as expected.

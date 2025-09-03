@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 149.3,
+            "reasoning": "Predicted loss of separation due to current flight paths and altitudes.",
+            "issued command": "FLIGHT1, climb immediately to 21000 feet and turn left heading 050 degrees. FLIGHT2, expedite descent to 20000 feet and turn right heading 180 degrees."
+        }
+    ]
+}

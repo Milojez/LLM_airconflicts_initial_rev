@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 99,
+            "reasoning": "Vertical separation will reduce below 1,000 feet in 99 seconds due to FLIGHT2's descent rate of 657 feet/min. The aircraft are on converging courses with a 15° heading difference, indicating they will likely have horizontal separation less than 5 nautical miles when the vertical separation becomes critical.",
+            "issued_command": "FLIGHT2, maintain altitude at 18,000 feet, stop descent."
+        }
+    ]
+}

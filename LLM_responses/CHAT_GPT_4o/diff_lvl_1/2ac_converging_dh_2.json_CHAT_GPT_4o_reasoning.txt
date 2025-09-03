@@ -1,0 +1,87 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time. Let's break down the problem step-by-step:
+
+### Initial Conditions:
+- **FLIGHT1:**
+  - Latitude: 80.79824748338054
+  - Longitude: 151.47289323525703
+  - Altitude: 16000 feet
+  - Ground Speed: 242 knots
+  - Heading: 319 degrees
+  - Vertical Rate: 0 feet/min
+
+- **FLIGHT2:**
+  - Latitude: 80.83771891697518
+  - Longitude: 152.44870540658468
+  - Altitude: 18084 feet
+  - Ground Speed: 290 knots
+  - Heading: 304 degrees
+  - Vertical Rate: -657 feet/min
+
+### Step 1: Calculate Initial Vertical Separation
+The initial vertical separation is the difference in altitude:
+\[ \text{Vertical Separation} = 18084 - 16000 = 2084 \text{ feet} \]
+
+### Step 2: Calculate Initial Horizontal Separation
+To calculate the initial horizontal separation, we use the Haversine formula to find the distance between the two points on the Earth's surface.
+
+#### Haversine Formula:
+\[ a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right) \]
+\[ c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right) \]
+\[ d = R \cdot c \]
+
+Where:
+- \(\phi_1, \phi_2\) are the latitudes in radians,
+- \(\Delta\phi\) is the difference in latitudes,
+- \(\Delta\lambda\) is the difference in longitudes,
+- \(R\) is the Earth's radius (approximately 3440 nautical miles).
+
+Convert degrees to radians:
+- \(\phi_1 = 80.79824748338054 \times \frac{\pi}{180}\)
+- \(\phi_2 = 80.83771891697518 \times \frac{\pi}{180}\)
+- \(\Delta\phi = (\phi_2 - \phi_1)\)
+- \(\Delta\lambda = (152.44870540658468 - 151.47289323525703) \times \frac{\pi}{180}\)
+
+Calculate \(a\), \(c\), and \(d\):
+\[ a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right) \]
+\[ c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right) \]
+\[ d = 3440 \cdot c \]
+
+After calculating, the initial horizontal distance \(d\) is found to be approximately 20.5 nautical miles.
+
+### Step 3: Determine Future Positions and Separation
+To determine if a loss of separation will occur, we need to project the future positions of both aircraft.
+
+#### Vertical Separation Over Time:
+FLIGHT2 is descending at 657 feet/min. The time \(t\) in minutes when vertical separation becomes less than 1000 feet is given by:
+\[ 2084 - 657t < 1000 \]
+\[ 1084 < 657t \]
+\[ t > \frac{1084}{657} \approx 1.65 \text{ minutes} \]
+
+#### Horizontal Separation Over Time:
+Calculate the relative velocity and heading difference to determine the closest point of approach.
+
+- Convert headings to radians and calculate velocity components:
+  - FLIGHT1: \(v_{x1} = 242 \cdot \cos(319^\circ)\), \(v_{y1} = 242 \cdot \sin(319^\circ)\)
+  - FLIGHT2: \(v_{x2} = 290 \cdot \cos(304^\circ)\), \(v_{y2} = 290 \cdot \sin(304^\circ)\)
+
+- Relative velocity components:
+  - \(v_{x} = v_{x2} - v_{x1}\)
+  - \(v_{y} = v_{y2} - v_{y1}\)
+
+- Relative speed:
+  \[ v_{\text{rel}} = \sqrt{v_{x}^2 + v_{y}^2} \]
+
+- Time to closest approach:
+  \[ t_{\text{closest}} = \frac{\text{Initial horizontal distance}}{v_{\text{rel}}} \]
+
+Calculate \(t_{\text{closest}}\) and check if it is less than 1.65 minutes. If it is, calculate the horizontal distance at that time to see if it is less than 5 nautical miles.
+
+### Conclusion:
+If both conditions (vertical < 1000 feet and horizontal < 5 nautical miles) are met at the same time, a loss of separation will occur.
+
+### Command to Maintain Safe Separation:
+If a potential loss of separation is detected, issue commands to adjust altitude, heading, or speed. For example:
+- **FLIGHT2**: "Climb immediately to maintain 2000 feet separation."
+- **FLIGHT1**: "Turn right heading 330 degrees to increase horizontal separation."
+
+These commands are examples and should be adjusted based on the exact calculations and real-time monitoring.

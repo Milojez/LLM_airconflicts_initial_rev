@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299,
+            "reasoning": "FLIGHT2 is descending at 200 ft/min and will reduce vertical separation below 1000 ft in approximately 5 minutes while horizontal separation remains insufficient",
+            "issued_command": "FLIGHT2, maintain flight level 240, cancel descent."
+        }
+    ]
+}

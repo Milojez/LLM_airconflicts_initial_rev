@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Predicted closest point of approach (DCPA) is very small (110.39 meters), indicating a high risk of collision",
+            "issued_command": "FLIGHT1: Turn right heading 160 degrees, reduce ground speed to 280 knots. FLIGHT2: Descend to 17,000 feet."
+        }
+    ]
+}

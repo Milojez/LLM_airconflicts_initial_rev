@@ -1,0 +1,98 @@
+# Air Traffic Control Separation Analysis
+
+## Initial Data
+- **FLIGHT1 (A330)**
+  - Position: y=3846374.6354 m, x=377811.9272 m
+  - Altitude: 20200 feet
+  - Speed: 266 knots
+  - Heading: 71°
+  - Vertical rate: 0 feet/min
+
+- **FLIGHT2 (A320)**
+  - Position: y=3889947.7735 m, x=389081.1708 m
+  - Altitude: 22290 feet
+  - Speed: 381 knots
+  - Heading: 161°
+  - Vertical rate: -550 feet/min
+
+## Step 1: Calculate initial separation
+
+### Horizontal separation
+Initial horizontal distance:
+```
+Δy = 3889947.7735 - 3846374.6354 = 43573.1381 m
+Δx = 389081.1708 - 377811.9272 = 11269.2436 m
+Horizontal distance = √(Δy² + Δx²) = √(43573.1381² + 11269.2436²) = 45022.9 m
+```
+
+Converting to nautical miles (1 nm = 1852 m):
+```
+45022.9 m ÷ 1852 = 24.31 nm
+```
+
+### Vertical separation
+Initial vertical separation:
+```
+22290 feet - 20200 feet = 2090 feet
+```
+
+## Step 2: Determine aircraft velocity components
+
+### FLIGHT1 velocity components
+```
+Speed = 266 knots
+Heading = 71°
+Vx1 = 266 * sin(71°) = 251.6 knots
+Vy1 = 266 * cos(71°) = 86.5 knots
+Vertical rate = 0 feet/min
+```
+
+### FLIGHT2 velocity components
+```
+Speed = 381 knots
+Heading = 161°
+Vx2 = 381 * sin(161°) = 127.9 knots
+Vy2 = 381 * cos(161°) = -359.1 knots
+Vertical rate = -550 feet/min
+```
+
+## Step 3: Calculate relative velocity
+```
+Relative Vx = Vx2 - Vx1 = 127.9 - 251.6 = -123.7 knots
+Relative Vy = Vy2 - Vy1 = -359.1 - 86.5 = -445.6 knots
+Relative vertical rate = -550 - 0 = -550 feet/min
+```
+
+## Step 4: Analyze future separation
+
+The aircraft are initially separated by 24.31 nm horizontally and 2090 feet vertically.
+
+The vertical separation will decrease at 550 feet/min. It will reach 1000 feet after:
+```
+(2090 - 1000) ÷ 550 = 1.98 minutes ≈ 2 minutes
+```
+
+In 2 minutes, the horizontal separation will change due to relative velocity. Converting knots to nm/min:
+```
+Relative Vx = -123.7 knots = -2.06 nm/min
+Relative Vy = -445.6 knots = -7.43 nm/min
+```
+
+After 2 minutes, the change in position will be:
+```
+Δx = -2.06 * 2 = -4.12 nm
+Δy = -7.43 * 2 = -14.86 nm
+```
+
+The new horizontal separation after 2 minutes:
+```
+New horizontal distance = √(Δx² + Δy²) = √((-4.12)² + (-14.86)²) = 15.43 nm
+```
+
+## Conclusion
+At the time when vertical separation reduces to 1000 feet (in approximately 2 minutes), the horizontal separation will be about 15.43 nm, which is greater than the 5 nm minimum required.
+
+As the aircraft continue on their current trajectories, FLIGHT2 is moving away from FLIGHT1 horizontally while descending. The minimum horizontal separation will remain above 5 nm when the vertical separation becomes less than 1000 feet.
+
+## Recommendation
+No immediate action is required as the aircraft will maintain safe separation. However, continue monitoring FLIGHT2's descent to ensure it maintains its current profile. If FLIGHT2's descent rate increases significantly, consider instructing FLIGHT1 to maintain current altitude and heading to ensure continued separation.

@@ -1,0 +1,25 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. The goal is to ensure that the aircraft maintain the required minimum horizontal and vertical separation standards.
+
+### Current Situation:
+- **FLIGHT1**: Altitude 16,000 feet, heading 319 degrees, ground speed 242 knots.
+- **FLIGHT2**: Altitude 18,084 feet, heading 304 degrees, ground speed 290 knots, descending at 657 feet/min.
+
+### Separation Standards:
+- **Horizontal Separation**: Typically 5 nautical miles.
+- **Vertical Separation**: Typically 1,000 feet.
+
+### Analysis:
+- The current horizontal distance is 9.65 nautical miles, which is above the minimum requirement, but the predicted DCPA is only 5.26 meters, indicating a significant risk of horizontal separation loss.
+- The current vertical separation is 2,084.6 feet, which is above the minimum requirement, but FLIGHT2 is descending.
+
+### Recommended Actions:
+1. **FLIGHT2 Altitude Adjustment**: Since FLIGHT2 is descending and will breach vertical separation, instruct FLIGHT2 to stop its descent and maintain a higher altitude to ensure vertical separation is maintained.
+   - **Command to FLIGHT2**: "FLIGHT2, stop descent and maintain 18,500 feet."
+
+2. **FLIGHT1 Heading Adjustment**: To increase horizontal separation, adjust the heading of FLIGHT1 slightly to the right to increase the distance between the two aircraft.
+   - **Command to FLIGHT1**: "FLIGHT1, turn right heading 330 degrees."
+
+3. **FLIGHT2 Speed Adjustment**: Reduce the speed of FLIGHT2 to increase the time to the closest point of approach, allowing more time for separation to be maintained.
+   - **Command to FLIGHT2**: "FLIGHT2, reduce speed to 250 knots."
+
+These commands should be issued promptly to ensure that the aircraft maintain safe separation and avoid any potential conflict. Continuous monitoring of the situation is necessary to make further adjustments if required.

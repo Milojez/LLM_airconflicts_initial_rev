@@ -1,0 +1,93 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time. Let's break down the problem step-by-step:
+
+### Step 1: Initial Vertical Separation
+- **FLIGHT1 Altitude:** 16,800 feet
+- **FLIGHT2 Altitude:** 18,298 feet
+
+The initial vertical separation is:
+\[ 18,298 - 16,800 = 1,498 \text{ feet} \]
+
+Since the vertical separation is greater than 1,000 feet, there is no immediate vertical conflict.
+
+### Step 2: Vertical Rate Analysis
+- **FLIGHT1 Vertical Rate:** 0 feet/min (constant altitude)
+- **FLIGHT2 Vertical Rate:** -100 feet/min (descending)
+
+FLIGHT2 is descending at 100 feet per minute. To reach a vertical separation of less than 1,000 feet:
+\[ 1,498 - 1,000 = 498 \text{ feet} \]
+
+Time to reach this vertical separation:
+\[ \frac{498 \text{ feet}}{100 \text{ feet/min}} = 4.98 \text{ minutes} \]
+
+### Step 3: Initial Horizontal Separation
+To calculate the initial horizontal separation, we use the haversine formula to find the great-circle distance between the two aircraft:
+
+- **FLIGHT1 Coordinates:** (25.095763879115907, -170.9951399602514)
+- **FLIGHT2 Coordinates:** (24.48112377126363, -170.42562592063655)
+
+Using the haversine formula:
+\[ a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right) \]
+\[ c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right) \]
+\[ d = R \cdot c \]
+
+Where:
+- \(\Delta\phi = \phi_2 - \phi_1\)
+- \(\Delta\lambda = \lambda_2 - \lambda_1\)
+- \(R = 3440 \text{ nautical miles (radius of the Earth)}\)
+
+Calculating:
+- \(\Delta\phi = 24.48112377126363 - 25.095763879115907 = -0.614640107852277\) degrees
+- \(\Delta\lambda = -170.42562592063655 - (-170.9951399602514) = 0.56951403961485\) degrees
+
+Convert degrees to radians:
+- \(\Delta\phi = -0.010725\) radians
+- \(\Delta\lambda = 0.009937\) radians
+- \(\phi_1 = 0.438\) radians
+- \(\phi_2 = 0.427\) radians
+
+Plug into the haversine formula:
+\[ a = \sin^2(-0.0053625) + \cos(0.438) \cdot \cos(0.427) \cdot \sin^2(0.0049685) \]
+\[ a \approx 0.000003 \]
+\[ c = 2 \cdot \text{atan2}(\sqrt{0.000003}, \sqrt{1-0.000003}) \approx 0.003464 \]
+\[ d = 3440 \cdot 0.003464 \approx 11.92 \text{ nautical miles} \]
+
+The initial horizontal separation is approximately 11.92 nautical miles, which is greater than 5 nautical miles.
+
+### Step 4: Horizontal Rate of Closure
+To determine if the horizontal separation will decrease to less than 5 nautical miles within 4.98 minutes, we need to calculate the relative velocity in the direction of each other.
+
+- **FLIGHT1 Speed:** 292 knots, Heading: 140 degrees
+- **FLIGHT2 Speed:** 227 knots, Heading: 320 degrees
+
+Convert headings to radians:
+- FLIGHT1: \(140^\circ = 2.443\) radians
+- FLIGHT2: \(320^\circ = 5.585\) radians
+
+Calculate velocity components:
+- **FLIGHT1:**
+  - \(V_{x1} = 292 \cdot \cos(2.443) \approx 224.5\) knots
+  - \(V_{y1} = 292 \cdot \sin(2.443) \approx 187.8\) knots
+
+- **FLIGHT2:**
+  - \(V_{x2} = 227 \cdot \cos(5.585) \approx 173.5\) knots
+  - \(V_{y2} = 227 \cdot \sin(5.585) \approx -145.8\) knots
+
+Relative velocity components:
+- \(V_{x_{rel}} = V_{x2} - V_{x1} = 173.5 - 224.5 = -51\) knots
+- \(V_{y_{rel}} = V_{y2} - V_{y1} = -145.8 - 187.8 = -333.6\) knots
+
+Relative speed:
+\[ V_{rel} = \sqrt{(-51)^2 + (-333.6)^2} \approx 337.5 \text{ knots} \]
+
+Time to close horizontal distance to 5 nautical miles:
+\[ \frac{11.92 - 5}{337.5} \times 60 \approx 1.23 \text{ minutes} \]
+
+### Conclusion
+The horizontal separation will reduce to less than 5 nautical miles in approximately 1.23 minutes, which is before the vertical separation reduces to less than 1,000 feet (4.98 minutes). Therefore, there will be no loss of separation.
+
+### Command to Maintain Safe Separation
+To ensure continued safe separation, we can issue a command to FLIGHT2 to adjust its descent rate to maintain vertical separation:
+
+- **Command to FLIGHT2:** "FLIGHT2, maintain current altitude until further advised."
+
+This command will prevent the vertical separation from decreasing, ensuring that both conditions for loss of separation are not met simultaneously.

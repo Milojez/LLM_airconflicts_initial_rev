@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Aircraft are on nearly reciprocal headings with a predicted closest point of approach of only 110.39 meters, which is well below minimum separation standards. Current separation is 48.23 NM horizontal and 1498.4 feet vertical.",
+            "issued_command": "FLIGHT2, Traffic alert. For separation, turn right heading 350 degrees immediately."
+        }
+    ]
+}

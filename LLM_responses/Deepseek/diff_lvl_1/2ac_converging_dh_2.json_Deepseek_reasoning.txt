@@ -1,0 +1,63 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Current Horizontal Distance
+
+First, we calculate the horizontal distance between the two aircraft using their latitudes and longitudes. The formula to calculate the distance between two points on the Earth's surface given their longitudes and latitudes is:
+
+\[d = \sqrt{(lat_2 - lat_1)^2 + (lon_2 - lon_1)^2}\]
+
+However, for more accurate calculations over long distances, we should use the Haversine formula. But given the close proximity of these points, the simple formula will suffice for an initial estimation, and then we'll consider the conversion to nautical miles.
+
+\[d = \sqrt{(80.83771891697518 - 80.79824748338054)^2 + (152.44870540658468 - 151.47289323525703)^2}\]
+
+\[d = \sqrt{(0.03947143359464)^2 + (0.97581217132765)^2}\]
+
+\[d = \sqrt{0.001558 + 0.9519}\]
+
+\[d = \sqrt{0.953458}\]
+
+\[d \approx 0.976\, \text{degrees}\]
+
+To convert degrees to nautical miles, we use the fact that 1 degree of latitude or longitude at the equator is approximately equal to 60 nautical miles. However, since we are at a high latitude, the distance per degree of longitude will be less. For simplicity, let's first calculate the distance in nautical miles assuming the equatorial conversion and then adjust for latitude.
+
+\[d \approx 0.976 \times 60\]
+
+\[d \approx 58.56\, \text{nautical miles}\]
+
+However, this calculation does not account for the latitude-dependent reduction in distance per degree of longitude. The actual distance will be less due to the higher latitude. A more precise calculation using the Haversine formula or considering the latitude would yield a more accurate result, but for the purpose of this initial assessment, let's proceed with understanding that the horizontal distance is significant.
+
+### Step 2: Calculate Current Vertical Distance
+
+The vertical distance is simply the difference in their altitudes.
+
+\[Vertical\, distance = |18084 - 16000|\]
+
+\[Vertical\, distance = 2084\, \text{feet}\]
+
+### Step 3: Predict Future Positions
+
+To predict if they will reach a loss of separation, we need to consider their movements.
+
+- **Horizontal Movement**: Both aircraft are moving, but their headings are close (319 degrees for FLIGHT1 and 304 degrees for FLIGHT2), indicating they are generally moving in the same direction but not exactly parallel.
+
+- **Vertical Movement**: FLIGHT2 is descending at 657 feet/min.
+
+Given the significant horizontal distance and the fact that their vertical separation is already greater than 1000 feet, the immediate concern for loss of separation based on the current data seems low. However, we must consider their trajectories and speeds to ensure they do not converge.
+
+### Step 4: Determine Potential for Loss of Separation
+
+Given the current data:
+- The horizontal distance is greater than 5 nautical miles (actually, much greater, as our rough calculation indicates).
+- The vertical distance is greater than 1000 feet.
+
+Without precise calculations of their future positions based on their speeds and headings, it's challenging to predict exactly when or if they will reach a point of loss of separation. However, considering their current distances and the fact that FLIGHT2 is descending, there could be a potential issue if their paths converge horizontally as FLIGHT2 descends.
+
+### Commands to Maintain Safe Separation
+
+Given the data, no immediate action seems necessary based solely on the current positions and movements. However, to maintain safe separation, air traffic control should continue to monitor their positions closely. If their paths are predicted to converge, commands could include:
+
+1. **Altitude Adjustments**: If FLIGHT2's descent is predicted to bring it too close to FLIGHT1 vertically, adjusting FLIGHT2's altitude or instructing it to level off could maintain separation.
+2. **Heading Changes**: Altering the heading of one or both aircraft to increase the horizontal distance between them could prevent loss of separation.
+3. **Speed Modifications**: Adjusting the speed of one or both aircraft could also affect their convergence, potentially preventing a loss of separation.
+
+These decisions would depend on more detailed predictions of their flight paths and the specific air traffic control protocols in place. Continuous monitoring and potentially adjusting their flight plans would be necessary to ensure safe separation is maintained.

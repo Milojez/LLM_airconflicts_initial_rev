@@ -1,0 +1,39 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 (B747) and FLIGHT2 (A330), we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* FLIGHT1 (B747) is at 22,200 feet, heading 216 degrees, ground speed 233 knots.
+* FLIGHT2 (A330) is at 24,196 feet, heading 215 degrees, ground speed 365 knots.
+* Current horizontal distance: 12.30 nautical miles.
+* Altitude difference: 1,996.8 feet.
+* Estimated time to loss of separation (TLOS): 299.3 seconds.
+* Predicted closest point of approach (DCPA): 6.68 meters in 335.6 seconds.
+
+**Analysis:**
+
+* The aircraft are on similar headings, which increases the risk of collision.
+* The altitude difference is significant, but FLIGHT2 is descending at 200 feet/min, which may reduce the altitude difference over time.
+* The ground speed of FLIGHT2 is much higher than FLIGHT1, which may cause FLIGHT2 to close in on FLIGHT1 quickly.
+
+**Recommended Actions:**
+
+To maintain safe separation, we recommend the following actions:
+
+1. **FLIGHT2 (A330):** Climb to 25,000 feet at a rate of 500 feet/min. This will increase the altitude difference and reduce the risk of collision.
+2. **FLIGHT2 (A330):** Turn right heading 240 degrees. This will increase the horizontal distance between the two aircraft and reduce the risk of collision.
+3. **FLIGHT1 (B747):** Maintain current heading and altitude. No changes are recommended for FLIGHT1 at this time.
+
+**Rationale:**
+
+* Climbing FLIGHT2 will increase the altitude difference and reduce the risk of collision.
+* Turning FLIGHT2 right will increase the horizontal distance between the two aircraft and reduce the risk of collision.
+* Maintaining FLIGHT1's current heading and altitude will minimize disruptions to its flight plan.
+
+**Monitoring:**
+
+* Continuously monitor the situation and adjust the recommended actions as necessary to ensure safe separation.
+* Recalculate the TLOS and DCPA after implementing the recommended actions to ensure that the conflict is resolved.
+
+By implementing these actions, we can maintain safe separation between FLIGHT1 and FLIGHT2 and prevent a potential collision.

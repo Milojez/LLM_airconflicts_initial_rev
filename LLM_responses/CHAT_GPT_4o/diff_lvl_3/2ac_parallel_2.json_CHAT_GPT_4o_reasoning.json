@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 0,
+            "reasoning": "The predicted closest point of approach (DCPA) is only 6.68 meters, which is far below the required minimum separation standards.",
+            "issued command": "Instruct FLIGHT1 to climb to 24,500 feet and adjust heading to 220 degrees. Instruct FLIGHT2 to maintain or increase its descent rate."
+        }
+    ]
+}

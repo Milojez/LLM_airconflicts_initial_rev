@@ -1,0 +1,36 @@
+# Air Traffic Control Analysis
+
+## Initial Data
+- FLIGHT1 (B747): Position (515161.18m E, 2536816.84m N), Altitude 25200 ft, Speed 245 knots, Heading 216°, Vertical rate 0 ft/min
+- FLIGHT2 (A330): Position (535663.09m E, 2565002.22m N), Altitude 25200 ft, Speed 412 knots, Heading 216°, Vertical rate 0 ft/min
+
+## Step 1: Analyze vertical separation
+Both aircraft are at 25200 feet with 0 ft/min vertical rate, so they will remain at the same altitude. This means:
+- Vertical separation = 0 feet (< 1000 feet threshold)
+- The vertical separation condition for loss of separation is met
+
+## Step 2: Calculate initial horizontal separation
+Using the Pythagorean theorem:
+- ΔX = 535663.09 - 515161.18 = 20501.91 meters
+- ΔY = 2565002.22 - 2536816.84 = 28185.38 meters
+- Initial horizontal distance = √(20501.91² + 28185.38²) = 34857.97 meters
+- Converting to nautical miles: 34857.97m ÷ 1852m/nm = 18.82 nautical miles
+
+## Step 3: Analyze future horizontal separation
+Both aircraft are flying on the same heading (216°), but FLIGHT2 is faster (412 knots vs 245 knots).
+- FLIGHT2 is ahead of FLIGHT1 and flying faster
+- The distance between them will increase over time
+- Therefore, the horizontal separation will never decrease below the initial 18.82 nm
+
+## Step 4: Determine if loss of separation will occur
+- Vertical separation condition is met (both at same altitude)
+- Horizontal separation is 18.82 nm and will only increase (> 5 nm threshold)
+- Since horizontal separation will always exceed 5 nm, a loss of separation will NOT occur
+
+## Air Traffic Control Command
+Since FLIGHT2 is ahead of FLIGHT1 and flying faster on the same heading, no immediate action is required as separation will naturally increase. However, as a precautionary measure:
+
+**Recommended command:**
+"FLIGHT1, maintain current heading and altitude. Traffic information: FLIGHT2 is ahead of you at same altitude, no conflict expected."
+
+No intervention is necessary as the aircraft are safely separated and the separation will only increase over time.

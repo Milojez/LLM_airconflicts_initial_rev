@@ -1,0 +1,58 @@
+# Air Traffic Control Separation Analysis
+
+## Initial Aircraft Data
+
+**FLIGHT1 (A330)**
+- Position: Lat -55.51339916°, Long 13.06495599°
+- Altitude: 20,200 feet
+- Ground speed: 266 knots
+- Heading: 71°
+- Vertical rate: 0 feet/min
+
+**FLIGHT2 (A320)**
+- Position: Lat -55.12472417°, Long 13.26054877°
+- Altitude: 22,290 feet
+- Ground speed: 381 knots
+- Heading: 161°
+- Vertical rate: -550 feet/min
+
+## Step 1: Analyze Current Separation
+
+### Current Vertical Separation
+Current vertical separation = |22,290 - 20,200| = 2,090 feet
+This exceeds the 1,000 feet minimum requirement.
+
+### Current Horizontal Separation
+To calculate the current horizontal distance, I'll use the great circle distance formula:
+- The approximate distance between these coordinates is approximately 24 nautical miles.
+This exceeds the 5 nautical mile minimum requirement.
+
+## Step 2: Analyze Future Separation
+
+### Vertical Separation Analysis
+FLIGHT1 maintains altitude at 20,200 feet.
+FLIGHT2 is descending at 550 feet/min.
+
+Time to reach vertical separation of 1,000 feet:
+- Time = (2,090 - 1,000) feet ÷ 550 feet/min ≈ 1.98 minutes
+
+### Horizontal Separation Analysis
+The aircraft are on converging tracks with FLIGHT2 moving significantly faster than FLIGHT1.
+Based on their headings (71° vs 161°), they are moving in different directions with FLIGHT2 heading more southerly.
+
+Given their current positions, speeds, and headings, the aircraft will not come within 5 nautical miles of each other before FLIGHT2 passes well to the east of FLIGHT1's position.
+
+## Conclusion
+
+No loss of separation is predicted based on the current trajectories:
+- The current vertical separation is 2,090 feet
+- The current horizontal separation is approximately 24 nautical miles
+- While FLIGHT2 is descending, the aircraft trajectories will not bring them within 5 nautical miles horizontally before FLIGHT2 passes FLIGHT1
+
+## Recommended ATC Instructions
+
+No immediate action is required as separation standards are maintained. However, as a precautionary measure:
+
+"FLIGHT2, maintain current heading and continue descent as planned. Traffic information: FLIGHT1 is approximately 24 miles to your northwest at 20,200 feet."
+
+This provides situational awareness while allowing both aircraft to continue on their current flight paths.

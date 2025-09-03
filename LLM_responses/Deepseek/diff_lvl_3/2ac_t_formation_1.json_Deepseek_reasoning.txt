@@ -1,0 +1,33 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* Both aircraft are flying at the same altitude (20800 feet) with no vertical separation.
+* The horizontal distance between them is 44.54 nautical miles, which is currently not a concern.
+* The estimated time to loss of separation (TLOS) is 299.5 seconds, indicating that the aircraft will violate the minimum separation criteria if no action is taken.
+* The predicted closest point of approach (DCPA) is 193.24 meters, which is very close and indicates a high risk of collision.
+
+**Analysis:**
+
+* Since both aircraft are flying at the same altitude, a vertical separation is not possible.
+* A heading change for one or both aircraft could be effective in increasing the horizontal distance between them.
+* A speed modification could also be considered, but it may not be enough to prevent the loss of separation.
+
+**Recommended Actions:**
+
+1. **Heading Change:** Issue a heading change command to FLIGHT1 to turn right by 20-30 degrees (e.g., new heading: 91-101 degrees). This will increase the horizontal distance between the two aircraft and reduce the risk of collision.
+2. **Speed Modification:** Consider issuing a speed reduction command to FLIGHT2 to reduce its ground speed by 20-30 knots (e.g., new speed: 362-372 knots). This will reduce the closure rate between the two aircraft and provide more time for the heading change to take effect.
+
+**Example Commands:**
+
+* "FLIGHT1, turn right heading 095 degrees, acknowledge."
+* "FLIGHT2, reduce speed to 370 knots, acknowledge."
+
+**Monitoring:**
+
+* Closely monitor the situation and adjust the commands as necessary to ensure that the minimum separation criteria are maintained.
+* Recalculate the TLOS and DCPA after issuing the commands to ensure that the conflict is resolved.
+
+By issuing these commands, we can increase the horizontal distance between the two aircraft, reduce the risk of collision, and maintain safe separation.

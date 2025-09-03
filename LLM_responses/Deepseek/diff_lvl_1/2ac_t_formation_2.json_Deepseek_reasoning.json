@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Aircraft are predicted to be within 5 nautical miles of each other horizontally and 1000 feet vertically.",
+            "issued_command": "FLIGHT2, descend and maintain 20000 feet."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 0,
+            "reasoning": "Both aircraft are at the same altitude with a vertical separation of 0 feet, which is less than the required 1,000 feet. The horizontal distance is less than 5 nautical miles.",
+            "issued command": "Instruct FLIGHT1 to change altitude to maintain vertical separation."
+        }
+    ]
+}

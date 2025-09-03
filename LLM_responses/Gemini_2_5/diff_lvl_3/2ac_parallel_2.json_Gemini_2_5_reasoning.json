@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Predicted loss of vertical separation due to FLIGHT2 descending towards FLIGHT1 on a converging, overtaking track.",
+            "issued command": "FLIGHT2, TURN RIGHT HEADING 240, MAINTAIN FLIGHT LEVEL 240."
+        }
+    ]
+}

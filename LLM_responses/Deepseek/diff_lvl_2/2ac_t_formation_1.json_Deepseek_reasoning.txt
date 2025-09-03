@@ -1,0 +1,77 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance and project their future positions based on their current speeds and headings. We'll then check if at any point their vertical distance is less than 1000 feet and their horizontal distance is less than 5 nautical miles.
+
+### Step 1: Convert Coordinates to a Common Reference
+
+First, let's convert the given coordinates into a more manageable format. The coordinates given are in meters, but for aviation, we often use nautical miles for horizontal distances. 
+
+1 nautical mile = 1852 meters.
+
+Given:
+- FLIGHT1: (y, x) = (3846375.103096159 m, 377813.17429230036 m)
+- FLIGHT2: (y, x) = (3926444.887643315 m, 397988.16415116284 m)
+
+Let's convert these to nautical miles for easier comparison later:
+- FLIGHT1: (y, x) ≈ (2078.31 nm, 204.22 nm)
+- FLIGHT2: (y, x) ≈ (2125.19 nm, 215.19 nm)
+
+### Step 2: Calculate Current Horizontal Distance
+
+To find the current horizontal distance between the two aircraft, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given the coordinates in nautical miles:
+\[d = \sqrt{(215.19 - 204.22)^2 + (2125.19 - 2078.31)^2}\]
+\[d = \sqrt{(10.97)^2 + (46.88)^2}\]
+\[d = \sqrt{120.3009 + 2195.0584}\]
+\[d = \sqrt{2315.3593}\]
+\[d \approx 48.13 \text{ nm}\]
+
+### Step 3: Calculate Current Vertical Distance
+
+Both aircraft are flying at 20800 feet. Therefore, the vertical distance between them is 0 feet, as they are at the same altitude.
+
+### Step 4: Project Future Positions
+
+To determine if they will lose separation, we need to project their future positions based on their speeds and headings.
+
+- FLIGHT1: Speed = 268 knots, Heading = 71 degrees
+- FLIGHT2: Speed = 392 knots, Heading = 161 degrees
+
+Let's calculate their movement in the x and y directions per minute:
+- FLIGHT1: \(x' = 268 \times \cos(71^\circ)\), \(y' = 268 \times \sin(71^\circ)\)
+- FLIGHT2: \(x'' = 392 \times \cos(161^\circ)\), \(y'' = 392 \times \sin(161^\circ)\)
+
+Calculating:
+- FLIGHT1: \(x' \approx 268 \times 0.3256 \approx 87.1\) knots, \(y' \approx 268 \times 0.9455 \approx 253.4\) knots
+- FLIGHT2: \(x'' \approx 392 \times -0.9397 \approx -368.1\) knots, \(y'' \approx 392 \times 0.342 \approx 134.1\) knots
+
+### Step 5: Determine Relative Movement
+
+The relative movement between the two aircraft in the x and y directions per minute is:
+- \(\Delta x = x' - x'' \approx 87.1 - (-368.1) \approx 455.2\) knots
+- \(\Delta y = y' - y'' \approx 253.4 - 134.1 \approx 119.3\) knots
+
+### Step 6: Calculate Time to Potential Loss of Separation
+
+Given the current distance and the relative speed, we can estimate the time it would take for the aircraft to potentially lose separation. However, since the initial horizontal distance is approximately 48.13 nm and the question asks for a loss of separation (horizontal distance < 5 nm and vertical distance < 1000 feet), we need to see if they are approaching each other.
+
+The relative speed in the direction of the line connecting them is what matters for closing distance. The initial calculation of relative movement doesn't directly give us the closing speed without considering the direction of the line connecting the two aircraft. 
+
+However, given the significant difference in their headings and the fact that one is moving north-east and the other south-east, their paths are not directly converging in a simple manner that would quickly reduce their horizontal distance to less than 5 nm based on their current speeds and headings.
+
+### Step 7: Conclusion on Loss of Separation
+
+Given the initial conditions and without precise calculations of their future positions at every minute, it's challenging to determine the exact time of potential loss of separation solely based on the provided data. The key factors are their relative speeds, headings, and the fact that they are currently at the same altitude.
+
+However, considering their current distance (approximately 48.13 nm) and the conditions required for loss of separation (horizontal distance < 5 nm and vertical distance < 1000 feet), and given that their vertical distance is 0 (same altitude), the critical factor is whether their horizontal distance will decrease to less than 5 nm.
+
+### Commands to Maintain Safe Separation
+
+Given the data, if we were to assume a potential for loss of separation based on future projections not fully calculable here, commands could include:
+- **Altitude Adjustment**: One aircraft could be instructed to climb or descend to increase the vertical separation.
+- **Heading Change**: Altering the heading of one or both aircraft to reduce the rate at which they are closing with each other.
+- **Speed Modification**: Increasing or decreasing the speed of one or both aircraft to adjust their relative closure rate.
+
+Without the ability to project their exact future positions based on their current vectors and without more detailed information on air traffic control's current strategies and the specific air traffic environment, the precise command would depend on the dynamic situation and the controller's assessment of the risk of loss of separation.
+
+Given the current data and the significant horizontal distance, immediate action may not be required, but monitoring their situation closely is essential to ensure safe separation is maintained.

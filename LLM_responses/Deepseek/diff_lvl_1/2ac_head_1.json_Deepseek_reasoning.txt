@@ -1,0 +1,54 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Given:
+- Latitude and longitude of FLIGHT1: (25.09586612502983, -170.9952346979887)
+- Latitude and longitude of FLIGHT2: (24.519755869400736, -170.4614218108527)
+
+The Haversine formula is:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right) \times R\]
+
+where:
+- \(d\) is the distance between the two points,
+- \(\phi_1\) and \(\phi_2\) are the latitudes of the two points in radians,
+- \(\lambda_1\) and \(\lambda_2\) are the longitudes of the two points in radians,
+- \(R\) is the radius of the Earth, approximately 6371 kilometers (or 3440 nautical miles).
+
+Let's convert the given coordinates to radians and apply the formula:
+- \(\phi_1 = 25.09586612502983 \times \frac{\pi}{180}\),
+- \(\phi_2 = 24.519755869400736 \times \frac{\pi}{180}\),
+- \(\lambda_1 = -170.9952346979887 \times \frac{\pi}{180}\),
+- \(\lambda_2 = -170.4614218108527 \times \frac{\pi}{180}\).
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{0.4203 - 0.4239}{2}\right) + \cos(0.4203) \cos(0.4239) \sin^2\left(\frac{-2.9945 + 2.9769}{2}\right)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2(-0.0018) + \cos(0.4203) \cos(0.4239) \sin^2(-0.0088)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0000033 + 0.9999 \times 0.9999 \times 0.000077}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0000033 + 0.000077}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0000803}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin(0.00894) \times 3440\]
+
+\[d \approx 2 \times 0.00894 \times 3440\]
+
+\[d \approx 61.5 \, \text{nautical miles}\]
+
+The vertical distance is 0 feet since both aircraft are at the same altitude (16200 feet).
+
+### Step 2: Predict Future Positions
+
+To predict if there will be a loss of separation, we need to calculate the future positions of both aircraft based on their ground speeds and headings. However, given the current distance (approximately 61.5 nautical miles) and the fact that both aircraft are flying at the same altitude with no vertical rate change, we can see that the horizontal distance condition for loss of separation (< 5 nautical miles) is not currently met and is unlikely to be met in the near future without significant changes in their flight paths.
+
+### Step 3: Determine Necessary Commands
+
+Given the current data, there's no immediate need for commands to adjust altitude, heading, or speed to maintain safe separation since the aircraft are not predicted to come within the loss of separation criteria based on their current trajectories. However, air traffic control should continue to monitor their positions and adjust as necessary to ensure safe separation is maintained.
+
+### Conclusion
+
+Based on the provided data, there is no immediate risk of loss of separation between FLIGHT1 and FLIGHT2. Continuous monitoring of their flight paths is necessary to ensure that safe separation is maintained. If their trajectories were to change such that they might come within 5 nautical miles of each other horizontally and 1000 feet vertically, then commands to adjust altitude, heading, or speed would be necessary to prevent loss of separation.

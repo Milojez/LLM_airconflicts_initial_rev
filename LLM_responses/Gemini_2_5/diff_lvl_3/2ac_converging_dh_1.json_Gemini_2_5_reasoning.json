@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.7,
+            "reasoning": "Predicted loss of separation based on converging tracks, high closure rate, and near-zero predicted DCPA (3.34m) in ~5 minutes (TLOS 299.7s). Current vertical separation is decreasing.",
+            "issued_command": "FLIGHT1, descend maintain Flight Level One Seven Zero."
+        }
+    ]
+}

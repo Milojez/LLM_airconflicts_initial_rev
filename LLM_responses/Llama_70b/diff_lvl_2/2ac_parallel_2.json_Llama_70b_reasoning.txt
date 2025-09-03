@@ -1,0 +1,75 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Convert Coordinates to a Common Reference for Easier Calculation
+
+First, let's convert the given coordinates into a more manageable format. We'll treat the x and y coordinates as points on a 2D plane, with the origin (0,0) being an arbitrary reference point. The given coordinates are already in meters, so we can directly use them for distance calculations.
+
+### Step 2: Calculate Current Horizontal Distance
+
+To find the horizontal distance between the two aircraft, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given:
+- \(x_1 = 515164.8003772175\) meters
+- \(y_1 = 2536821.8152077296\) meters
+- \(x_2 = 528537.7081951243\) meters
+- \(y_2 = 2555190.981629861\) meters
+
+\[d = \sqrt{(528537.7081951243 - 515164.8003772175)^2 + (2555190.981629861 - 2536821.8152077296)^2}\]
+\[d = \sqrt{(13372.9078179068)^2 + (18369.1664221314)^2}\]
+\[d = \sqrt{178911231.415 + 337551111.309}\]
+\[d = \sqrt{516462342.724}\]
+\[d \approx 22713.57 \text{ meters}\]
+
+To convert meters to nautical miles, we use the conversion factor: 1 nautical mile = 1852 meters.
+\[d \approx \frac{22713.57}{1852} \approx 12.27 \text{ nautical miles}\]
+
+### Step 3: Calculate Current Vertical Distance
+
+Given:
+- Altitude of FLIGHT1 = 22200 feet
+- Altitude of FLIGHT2 = 24196 feet
+
+\[ \text{Vertical Distance} = |24196 - 22200| = 1996 \text{ feet} \]
+
+### Step 4: Determine If Current Separation Is Safe
+
+- Horizontal distance is approximately 12.27 nautical miles, which is greater than 5 nautical miles.
+- Vertical distance is 1996 feet, which is less than 1000 feet.
+
+Currently, the horizontal separation is safe, but the vertical separation condition is met for potential loss of separation. However, loss of separation requires both conditions to be met simultaneously.
+
+### Step 5: Predict Future Positions
+
+To predict if there will be a loss of separation, we need to consider the aircraft's movements. Given the headings and speeds, we can calculate their relative motion.
+
+- FLIGHT1's speed = 233 knots, heading = 216 degrees
+- FLIGHT2's speed = 365 knots, heading = 215 degrees
+
+Both aircraft are flying roughly in the same direction, with FLIGHT2 being significantly faster.
+
+### Step 6: Calculate Relative Speed and Direction
+
+Since they are flying almost in the same direction, the relative speed is the difference in their speeds.
+\[ \text{Relative Speed} = 365 - 233 = 132 \text{ knots} \]
+
+Given their similar headings, we can assume the relative direction is roughly the same as their individual headings, approximately 215-216 degrees.
+
+### Step 7: Consider Vertical Movement
+
+FLIGHT2 is descending at 200 feet/min. This could potentially decrease the vertical distance between the two aircraft over time.
+
+### Step 8: Determine Potential for Loss of Separation
+
+Given the current safe horizontal distance and the fact that FLIGHT2 is moving faster and in roughly the same direction, the horizontal distance will increase over time, not decrease. However, the vertical separation could decrease due to FLIGHT2's descent.
+
+To precisely calculate the time to potential loss of separation, we would need to integrate the positions of both aircraft over time, considering their speeds, headings, and vertical rates. However, given the information and the complexity of such a calculation, we can reason about the necessary actions to maintain safe separation.
+
+### Necessary Commands to Maintain Safe Separation
+
+Given the potential for decreasing vertical separation due to FLIGHT2's descent, a command to adjust FLIGHT2's altitude could be necessary. However, since the horizontal separation is increasing due to their relative speeds and similar headings, no immediate action for horizontal separation is required.
+
+1. **Altitude Adjustment for FLIGHT2**: Consider commanding FLIGHT2 to level off or ascend to maintain or increase the vertical separation.
+2. **Monitoring**: Continue to monitor the situation closely, as changes in aircraft speed, heading, or vertical rate could affect the separation.
+
+Without precise calculations of their future positions based on their current trajectories, these recommendations are based on the current situation and the potential for loss of separation due to vertical movement. Continuous monitoring and potential adjustments to maintain safe separation are crucial.

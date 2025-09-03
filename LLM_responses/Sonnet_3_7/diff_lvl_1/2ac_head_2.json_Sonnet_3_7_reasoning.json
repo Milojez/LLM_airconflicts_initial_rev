@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 1200,
+            "reasoning": "Aircraft are on converging tracks with FLIGHT2 descending. Vertical separation will reduce below 1000 feet in approximately 5 minutes while horizontal distance continues to decrease.",
+            "issued_command": "FLIGHT2, maintain altitude at 18000 feet, stop descent."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 336,
+            "reasoning": "Converging tracks at the same altitude (20800 ft). Predicted minimum horizontal separation 0.22 NM (< 5 NM) while vertical separation is 0 ft (< 1000 ft).",
+            "issued command": "FLIGHT1, climb and maintain flight level two two zero."
+        }
+    ]
+}

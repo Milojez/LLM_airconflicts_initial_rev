@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.3,
+            "reasoning": "Aircraft are on similar headings with a significant altitude difference and a high ground speed difference, increasing the risk of collision.",
+            "issued_command": "FLIGHT2: Climb to 25,000 feet at 500 feet/min and turn right heading 240 degrees. FLIGHT1: Maintain current heading and altitude."
+        }
+    ]
+}

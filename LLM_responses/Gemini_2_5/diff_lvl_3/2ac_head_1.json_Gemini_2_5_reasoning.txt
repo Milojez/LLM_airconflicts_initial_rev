@@ -1,0 +1,39 @@
+Okay, this is an urgent situation requiring immediate action. Both aircraft are at the same altitude (16200 ft) on nearly reciprocal headings (140° vs 320°), indicating a direct head-on conflict course. The predicted closest point of approach (DCPA) of 97 meters is far below any safe separation minimum.
+
+**Analysis:**
+
+1.  **Conflict Type:** Head-on collision course at the same altitude.
+2.  **Urgency:** High. While TLOS is ~5 minutes and CPA is ~5.6 minutes, the extremely small DCPA necessitates prompt resolution.
+3.  **Primary Resolution Method:** Either vertical or horizontal separation must be established immediately. Given they are head-on, a heading change (vectoring) is a very effective method. Vertical separation is also effective but requires assigning a new altitude. Turning both aircraft right is a standard procedure.
+
+**Required Commands:**
+
+The most immediate and effective action is to issue heading changes to both aircraft to turn them away from each other. Turning both aircraft to their right is standard practice. A turn of 30 degrees should be sufficient initially.
+
+1.  **Command to FLIGHT1:**
+    *   "**FLIGHT1, turn right heading one seven zero (170) immediately for traffic avoidance.**"
+    *   *(Follow-up Traffic Advisory):* "**FLIGHT1, traffic twelve o'clock, four five miles, opposite direction, Boeing 777, level one six thousand two hundred.**"
+
+2.  **Command to FLIGHT2:**
+    *   "**FLIGHT2, turn right heading three five zero (350) immediately for traffic avoidance.**"
+    *   *(Follow-up Traffic Advisory):* "**FLIGHT2, traffic twelve o'clock, four five miles, opposite direction, Boeing 737, level one six thousand two hundred.**"
+
+**Reasoning:**
+
+*   **Simultaneous Turns:** Turning both aircraft ensures separation is achieved more rapidly than turning only one.
+*   **Turning Right:** This is a standard convention for collision avoidance in many airspace regions.
+*   **Heading Change:** A 30-degree turn (140° -> 170° for FLIGHT1, 320° -> 350° for FLIGHT2) immediately changes their trajectories from converging to diverging.
+*   **"Immediately":** This conveys the urgency of the required maneuver.
+*   **Traffic Advisory:** Providing information about the conflicting traffic enhances pilot situational awareness.
+
+**Alternative (Vertical Separation):**
+
+If airspace permits, assigning different altitudes is also a valid solution:
+
+*   "**FLIGHT1, descend and maintain one five thousand (15000) immediately for traffic avoidance.**" (Or climb to 17000)
+*   "**FLIGHT2, maintain one six thousand two hundred (16200).**" (Confirming level)
+*   *(Followed by traffic advisories as above)*
+
+However, vectoring (heading change) is often preferred for immediate horizontal resolution in head-on scenarios unless vertical separation is clearly the simpler option based on surrounding traffic and flight paths. Given the data, the heading change is the most direct command to resolve the immediate conflict geometry.
+
+**Monitoring:** After issuing the commands, closely monitor both aircraft radar tracks to ensure compliance and confirm that separation is increasing to a safe margin (e.g., > 5 NM). Further instructions may be needed once separation is assured (e.g., resuming previous course or direct routing).

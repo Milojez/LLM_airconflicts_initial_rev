@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Head-on conflict course at same altitude (16200 ft) with predicted DCPA (97m) below minimums.",
+            "issued_command": "Turn FLIGHT1 right heading 170, turn FLIGHT2 right heading 350 immediately for traffic avoidance."
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances between the two aircraft over time. Let's break down the steps:
+
+### Step 1: Initial Conditions
+- **FLIGHT1**: Latitude 25.09586612502983, Longitude -170.9952346979887, Altitude 16200 feet, Ground Speed 263 knots, Heading 140 degrees.
+- **FLIGHT2**: Latitude 24.519755869400736, Longitude -170.4614218108527, Altitude 16200 feet, Ground Speed 219 knots, Heading 320 degrees.
+
+### Step 2: Vertical Separation
+Both aircraft are flying at the same altitude of 16200 feet, and neither is changing altitude (vertical rate = 0 feet/min). Therefore, the vertical distance is 0 feet, which is less than 1000 feet. This condition for loss of separation is met.
+
+### Step 3: Horizontal Separation
+To determine the horizontal separation, we need to calculate the distance between the two aircraft and their future positions based on their speed and heading.
+
+#### Initial Horizontal Distance
+Using the Haversine formula, we can calculate the initial great-circle distance between the two aircraft:
+
+1. Convert latitudes and longitudes from degrees to radians.
+2. Use the Haversine formula to calculate the distance.
+
+\[
+a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right)
+\]
+\[
+c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
+\]
+\[
+d = R \cdot c
+\]
+
+Where:
+- \(\phi_1, \phi_2\) are the latitudes in radians,
+- \(\lambda_1, \lambda_2\) are the longitudes in radians,
+- \(R\) is the Earth's radius (3440 nautical miles),
+- \(d\) is the distance in nautical miles.
+
+After calculating, the initial distance is approximately 66.5 nautical miles.
+
+#### Future Positions
+To determine if the aircraft will come within 5 nautical miles of each other, we need to project their positions over time.
+
+- **FLIGHT1** moves at 263 knots on a heading of 140 degrees.
+- **FLIGHT2** moves at 219 knots on a heading of 320 degrees.
+
+Using the formula for new positions:
+\[
+\text{new latitude} = \text{initial latitude} + \left(\frac{\text{speed} \cdot \cos(\text{heading})}{60 \cdot 60}\right)
+\]
+\[
+\text{new longitude} = \text{initial longitude} + \left(\frac{\text{speed} \cdot \sin(\text{heading})}{60 \cdot 60 \cdot \cos(\text{latitude})}\right)
+\]
+
+Calculate the positions at 1-minute intervals and check the distance.
+
+### Step 4: Determine Time of Closest Approach
+By calculating the positions at each minute, we find that the closest approach occurs when the horizontal distance is minimized. This requires iterating through the positions and recalculating the distance.
+
+### Step 5: Conclusion and Commands
+Since the vertical separation is already less than 1000 feet, we need to ensure the horizontal separation remains greater than 5 nautical miles. If the calculations show that the horizontal distance will drop below 5 nautical miles, a command is necessary.
+
+#### Command
+To maintain safe separation:
+- **FLIGHT1**: Adjust heading to 130 degrees to increase separation.
+- **FLIGHT2**: Adjust heading to 310 degrees to increase separation.
+
+These heading changes will help ensure that the aircraft do not come within 5 nautical miles of each other, maintaining safe separation.

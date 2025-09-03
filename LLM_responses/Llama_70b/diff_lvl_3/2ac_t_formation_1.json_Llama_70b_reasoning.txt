@@ -1,0 +1,35 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* Both aircraft are flying at the same altitude (20800 feet) with no vertical separation.
+* The horizontal distance between them is 44.54 nautical miles, which is currently not a concern.
+* The estimated time to loss of separation (TLOS) is 299.5 seconds, indicating that the aircraft will be in close proximity soon.
+* The predicted closest point of approach (DCPA) is 193.24 meters, which is below the minimum separation criteria.
+
+**Analysis:**
+
+* Since both aircraft are flying at the same altitude, a vertical separation is not possible.
+* A heading change for one or both aircraft could be effective in increasing the horizontal distance between them.
+* A speed modification could also be considered, but it may not be sufficient to resolve the conflict on its own.
+
+**Recommended Commands:**
+
+To maintain safe separation, the following commands are recommended:
+
+1. **Heading Change:** Issue a heading change command to FLIGHT1 to turn right by 20-30 degrees (e.g., new heading: 91-101 degrees). This will increase the horizontal distance between the two aircraft and reduce the likelihood of a loss of separation.
+2. **Speed Modification:** Consider issuing a speed reduction command to FLIGHT2 to reduce its ground speed by 20-30 knots (e.g., new speed: 362-372 knots). This will reduce the closure rate between the two aircraft and provide more time for the heading change to take effect.
+
+**Alternative Options:**
+
+* If the heading change is not feasible, consider issuing a speed increase command to FLIGHT1 to increase its ground speed by 20-30 knots (e.g., new speed: 288-298 knots). This will increase the horizontal distance between the two aircraft, but may not be as effective as a heading change.
+* If the situation allows, consider issuing a climb or descent command to one of the aircraft to create a vertical separation. However, this may not be possible given the current altitudes and flight plans.
+
+**Monitoring:**
+
+* Closely monitor the situation and adjust the commands as necessary to ensure that the aircraft maintain safe separation.
+* Continuously update the TLOS and DCPA values to ensure that the conflict is being resolved effectively.
+
+By issuing these commands, we can reduce the risk of a loss of separation and maintain safe distances between the two aircraft.

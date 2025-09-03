@@ -1,0 +1,33 @@
+**Conflict Resolution**
+
+To maintain safe separation between FLIGHT1 (B747) and FLIGHT2 (A330), we need to analyze the situation and determine the most effective resolution. Given the data:
+
+1. **Current Situation**:
+	* Both aircraft are flying at the same altitude (25,200 feet).
+	* The horizontal distance between them is 18.87 nautical miles.
+	* The estimated time to loss of separation (TLOS) is 299.1 seconds.
+	* The predicted closest point of approach (DCPA) is 15.73 meters, expected to occur in 407.0 seconds.
+2. **Analysis**:
+	* Since both aircraft are at the same altitude, a vertical separation is not possible.
+	* The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 35.97 degrees, indicating that FLIGHT2 is to the northeast of FLIGHT1.
+	* FLIGHT2 is flying at a significantly higher ground speed (412 knots) than FLIGHT1 (245 knots).
+3. **Resolution**:
+	* To maintain safe separation, we need to increase the horizontal distance between the two aircraft.
+	* Considering the significant difference in ground speeds, a speed modification for FLIGHT2 would be the most effective solution.
+	* **Command**: FLIGHT2, reduce speed to 280 knots.
+
+Alternatively, or in addition to the speed modification, a heading change could be considered:
+
+* **Command**: FLIGHT2, turn right heading 240 degrees.
+
+This would increase the horizontal distance between the two aircraft and reduce the likelihood of a loss of separation.
+
+**Rationale**:
+
+* Reducing FLIGHT2's speed will decrease its closure rate with FLIGHT1, increasing the time available to resolve the conflict.
+* A heading change for FLIGHT2 will also increase the horizontal distance between the two aircraft, further reducing the risk of a loss of separation.
+
+**Monitoring**:
+
+* After issuing the command(s), closely monitor the situation to ensure that the conflict is resolved and safe separation is maintained.
+* Be prepared to issue additional commands if necessary to ensure safe separation.

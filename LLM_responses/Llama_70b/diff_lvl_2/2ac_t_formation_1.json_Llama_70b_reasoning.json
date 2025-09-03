@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": "Unknown, depends on flight path predictions",
+            "reasoning": "Aircraft are at the same altitude and within 5 nautical miles of each other horizontally",
+            "issued_command": "FLIGHT1, turn right heading 090 degrees to increase separation with FLIGHT2, or FLIGHT2, climb and maintain 21000 feet to increase vertical separation with FLIGHT1"
+        }
+    ]
+}

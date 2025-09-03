@@ -1,0 +1,52 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze their current positions, headings, and speeds to predict their future positions and check if they will violate the separation criteria.
+
+### Step 1: Convert Ground Speed to Meters per Second
+- **FLIGHT1**: 263 knots = 263 * 0.514444 = 135.34 m/s
+- **FLIGHT2**: 219 knots = 219 * 0.514444 = 112.68 m/s
+
+### Step 2: Calculate Velocity Components
+Using the heading to determine the velocity components in the x and y directions:
+
+- **FLIGHT1** (heading 140 degrees):
+  - \( V_{x1} = 135.34 \times \cos(140^\circ) = 135.34 \times (-0.7660) = -103.68 \, \text{m/s} \)
+  - \( V_{y1} = 135.34 \times \sin(140^\circ) = 135.34 \times 0.6428 = 86.95 \, \text{m/s} \)
+
+- **FLIGHT2** (heading 320 degrees):
+  - \( V_{x2} = 112.68 \times \cos(320^\circ) = 112.68 \times 0.7660 = 86.34 \, \text{m/s} \)
+  - \( V_{y2} = 112.68 \times \sin(320^\circ) = 112.68 \times (-0.6428) = -72.42 \, \text{m/s} \)
+
+### Step 3: Calculate Relative Velocity
+- \( V_{x\_rel} = V_{x2} - V_{x1} = 86.34 - (-103.68) = 190.02 \, \text{m/s} \)
+- \( V_{y\_rel} = V_{y2} - V_{y1} = -72.42 - 86.95 = -159.37 \, \text{m/s} \)
+
+### Step 4: Calculate Initial Horizontal Distance
+Convert the initial positions from meters to nautical miles (1 nautical mile = 1852 meters):
+
+- Initial x distance: \( 554557.6413803147 - 500480.49146044033 = 54077.15 \, \text{meters} = 29.20 \, \text{nautical miles} \)
+- Initial y distance: \( 2711879.124660589 - 2775562.9440137204 = -63683.82 \, \text{meters} = -34.39 \, \text{nautical miles} \)
+
+Initial horizontal distance:
+\[ \text{Distance} = \sqrt{(29.20)^2 + (-34.39)^2} = \sqrt{853.44 + 1182.67} = \sqrt{2036.11} = 45.12 \, \text{nautical miles} \]
+
+### Step 5: Determine Time to Potential Loss of Separation
+Since both aircraft are at the same altitude (16200 feet), the vertical separation is 0 feet, which is less than 1000 feet. We need to find when the horizontal distance becomes less than 5 nautical miles.
+
+The relative speed in the horizontal plane:
+\[ V_{rel} = \sqrt{(190.02)^2 + (-159.37)^2} = \sqrt{36107.60 + 25400.14} = \sqrt{61507.74} = 247.99 \, \text{m/s} \]
+
+Convert this speed to nautical miles per second:
+\[ V_{rel\_nm} = \frac{247.99}{1852} = 0.134 \, \text{nautical miles per second} \]
+
+Time to reach 5 nautical miles:
+\[ \text{Time} = \frac{45.12 - 5}{0.134} = \frac{40.12}{0.134} = 299.40 \, \text{seconds} \]
+
+### Conclusion
+The aircraft will reach a loss of separation in approximately 299 seconds if no action is taken.
+
+### Recommended Command
+To maintain safe separation, issue a command to change the heading or altitude of one of the aircraft. For example:
+
+- **FLIGHT1**: Change heading to 150 degrees to increase separation.
+- **FLIGHT2**: Climb to 17200 feet to ensure vertical separation.
+
+These commands will help maintain safe separation and prevent a loss of separation scenario.

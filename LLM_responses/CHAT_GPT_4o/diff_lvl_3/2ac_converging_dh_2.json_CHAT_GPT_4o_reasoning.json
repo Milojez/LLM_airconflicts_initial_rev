@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Predicted loss of horizontal and vertical separation due to FLIGHT2's descent and close DCPA.",
+            "issued_command": "FLIGHT2, stop descent and maintain 18,500 feet; FLIGHT1, turn right heading 330 degrees; FLIGHT2, reduce speed to 250 knots."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 336,
+            "reasoning": "Predicted loss of vertical (<1000ft) and horizontal (<5NM) separation in approx 5.6 minutes due to converging tracks and FLIGHT2's descent.",
+            "issued command": "FLIGHT2, MAINTAIN ALTITUDE ONE EIGHT THOUSAND."
+        }
+    ]
+}

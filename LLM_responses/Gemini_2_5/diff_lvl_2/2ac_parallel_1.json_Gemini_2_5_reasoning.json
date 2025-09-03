@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 298,
+            "reasoning": "Predicted Loss of Separation: Vertical separation is 0 ft (< 1000 ft) and horizontal separation (currently 18.82 NM) is predicted to decrease below 5 NM in approximately 5 minutes due to FLIGHT2 overtaking FLIGHT1 on the same track at the same altitude.",
+            "issued_command": "FLIGHT2, climb and maintain Flight Level 260."
+        }
+    ]
+}

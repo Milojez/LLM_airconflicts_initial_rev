@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": null,
+            "reasoning": "Vertical separation is less than 1000 feet and FLIGHT2 is descending, potentially decreasing vertical separation further.",
+            "issued_command": "Consider commanding FLIGHT2 to level off or ascend to maintain or increase the vertical separation."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 149.3,
+            "reasoning": "Aircraft are predicted to come within 56.85 meters of each other in 188 seconds, with current vertical separation of only 2091 ft while FLIGHT2 is descending. This indicates an imminent loss of separation.",
+            "issued_command": "FLIGHT2, traffic alert. Turn right heading 190 degrees immediately for traffic separation. Maintain current descent rate. Report new heading established."
+        }
+    ]
+}

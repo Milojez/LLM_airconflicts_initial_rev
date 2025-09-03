@@ -1,0 +1,69 @@
+# Loss of Separation Analysis
+
+## Initial Data
+- FLIGHT1 (A330): 
+  - Position: (472742.1287m E, 8971041.1139m N)
+  - Altitude: 18000 feet
+  - Speed: 237 knots
+  - Heading: 319°
+  - Vertical rate: 0 feet/min
+
+- FLIGHT2 (A330):
+  - Position: (500862.8985m E, 8968825.8303m N)
+  - Altitude: 19093 feet
+  - Speed: 335 knots
+  - Heading: 304°
+  - Vertical rate: -71 feet/min
+
+## Step 1: Calculate initial separation
+### Horizontal separation
+Initial horizontal distance = √[(500862.8985 - 472742.1287)² + (8968825.8303 - 8971041.1139)²]
+= √[(28120.7698)² + (-2215.2836)²]
+= √(790777693.4 + 4907480.9)
+= √795685174.3
+= 28209.7 meters
+= 15.23 nautical miles (1 NM = 1852 meters)
+
+### Vertical separation
+Initial vertical separation = 19093 - 18000 = 1093 feet
+
+## Step 2: Determine future positions and separation
+Converting speeds to meters/second:
+- FLIGHT1: 237 knots = 121.8 m/s
+- FLIGHT2: 335 knots = 172.3 m/s
+
+Converting headings to velocity components:
+- FLIGHT1: vx = 121.8 * sin(319°) = 121.8 * (-0.6561) = -79.9 m/s
+           vy = 121.8 * cos(319°) = 121.8 * 0.7547 = 91.9 m/s
+- FLIGHT2: vx = 172.3 * sin(304°) = 172.3 * (-0.8387) = -144.5 m/s
+           vy = 172.3 * cos(304°) = 172.3 * 0.5446 = 93.8 m/s
+
+Vertical rate for FLIGHT2 = -71 feet/min = -0.36 feet/sec
+
+The aircraft are initially well separated horizontally (15.23 NM > 5 NM requirement).
+FLIGHT2 is descending at -71 feet/min, so we need to check if vertical separation will decrease below 1000 feet.
+
+Time to reach 1000 feet vertical separation = (1093 - 1000)/0.36 = 258.3 seconds ≈ 4.3 minutes
+
+At that time, the horizontal positions would be:
+- FLIGHT1: x = 472742.1287 + (-79.9 * 258.3) = 452101.5 m
+           y = 8971041.1139 + (91.9 * 258.3) = 8994778.4 m
+- FLIGHT2: x = 500862.8985 + (-144.5 * 258.3) = 463550.9 m
+           y = 8968825.8303 + (93.8 * 258.3) = 8993057.9 m
+
+New horizontal separation = √[(463550.9 - 452101.5)² + (8993057.9 - 8994778.4)²]
+= √[(11449.4)² + (-1720.5)²]
+= √(131088748.4 + 2960120.3)
+= √134048868.7
+= 11579.7 meters
+= 6.25 nautical miles
+
+## Conclusion
+When the vertical separation approaches 1000 feet (in about 4.3 minutes), the horizontal separation will be approximately 6.25 NM, which is still greater than the required 5 NM.
+
+However, the aircraft are converging, and if we project further, they could potentially lose separation. To maintain safe separation, I recommend:
+
+## Recommended ATC Instructions
+"FLIGHT2, maintain FL190, cancel descent."
+
+This instruction will keep FLIGHT2 at its current altitude, maintaining vertical separation above 1000 feet and eliminating any risk of loss of separation.

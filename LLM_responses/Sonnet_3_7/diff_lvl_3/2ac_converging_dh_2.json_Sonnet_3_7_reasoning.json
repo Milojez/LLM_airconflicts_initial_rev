@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 198.5,
+            "reasoning": "FLIGHT2 is descending and will cross FLIGHT1's altitude while their paths converge to an extremely close proximity (5.26 meters) in 6.9 minutes. Current separation is 9.65 NM horizontal and 2084.6 ft vertical.",
+            "issued_command": "FLIGHT2, Traffic Alert. Stop descent immediately, maintain FL180. FLIGHT2, for traffic separation, turn right heading 330 degrees."
+        }
+    ]
+}

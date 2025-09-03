@@ -1,0 +1,29 @@
+# Air Traffic Control Response - Loss of Separation Alert
+
+## Situation Analysis
+- FLIGHT1 (B737): FL168, heading 140°, 292 knots, level flight
+- FLIGHT2 (B777): FL183, heading 320°, 227 knots, descending at 100 ft/min
+- Current separation: 48.23 NM horizontal, 1498.4 feet vertical
+- TLOS: 299.6 seconds (approximately 5 minutes)
+- DCPA: 110.39 meters in 334.3 seconds (critically close)
+- Aircraft are on nearly reciprocal headings (140° vs 320°)
+
+## Resolution Command
+
+"FLIGHT2, Traffic alert. For separation, turn right heading 350 degrees immediately."
+
+## Rationale
+1. The aircraft are converging on nearly opposite headings with a predicted closest point of approach of only 110 meters, which is well below minimum separation standards.
+
+2. A heading change is preferred over altitude adjustment because:
+   - FLIGHT2 is already descending slightly
+   - The vertical separation is currently adequate at nearly 1500 feet
+   - A heading change provides immediate lateral separation
+
+3. Instructing FLIGHT2 to turn right (to heading 350°) will:
+   - Move it away from the conflict point
+   - Increase the lateral separation at the closest point of approach
+   - Provide a 30° deviation from current track, which is sufficient to resolve the conflict
+   - Allow FLIGHT2 to return to course after passing the conflict point
+
+4. FLIGHT2 was selected for the maneuver as it's already in a slight descent and changing its heading creates less disruption to the overall traffic flow.

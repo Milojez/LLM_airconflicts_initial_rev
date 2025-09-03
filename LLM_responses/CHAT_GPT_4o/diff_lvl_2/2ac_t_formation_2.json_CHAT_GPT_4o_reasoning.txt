@@ -1,0 +1,108 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time. Let's break down the problem step-by-step:
+
+### Initial Conditions
+
+1. **FLIGHT1:**
+   - Position: (x1, y1) = (377811.9271926498, 3846374.6354066636) meters
+   - Altitude: 20200 feet
+   - Ground Speed: 266 knots
+   - Heading: 71 degrees
+   - Vertical Rate: 0 feet/min
+
+2. **FLIGHT2:**
+   - Position: (x2, y2) = (389081.1708243784, 3889947.7734683035) meters
+   - Altitude: 22290 feet
+   - Ground Speed: 381 knots
+   - Heading: 161 degrees
+   - Vertical Rate: -550 feet/min
+
+### Conversion Factors
+
+- 1 knot = 0.514444 meters/second
+- 1 nautical mile = 1852 meters
+- 1 degree = π/180 radians
+
+### Step 1: Calculate Initial Horizontal Distance
+
+Convert the positions to a common unit (meters) and calculate the initial horizontal distance:
+
+\[
+\text{Initial Horizontal Distance} = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}
+\]
+
+\[
+= \sqrt{(389081.1708243784 - 377811.9271926498)^2 + (3889947.7734683035 - 3846374.6354066636)^2}
+\]
+
+\[
+= \sqrt{(11269.2436317286)^2 + (43573.1380616399)^2}
+\]
+
+\[
+= \sqrt{126964792.5 + 1898459641.5}
+\]
+
+\[
+= \sqrt{2025424434}
+\]
+
+\[
+\approx 45004.94 \text{ meters} \approx 24.3 \text{ nautical miles}
+\]
+
+### Step 2: Calculate Initial Vertical Distance
+
+\[
+\text{Initial Vertical Distance} = |22290 - 20200| = 2090 \text{ feet}
+\]
+
+### Step 3: Determine Relative Motion
+
+- **FLIGHT1 Velocity Components:**
+  - \( V_{x1} = 266 \times 0.514444 \times \cos(71 \times \frac{\pi}{180}) \)
+  - \( V_{y1} = 266 \times 0.514444 \times \sin(71 \times \frac{\pi}{180}) \)
+
+- **FLIGHT2 Velocity Components:**
+  - \( V_{x2} = 381 \times 0.514444 \times \cos(161 \times \frac{\pi}{180}) \)
+  - \( V_{y2} = 381 \times 0.514444 \times \sin(161 \times \frac{\pi}{180}) \)
+
+Calculate these components:
+
+- \( V_{x1} \approx 266 \times 0.514444 \times 0.32557 \approx 44.5 \text{ m/s} \)
+- \( V_{y1} \approx 266 \times 0.514444 \times 0.94552 \approx 129.5 \text{ m/s} \)
+
+- \( V_{x2} \approx 381 \times 0.514444 \times (-0.93969) \approx -184.1 \text{ m/s} \)
+- \( V_{y2} \approx 381 \times 0.514444 \times 0.34202 \approx 67.1 \text{ m/s} \)
+
+### Step 4: Relative Velocity
+
+- \( V_{x_{rel}} = V_{x2} - V_{x1} = -184.1 - 44.5 = -228.6 \text{ m/s} \)
+- \( V_{y_{rel}} = V_{y2} - V_{y1} = 67.1 - 129.5 = -62.4 \text{ m/s} \)
+
+### Step 5: Time to Potential Loss of Separation
+
+To find the time when the horizontal distance might be less than 5 nautical miles (9260 meters), solve:
+
+\[
+\sqrt{(x2 + V_{x_{rel}} \cdot t - x1)^2 + (y2 + V_{y_{rel}} \cdot t - y1)^2} < 9260
+\]
+
+This is a quadratic equation in terms of \( t \). Solving it will give the time when the horizontal distance is less than 5 nautical miles.
+
+### Step 6: Vertical Separation
+
+The vertical rate of FLIGHT2 is -550 feet/min, so the vertical distance changes as:
+
+\[
+\text{Vertical Distance} = 2090 - 550 \times \frac{t}{60}
+\]
+
+Set this to be less than 1000 feet to find the time when vertical separation is lost.
+
+### Conclusion
+
+Given the initial conditions, the horizontal distance is much greater than 5 nautical miles, and the vertical distance is greater than 1000 feet. The relative velocities indicate that FLIGHT2 is descending and moving away horizontally. Therefore, there is no immediate risk of loss of separation.
+
+### Command
+
+No immediate command is necessary as there is no risk of loss of separation based on the current trajectory and rates. However, continue to monitor the situation and be prepared to issue commands if the situation changes.

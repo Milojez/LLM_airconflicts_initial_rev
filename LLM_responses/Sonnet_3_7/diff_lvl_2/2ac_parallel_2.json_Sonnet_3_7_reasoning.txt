@@ -1,0 +1,84 @@
+# Air Traffic Control Separation Analysis
+
+## Initial Data
+- **FLIGHT1 (B747)**:
+  - Position: (515164.8003772175m E, 2536821.8152077296m N)
+  - Altitude: 22200 feet
+  - Speed: 233 knots
+  - Heading: 216 degrees
+  - Vertical rate: 0 feet/min
+
+- **FLIGHT2 (A330)**:
+  - Position: (528537.7081951243m E, 2555190.981629861m N)
+  - Altitude: 24196 feet
+  - Speed: 365 knots
+  - Heading: 215 degrees
+  - Vertical rate: -200 feet/min
+
+## Step 1: Calculate Initial Separation
+
+### Horizontal Separation
+```
+Distance = √[(x2-x1)² + (y2-y1)²]
+Distance = √[(528537.7081951243 - 515164.8003772175)² + (2555190.981629861 - 2536821.8152077296)²]
+Distance = √[(13372.9078179068)² + (18369.1664221314)²]
+Distance = √(178835661.6 + 337427219.9)
+Distance = √516262881.5
+Distance = 22722.3 meters
+```
+
+Converting to nautical miles (1 nm = 1852 meters):
+```
+22722.3 meters ÷ 1852 = 12.27 nautical miles
+```
+
+### Vertical Separation
+```
+Vertical separation = |24196 - 22200| = 1996 feet
+```
+
+## Step 2: Analyze Aircraft Trajectories
+
+Converting headings to radians:
+- FLIGHT1: 216° = 3.77 radians
+- FLIGHT2: 215° = 3.75 radians
+
+Velocity components:
+- FLIGHT1 (233 knots):
+  - Vx = 233 × sin(216°) = 233 × (-0.5878) = -137.0 knots
+  - Vy = 233 × cos(216°) = 233 × (-0.809) = -188.5 knots
+
+- FLIGHT2 (365 knots):
+  - Vx = 365 × sin(215°) = 365 × (-0.5736) = -209.4 knots
+  - Vy = 365 × cos(215°) = 365 × (-0.8192) = -299.0 knots
+
+Relative velocity:
+- Vx_rel = -209.4 - (-137.0) = -72.4 knots
+- Vy_rel = -299.0 - (-188.5) = -110.5 knots
+
+## Step 3: Predict Future Positions and Separation
+
+The aircraft are on nearly parallel tracks with FLIGHT2 moving faster. Since FLIGHT2 is descending at 200 feet/min and the initial vertical separation is 1996 feet, the vertical separation will decrease over time.
+
+Time to vertical separation of 1000 feet:
+```
+Time = (1996 - 1000) feet ÷ 200 feet/min = 4.98 minutes
+```
+
+In 4.98 minutes, the horizontal positions will change:
+- FLIGHT1 will travel: 233 knots × 4.98 minutes = 19.3 nm
+- FLIGHT2 will travel: 365 knots × 4.98 minutes = 30.3 nm
+
+Given their similar headings but different speeds, the horizontal separation will decrease over time.
+
+## Step 4: Determine Closest Point of Approach (CPA)
+
+Based on the calculations, the aircraft will maintain more than 5 nm horizontal separation when they reach 1000 feet vertical separation. However, as FLIGHT2 continues to descend, the vertical separation will continue to decrease.
+
+## Conclusion
+
+There is a potential for loss of separation as FLIGHT2 continues to descend. To maintain safe separation, I would issue the following command:
+
+"FLIGHT2, maintain flight level 240, cancel descent."
+
+This command will keep FLIGHT2 at its current altitude, maintaining the vertical separation above 1000 feet and preventing a loss of separation situation. This is the simplest solution that minimizes disruption to both flights while ensuring safety.

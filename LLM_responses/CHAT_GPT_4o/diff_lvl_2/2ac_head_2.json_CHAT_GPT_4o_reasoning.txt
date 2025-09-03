@@ -1,0 +1,89 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time. Let's break down the problem step-by-step:
+
+### Initial Conditions
+
+- **FLIGHT1:**
+  - Position: (500490.0443942733, 2775551.6226634467) meters
+  - Altitude: 16800 feet
+  - Ground Speed: 292 knots
+  - Heading: 140 degrees
+  - Vertical Rate: 0 feet/min
+
+- **FLIGHT2:**
+  - Position: (558201.6042663791, 2707616.206989677) meters
+  - Altitude: 18298 feet
+  - Ground Speed: 227 knots
+  - Heading: 320 degrees
+  - Vertical Rate: -100 feet/min
+
+### Step 1: Convert Speeds to Meters per Second
+
+1 knot = 0.514444 meters/second
+
+- **FLIGHT1 Speed:** 292 knots = 292 * 0.514444 = 150.22 m/s
+- **FLIGHT2 Speed:** 227 knots = 227 * 0.514444 = 116.79 m/s
+
+### Step 2: Calculate Velocity Components
+
+Using the heading to determine the velocity components:
+
+- **FLIGHT1:**
+  - Heading 140 degrees
+  - \( Vx_1 = 150.22 \times \cos(140^\circ) \)
+  - \( Vy_1 = 150.22 \times \sin(140^\circ) \)
+
+- **FLIGHT2:**
+  - Heading 320 degrees
+  - \( Vx_2 = 116.79 \times \cos(320^\circ) \)
+  - \( Vy_2 = 116.79 \times \sin(320^\circ) \)
+
+### Step 3: Calculate Relative Velocity
+
+- \( Vx_{rel} = Vx_2 - Vx_1 \)
+- \( Vy_{rel} = Vy_2 - Vy_1 \)
+
+### Step 4: Calculate Initial Horizontal Distance
+
+Using the Pythagorean theorem:
+
+\[ D_{initial} = \sqrt{(558201.6042663791 - 500490.0443942733)^2 + (2707616.206989677 - 2775551.6226634467)^2} \]
+
+### Step 5: Calculate Time to Minimum Horizontal Distance
+
+The relative horizontal velocity is used to determine the time to minimum distance:
+
+\[ t = \frac{-((x_2 - x_1) \cdot Vx_{rel} + (y_2 - y_1) \cdot Vy_{rel})}{Vx_{rel}^2 + Vy_{rel}^2} \]
+
+### Step 6: Calculate Minimum Horizontal Distance
+
+Substitute \( t \) back into the position equations to find the minimum horizontal distance.
+
+### Step 7: Calculate Vertical Separation Over Time
+
+- **FLIGHT1 Altitude:** Constant at 16800 feet
+- **FLIGHT2 Altitude:** Decreasing at 100 feet/min
+
+Calculate the time when the vertical separation is less than 1000 feet:
+
+\[ \text{Vertical Separation} = |16800 - (18298 - 100 \times t)| < 1000 \]
+
+### Step 8: Determine Loss of Separation
+
+Check if both conditions (horizontal < 5 nautical miles and vertical < 1000 feet) are met at the same time.
+
+### Step 9: Issue Commands
+
+If a potential loss of separation is detected, issue commands to maintain safe separation:
+
+- **Altitude Adjustment:** Instruct FLIGHT2 to maintain or increase altitude to prevent vertical separation loss.
+- **Heading Change:** Adjust FLIGHT1 or FLIGHT2 heading to increase horizontal separation.
+- **Speed Modification:** Adjust speed to delay or prevent the loss of separation.
+
+### Conclusion
+
+Perform the calculations to determine if and when the loss of separation occurs, and issue the necessary commands based on the results. If calculations show a potential conflict, a typical command might be:
+
+- "FLIGHT2, climb and maintain 18500 feet."
+- "FLIGHT1, turn left heading 130 degrees."
+
+These commands are examples and should be adjusted based on the specific calculations and airspace constraints.

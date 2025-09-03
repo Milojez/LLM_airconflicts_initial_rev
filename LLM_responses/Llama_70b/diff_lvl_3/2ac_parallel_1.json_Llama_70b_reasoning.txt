@@ -1,0 +1,34 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 (B747) and FLIGHT2 (A330), we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* Both aircraft are flying at the same altitude (25,200 feet) and have the same heading (216 degrees).
+* The horizontal distance between them is 18.87 nautical miles, which is relatively close.
+* The estimated time to loss of separation (TLOS) is 299.1 seconds, indicating that the aircraft will violate the minimum separation criteria soon.
+* The predicted closest point of approach (DCPA) is 15.73 meters, which is extremely close and indicates a high risk of collision.
+
+**Analysis:**
+
+* Since both aircraft are flying at the same altitude and heading, a vertical separation (altitude change) would be the most effective way to resolve the conflict.
+* However, considering the short TLOS and extremely close DCPA, a heading change or speed modification might not be sufficient to resolve the conflict in time.
+
+**Recommended Commands:**
+
+1. **Altitude Adjustment:** Issue a command to one of the aircraft to change its altitude. Considering the current situation, it's recommended to instruct FLIGHT2 (A330) to climb to a higher altitude, e.g., 26,000 feet. This will provide a safe vertical separation between the two aircraft.
+2. **Alternative Option:** If an altitude change is not feasible, consider issuing a command to FLIGHT2 (A330) to turn right (or left) by 30-40 degrees to increase the horizontal separation. However, this option is less preferred due to the short TLOS and close DCPA.
+
+**Command Example:**
+
+"FLIGHT2, climb and maintain 26,000 feet. Report level."
+
+or
+
+"FLIGHT2, turn right heading 246 degrees. Report heading."
+
+**Monitoring and Follow-up:**
+
+After issuing the command, closely monitor the situation and adjust the commands as necessary to ensure safe separation is maintained. Verify that the aircraft is responding to the command and that the separation is increasing.
+
+Remember to consider other factors such as weather, air traffic, and aircraft performance when making decisions. Additionally, always follow standard air traffic control procedures and protocols when resolving conflicts.

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299,
+            "reasoning": "Aircraft are at the same altitude (0 ft vertical separation) and on reciprocal tracks. Predicted horizontal separation will be less than 5 NM in approximately 5 minutes.",
+            "issued command": "FLIGHT1, climb immediately, maintain flight level one seven zero."
+        }
+    ]
+}

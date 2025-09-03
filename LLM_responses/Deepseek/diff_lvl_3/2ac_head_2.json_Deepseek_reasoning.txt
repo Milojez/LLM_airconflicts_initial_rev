@@ -1,0 +1,41 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* FLIGHT1 (B737) is at 16,800 feet, heading 140 degrees, and ground speed 292 knots.
+* FLIGHT2 (B777) is at 18,298 feet, heading 320 degrees, and ground speed 227 knots.
+* The current horizontal distance between them is 48.23 nautical miles, with an altitude difference of 1,498.4 feet.
+* The estimated time to loss of separation (TLOS) is 299.6 seconds, and the predicted closest point of approach (DCPA) is 110.39 meters, expected to occur in 334.3 seconds.
+
+**Analysis:**
+
+* The altitude difference between the two aircraft is significant (1,498.4 feet), which provides some separation.
+* However, the predicted DCPA is very small (110.39 meters), indicating a high risk of collision if no action is taken.
+* The TLOS is relatively short (299.6 seconds), which means that a resolution is needed quickly.
+
+**Recommended Actions:**
+
+To maintain safe separation, I recommend the following actions:
+
+1. **FLIGHT1: Turn right heading 160 degrees**. This will increase the horizontal distance between the two aircraft and reduce the risk of collision.
+2. **FLIGHT2: Descend to 17,000 feet**. This will reduce the altitude difference between the two aircraft and provide a safer separation.
+3. **FLIGHT1: Reduce ground speed to 280 knots**. This will reduce the closure rate between the two aircraft and provide more time to resolve the conflict.
+
+**Rationale:**
+
+* Turning FLIGHT1 right will increase the horizontal distance between the two aircraft and reduce the risk of collision.
+* Descending FLIGHT2 will reduce the altitude difference and provide a safer separation.
+* Reducing FLIGHT1's ground speed will reduce the closure rate and provide more time to resolve the conflict.
+
+**Monitoring:**
+
+After issuing these commands, I will closely monitor the situation to ensure that the conflict is resolved and safe separation is maintained. If necessary, further adjustments can be made to ensure the safety of both aircraft.
+
+**Commands:**
+
+The following commands will be issued to the aircraft:
+
+* FLIGHT1: "Turn right heading 160 degrees, reduce ground speed to 280 knots."
+* FLIGHT2: "Descend to 17,000 feet."

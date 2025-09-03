@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 188.5,
+            "reasoning": "Predicted vertical separation (approx. 361 ft) and horizontal separation (approx. 0.6 NM) will be below minimums (1000 ft / 5 NM) at the closest point of approach in approximately 188.5 seconds.",
+            "issued_command": "FLIGHT2, MAINTAIN FLIGHT LEVEL TWO TWO ZERO."
+        }
+    ]
+}

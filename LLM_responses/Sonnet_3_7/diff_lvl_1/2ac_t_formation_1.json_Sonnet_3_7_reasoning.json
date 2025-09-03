@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": null,
+            "reasoning": "Both aircraft are at the same altitude (20800 feet) with converging trajectories. FLIGHT1 is heading northeast (71°) at 268 knots while FLIGHT2 is heading south-southeast (161°) at 392 knots.",
+            "issued_command": "FLIGHT1, for traffic separation, climb and maintain flight level 230. Report reaching."
+        }
+    ]
+}

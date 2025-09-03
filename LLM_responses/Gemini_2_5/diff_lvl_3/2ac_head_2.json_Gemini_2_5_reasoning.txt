@@ -1,0 +1,48 @@
+Okay, acknowledging the conflict alert between FLIGHT1 and FLIGHT2.
+
+**Analysis:**
+
+1.  **Conflict Type:** The aircraft are on nearly reciprocal headings (140° vs 320°) and converging.
+2.  **Vertical Situation:** FLIGHT1 is level at 16800 ft. FLIGHT2 is at 18298 ft but descending (-100 ft/min). The current vertical separation is ~1500 ft, but this is decreasing and will eventually be lost if FLIGHT2 continues descent towards FLIGHT1's level.
+3.  **Urgency:** TLOS is ~5 minutes (299.6s), and the predicted minimum distance (DCPA) is extremely small (110m), indicating a high-risk encounter if no action is taken.
+4.  **Relative Position:** QDR 139.9° from FLIGHT1 to FLIGHT2 confirms they are almost directly head-on (FLIGHT1 heading 140°).
+
+**Resolution Strategy:**
+
+The most efficient ways to resolve a head-on or near head-on conflict are typically either:
+a)  Establishing vertical separation by adjusting altitude/level.
+b)  Establishing horizontal separation by turning one or both aircraft (standard practice is often turning right).
+
+**Recommended Commands:**
+
+Given the situation, either a vertical or horizontal command would be effective. Here are the most likely options:
+
+**Option 1: Vertical Resolution (Stopping Descent)**
+
+*   **Command:** `FLIGHT2, MAINTAIN FLIGHT LEVEL ONE EIGHT ZERO.`
+*   **Rationale:** FLIGHT2 is currently at 18298 ft and descending. Stopping the descent at the nearest standard flight level (FL180) immediately halts the vertical convergence. This maintains more than the required 1000 ft vertical separation (FL180 vs 16800 ft = 1200 ft initially, increasing slightly as FL1 is not exactly at FL170). This is often minimally disruptive if FLIGHT2 can temporarily level off.
+
+**Option 2: Horizontal Resolution (Turn Right)**
+
+*   **Command:** `FLIGHT1, TURN RIGHT HEADING ONE SEVEN ZERO, VECTOR FOR TRAFFIC.`
+    *   *(Alternative: `FLIGHT2, TURN RIGHT HEADING THREE FIVE ZERO, VECTOR FOR TRAFFIC.`)*
+*   **Rationale:** A turn (typically 30 degrees or more) provides positive horizontal separation. Turning right is standard procedure in many head-on scenarios. Issuing the command to FLIGHT1 (heading 140 -> 170) or FLIGHT2 (heading 320 -> 350) would achieve this. Vectoring only one aircraft is usually sufficient initially. The phrase "vector for traffic" informs the pilot of the reason for the turn.
+
+**Choice and Final Command:**
+
+Both options are viable. Stopping FLIGHT2's descent (Option 1) is very direct and addresses the immediate vertical conflict risk. However, a heading change (Option 2) is also standard practice for head-on situations.
+
+Let's select **Option 1 (Vertical Resolution)** as a primary, often less disruptive command if the altitude is acceptable for FLIGHT2:
+
+**Primary Command:**
+
+*   **`FLIGHT2, MAINTAIN FLIGHT LEVEL ONE EIGHT ZERO.`**
+
+**Contingency/Alternative Command (if Option 1 is not feasible or preferred):**
+
+*   **`FLIGHT1, TURN RIGHT HEADING ONE SEVEN ZERO, VECTOR FOR TRAFFIC.`**
+
+**Follow-up Actions:**
+
+*   Monitor both aircraft closely to ensure compliance and that separation increases.
+*   Once separation is assured, clear the aircraft back on course or to resume their descent/climb as appropriate (e.g., "FLIGHT2, descend maintain..." or "FLIGHT1, resume own navigation...").

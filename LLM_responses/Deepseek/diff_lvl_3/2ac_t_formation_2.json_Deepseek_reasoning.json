@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 149.3,
+            "reasoning": "Potential violation of minimum separation criteria due to high ground speed of FLIGHT2 and relatively small altitude difference.",
+            "issued_command": "FLIGHT2, reduce speed to 280 knots. Report passing 22,000 feet."
+        }
+    ]
+}

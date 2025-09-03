@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.1,
+            "reasoning": "Aircraft are at the same altitude and the horizontal distance is decreasing",
+            "issued_command": "FLIGHT2, reduce speed to 280 knots and/or turn right heading 240 degrees"
+        }
+    ]
+}

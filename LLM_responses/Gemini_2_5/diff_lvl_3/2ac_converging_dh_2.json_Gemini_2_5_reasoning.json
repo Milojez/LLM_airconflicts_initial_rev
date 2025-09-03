@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 198,
+            "reasoning": "FLIGHT2 (FL180 descending) is converging vertically and horizontally with FLIGHT1 (FL160 level). Vertical separation is rapidly decreasing, and predicted CPA is extremely close (5.26m).",
+            "issued_command": "FLIGHT2, stop descent immediately, maintain Flight Level One Eight Zero. FLIGHT1, turn right heading Three Six Zero."
+        }
+    ]
+}

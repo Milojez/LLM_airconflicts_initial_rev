@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Predicted loss of separation due to close horizontal and vertical proximity.",
+            "issued command": "FLIGHT1, turn left heading 120 degrees. FLIGHT1, reduce speed to 270 knots. FLIGHT2, maintain current altitude, stop descent."
+        }
+    ]
+}

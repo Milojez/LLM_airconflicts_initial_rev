@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 20.1,
+            "reasoning": "Aircraft are at the same altitude and flying in the same direction, with FLIGHT2 closing in on FLIGHT1 due to higher speed.",
+            "issued_command": "Consider instructing FLIGHT2 to reduce its speed to match or come closer to FLIGHT1's speed."
+        }
+    ]
+}

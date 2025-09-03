@@ -1,0 +1,86 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances between the two aircraft over time. Let's break down the problem step-by-step:
+
+### Initial Conditions
+
+- **FLIGHT1 (B747)**
+  - Latitude: 22.93942528778623
+  - Longitude: 105.14790990819345
+  - Altitude: 22,200 feet
+  - Ground Speed: 233 knots
+  - Heading: 216 degrees
+  - Vertical Rate: 0 feet/min
+
+- **FLIGHT2 (A330)**
+  - Latitude: 23.105184605643952
+  - Longitude: 105.27868248803264
+  - Altitude: 24,196 feet
+  - Ground Speed: 365 knots
+  - Heading: 215 degrees
+  - Vertical Rate: -200 feet/min
+
+### Step 1: Calculate Initial Vertical Separation
+
+The initial vertical separation is the difference in altitude between the two aircraft:
+
+\[ \text{Vertical Separation} = 24,196 - 22,200 = 1,996 \text{ feet} \]
+
+Since the vertical separation is greater than 1,000 feet, there is no immediate vertical conflict.
+
+### Step 2: Calculate Initial Horizontal Separation
+
+To calculate the initial horizontal separation, we need to determine the distance between the two aircraft based on their latitude and longitude. We can use the haversine formula to calculate the great-circle distance:
+
+\[ a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right) \]
+
+\[ c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right) \]
+
+\[ d = R \cdot c \]
+
+Where:
+- \(\phi_1, \phi_2\) are the latitudes in radians,
+- \(\lambda_1, \lambda_2\) are the longitudes in radians,
+- \(R\) is the Earth's radius (mean radius = 3,440 nautical miles),
+- \(\Delta\phi = \phi_2 - \phi_1\),
+- \(\Delta\lambda = \lambda_2 - \lambda_1\).
+
+Converting degrees to radians:
+
+- \(\phi_1 = 22.93942528778623 \times \frac{\pi}{180}\)
+- \(\phi_2 = 23.105184605643952 \times \frac{\pi}{180}\)
+- \(\lambda_1 = 105.14790990819345 \times \frac{\pi}{180}\)
+- \(\lambda_2 = 105.27868248803264 \times \frac{\pi}{180}\)
+
+Calculate \(\Delta\phi\) and \(\Delta\lambda\):
+
+- \(\Delta\phi = \phi_2 - \phi_1\)
+- \(\Delta\lambda = \lambda_2 - \lambda_1\)
+
+Plug these into the haversine formula to find \(d\).
+
+### Step 3: Calculate Future Positions
+
+To determine if a loss of separation will occur, we need to project the future positions of both aircraft. We will calculate their positions after a certain time interval, say 1 minute, and check the separation again.
+
+- **FLIGHT1**: No vertical change, horizontal position changes based on speed and heading.
+- **FLIGHT2**: Descends at 200 feet/min, horizontal position changes based on speed and heading.
+
+Calculate the new positions using the speed, heading, and vertical rate. Convert speed from knots to nautical miles per minute (1 knot = 1 nautical mile per hour, so divide by 60 for per minute).
+
+### Step 4: Check for Loss of Separation
+
+After calculating the new positions, check:
+
+- **Vertical Separation**: If it becomes less than 1,000 feet.
+- **Horizontal Separation**: If it becomes less than 5 nautical miles.
+
+### Step 5: Issue Commands
+
+If a potential loss of separation is detected, issue commands to maintain safe separation. Possible commands include:
+
+- **Altitude Adjustment**: Instruct FLIGHT2 to adjust its descent rate to maintain vertical separation.
+- **Heading Change**: Instruct either aircraft to change heading to increase horizontal separation.
+- **Speed Modification**: Adjust speed to delay or expedite reaching the conflict point.
+
+### Conclusion
+
+Based on the initial conditions, there is no immediate loss of separation. However, due to FLIGHT2's descent, continuous monitoring is required. If calculations show a future conflict, issue a command to FLIGHT2 to adjust its descent rate or heading to maintain safe separation.

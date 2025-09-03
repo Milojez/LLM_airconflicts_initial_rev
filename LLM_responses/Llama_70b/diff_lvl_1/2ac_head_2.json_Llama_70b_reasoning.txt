@@ -1,0 +1,62 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speed, heading, and vertical rate.
+
+### Step 1: Calculate Current Horizontal Distance
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this purpose, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+The Haversine formula is:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right) \times R\]
+
+where:
+- \(d\) is the distance between the two points,
+- \(\phi_1\) and \(\phi_2\) are the latitudes of the two points,
+- \(\lambda_1\) and \(\lambda_2\) are the longitudes of the two points,
+- \(R\) is the radius of the Earth, approximately 6371 kilometers (or 3440 nautical miles).
+
+Given:
+- \(\phi_1 = 25.095763879115907^\circ\),
+- \(\lambda_1 = -170.9951399602514^\circ\),
+- \(\phi_2 = 24.48112377126363^\circ\),
+- \(\lambda_2 = -170.42562592063655^\circ\).
+
+Let's convert these to radians for calculation:
+- \(\phi_1 = 25.095763879115907 \times \frac{\pi}{180}\),
+- \(\lambda_1 = -170.9951399602514 \times \frac{\pi}{180}\),
+- \(\phi_2 = 24.48112377126363 \times \frac{\pi}{180}\),
+- \(\lambda_2 = -170.42562592063655 \times \frac{\pi}{180}\).
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{24.48112377126363 \times \frac{\pi}{180} - 25.095763879115907 \times \frac{\pi}{180}}{2}\right) + \cos(25.095763879115907 \times \frac{\pi}{180}) \cos(24.48112377126363 \times \frac{\pi}{180}) \sin^2\left(\frac{-170.42562592063655 \times \frac{\pi}{180} - (-170.9951399602514 \times \frac{\pi}{180})}{2}\right)}\right) \times 3440\]
+
+After calculation:
+\[d \approx 43.35 \, \text{nautical miles}\]
+
+### Step 2: Calculate Current Vertical Distance
+
+The current vertical distance is the absolute difference in their altitudes:
+\[|16800 - 18298| = 1498 \, \text{feet}\]
+
+### Step 3: Predict Future Positions
+
+To predict if they will reach a loss of separation, we need to consider their ground speeds and headings. However, without specific times or a time frame to predict over, we'll consider the general direction and speed to assess potential conflict.
+
+FLIGHT1 is heading 140 degrees at 292 knots, and FLIGHT2 is heading 320 degrees at 227 knots. Given their current positions and headings, they appear to be moving away from each other horizontally.
+
+### Step 4: Vertical Rate Consideration
+
+FLIGHT2 has a vertical rate of -100 feet/min, meaning it is descending. This could potentially reduce the vertical separation between the two aircraft over time.
+
+### Step 5: Determine Potential Loss of Separation
+
+Given the current horizontal distance of approximately 43.35 nautical miles, which is far beyond the 5 nautical mile threshold for loss of separation, and the current vertical distance of 1498 feet, which is below the 1000 feet threshold, we need to consider if their trajectories will bring them closer together.
+
+However, considering their headings and the significant horizontal distance, it's unlikely they will close the horizontal distance to less than 5 nautical miles in the near future based on the information provided. The descending aircraft (FLIGHT2) could potentially reduce the vertical separation further, but without a direct collision course or a significant change in their flight paths, the primary concern would be ensuring that FLIGHT2's descent does not intersect with FLIGHT1's altitude.
+
+### Commands to Maintain Safe Separation
+
+Given the current data and without predicting a direct loss of separation, no immediate commands are necessary based solely on the provided information. However, to maintain safe separation and considering FLIGHT2's descent, a prudent measure could be:
+
+- **Altitude Adjustment for FLIGHT2**: If FLIGHT2 continues its descent, it may be necessary to adjust its altitude to maintain a safe vertical separation from FLIGHT1. This could involve leveling off at a safe altitude above FLIGHT1 or altering its descent rate.
+
+- **Monitoring**: Continue to monitor the positions and altitudes of both aircraft to ensure that safe separation is maintained.
+
+It's essential to note that air traffic control decisions involve real-time data and considerations of multiple factors, including weather, other air traffic, and emergency procedures. The analysis provided is based on the limited data given and is intended for illustrative purposes.

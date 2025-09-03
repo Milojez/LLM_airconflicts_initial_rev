@@ -1,0 +1,76 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Given:
+- Latitude and longitude of FLIGHT1: (25.09586612502983, -170.9952346979887)
+- Latitude and longitude of FLIGHT2: (24.519755869400736, -170.4614218108527)
+
+Haversine formula:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right) \times R\]
+
+where:
+- \(d\) is the distance between the two points,
+- \(\phi_1\) and \(\phi_2\) are the latitudes of the two points,
+- \(\lambda_1\) and \(\lambda_2\) are the longitudes of the two points,
+- \(R\) is the radius of the Earth, approximately 6371 kilometers.
+
+Let's convert the formula to use nautical miles (1 nautical mile = 1.852 kilometers):
+\[R \approx 3440 \, \text{nautical miles}\]
+
+Plugging in the values:
+\[\phi_1 = 25.09586612502983^\circ, \lambda_1 = -170.9952346979887^\circ\]
+\[\phi_2 = 24.519755869400736^\circ, \lambda_2 = -170.4614218108527^\circ\]
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{24.519755869400736 - 25.09586612502983}{2}\right) + \cos(25.09586612502983) \cos(24.519755869400736) \sin^2\left(\frac{-170.4614218108527 - (-170.9952346979887)}{2}\right)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{-0.576110255629097}{2}\right) + \cos(25.09586612502983) \cos(24.519755869400736) \sin^2\left(\frac{0.533812887136}{2}\right)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2(-0.2880551278145485) + \cos(25.09586612502983) \cos(24.519755869400736) \sin^2(0.266906443568)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.002326 + 0.7853 \times 0.9135 \times 0.0713}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.002326 + 0.0523}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.054626}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin(0.2339) \times 3440\]
+
+\[d \approx 2 \times 0.2339 \times \frac{\pi}{180} \times 3440\]
+
+\[d \approx 2 \times 0.004079 \times 3440\]
+
+\[d \approx 28.1 \, \text{nautical miles}\]
+
+The current horizontal distance is approximately 28.1 nautical miles.
+
+### Step 2: Calculate Vertical Distance
+
+Both aircraft are flying at the same altitude, 16200 feet. Therefore, the vertical distance between them is 0 feet.
+
+### Step 3: Predict Future Positions
+
+To predict if there will be a loss of separation, we need to calculate the future positions of both aircraft based on their ground speeds and headings.
+
+Given:
+- FLIGHT1: Ground speed = 263 knots, Heading = 140 degrees
+- FLIGHT2: Ground speed = 219 knots, Heading = 320 degrees
+
+However, without specific time frames or more detailed trajectory predictions, we can't accurately calculate future positions. But we can assess the risk based on current data.
+
+### Step 4: Assess Risk of Loss of Separation
+
+Given the current horizontal distance of approximately 28.1 nautical miles and the fact that both aircraft are at the same altitude, there is no immediate risk of loss of separation since both conditions (vertical distance < 1000 feet and horizontal distance < 5 nautical miles) are not met.
+
+### Commands to Maintain Safe Separation
+
+Based on the provided data, no immediate commands are necessary to maintain safe separation since the aircraft are not predicted to be in close proximity. However, air traffic control should continue to monitor their positions and adjust as necessary to prevent any potential loss of separation.
+
+For future reference or in case the situation changes, possible commands could include:
+- Altitude adjustments: Change the altitude of one or both aircraft to increase vertical separation.
+- Heading changes: Alter the course of one or both aircraft to increase horizontal separation.
+- Speed modifications: Increase or decrease the speed of one or both aircraft to adjust their relative positions and maintain safe separation.
+
+Continuous monitoring and adjustments as necessary are key to preventing loss of separation and ensuring safe air traffic control.

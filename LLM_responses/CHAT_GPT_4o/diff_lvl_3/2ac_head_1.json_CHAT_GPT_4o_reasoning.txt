@@ -1,0 +1,18 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. Given that both aircraft are at the same altitude and the horizontal distance is decreasing, we can consider either altitude changes or heading adjustments. Here are some options:
+
+1. **Altitude Change**: 
+   - Instruct one of the aircraft to change altitude. For example, instruct FLIGHT1 to climb to 16,500 feet or descend to 15,500 feet. This will create vertical separation and eliminate the conflict.
+
+2. **Heading Change**:
+   - Instruct FLIGHT1 to alter its heading to increase the horizontal separation. For example, a heading change to 130 degrees or 150 degrees could be considered, depending on the airspace and traffic conditions.
+   - Alternatively, instruct FLIGHT2 to change its heading to 310 degrees or 330 degrees to increase separation.
+
+3. **Speed Adjustment**:
+   - Adjust the speed of one or both aircraft to alter the time to the closest point of approach. For instance, instruct FLIGHT1 to reduce speed to 240 knots or FLIGHT2 to increase speed to 240 knots.
+
+Given the current situation, a combination of a small heading change and an altitude change would be most effective in quickly resolving the conflict. Here is a recommended command:
+
+- **FLIGHT1**: "FLIGHT1, climb to 16,500 feet and adjust heading to 130 degrees."
+- **FLIGHT2**: "FLIGHT2, maintain current altitude and adjust heading to 310 degrees."
+
+These commands should be issued promptly to ensure that the aircraft have enough time to execute the maneuvers and maintain safe separation. Always consider the surrounding airspace and any other traffic that might be affected by these changes.

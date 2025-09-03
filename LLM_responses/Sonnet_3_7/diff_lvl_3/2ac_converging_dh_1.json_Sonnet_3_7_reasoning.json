@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.7,
+            "reasoning": "Aircraft are converging with a predicted CPA of 3.34 meters in 447 seconds. Current separation is 15.17 NM horizontal and 1093.9 ft vertical, but FLIGHT2's descent could reduce vertical separation below minimums.",
+            "issued_command": "FLIGHT2: Turn left heading 290 degrees and maintain FL190. FLIGHT1: Descend and maintain FL170."
+        }
+    ]
+}

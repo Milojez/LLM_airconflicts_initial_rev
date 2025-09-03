@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 240,
+            "reasoning": "Predicted LOS in approx. 4 mins. FLIGHT2 descending through FLIGHT1's altitude (16000 ft). At t=4 min, vertical separation predicted ~544 ft (<1000 ft) and horizontal separation predicted ~4.7 NM (<5 NM).",
+            "issued_command": "FLIGHT2, stop descent at Flight Level 170."
+        }
+    ]
+}

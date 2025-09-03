@@ -1,0 +1,55 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions based on their current velocities and headings.
+
+### Step 1: Convert Coordinates to a Common Unit
+First, let's convert all coordinates to meters for simplicity. The y and x coordinates are already given in meters.
+
+### Step 2: Calculate Current Horizontal Distance
+To find the horizontal distance, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given:
+- \(x_1 = 500490.0443942733\) meters
+- \(y_1 = 2775551.6226634467\) meters
+- \(x_2 = 558201.6042663791\) meters
+- \(y_2 = 2707616.206989677\) meters
+
+\[d = \sqrt{(558201.6042663791 - 500490.0443942733)^2 + (2707616.206989677 - 2775551.6226634467)^2}\]
+\[d = \sqrt{(57511.5598721058)^2 + (-69335.415673769)^2}\]
+\[d = \sqrt{330551121.41 + 480495243.33}\]
+\[d = \sqrt{811046364.74}\]
+\[d \approx 28455.81 \text{ meters}\]
+
+To convert meters to nautical miles, we use the conversion factor: \(1 \text{ nautical mile} = 1852 \text{ meters}\).
+
+\[d \approx \frac{28455.81}{1852} \approx 15.37 \text{ nautical miles}\]
+
+### Step 3: Calculate Current Vertical Distance
+Given:
+- Altitude of FLIGHT1: 16800 feet
+- Altitude of FLIGHT2: 18298 feet
+
+\[ \text{Vertical distance} = |18298 - 16800| = 1498 \text{ feet} \]
+
+Since \(1498 \text{ feet} < 1000 \text{ feet}\) is not true, the current vertical separation is sufficient.
+
+### Step 4: Predict Future Positions
+To predict if there will be a loss of separation, we need to consider the aircraft's ground speeds and headings. However, without specific time frames or more detailed trajectory predictions, we can only assess the current situation and the immediate future based on their current velocities and directions.
+
+Given:
+- FLIGHT1's heading: 140 degrees, speed: 292 knots
+- FLIGHT2's heading: 320 degrees, speed: 227 knots
+
+### Step 5: Determine Potential for Loss of Separation
+Given the current distances and the fact that we do not have enough information to accurately predict their future positions without making assumptions about their flight paths, we cannot definitively say if they will reach a loss of separation based solely on the provided data. However, we can see that currently, they are not in a loss of separation situation due to the horizontal distance being greater than 5 nautical miles.
+
+### Step 6: Consider Vertical Rate
+FLIGHT2 is descending at 100 feet/min. This could potentially reduce the vertical distance between the two aircraft over time. However, without knowing the exact flight plans or future adjustments, it's challenging to predict exactly when or if they will be at the same altitude.
+
+### Commands to Maintain Safe Separation
+Given the current situation, no immediate action seems necessary based solely on the provided data. However, to maintain safe separation, air traffic control should continue to monitor their positions and velocities closely. If their trajectories suggest they might violate separation rules in the future, commands could include:
+
+1. **Altitude Adjustments:** If FLIGHT2 continues to descend, it might be necessary to instruct one of the aircraft to change altitude to maintain a vertical separation of at least 1000 feet.
+2. **Heading Changes:** Altering the heading of one or both aircraft could help increase the horizontal distance between them.
+3. **Speed Modifications:** Adjusting the speed of one or both aircraft could also be considered to affect their closure rate and maintain safe separation.
+
+These decisions would depend on the specific trajectories and the air traffic control's assessment of the risk of loss of separation. Continuous monitoring and potentially adjusting the flight paths of these aircraft would be necessary to prevent a loss of separation.

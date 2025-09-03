@@ -1,0 +1,23 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. Given the current situation, we have a few options to consider: altitude adjustments, heading changes, or speed modifications. Here are some potential commands:
+
+1. **Altitude Adjustment:**
+   - Since FLIGHT2 is descending at a rate of -550 feet/min, we can instruct FLIGHT1 to climb or FLIGHT2 to descend further to increase the vertical separation.
+   - Command to FLIGHT1: "FLIGHT1, climb immediately to 21000 feet."
+   - Alternatively, command to FLIGHT2: "FLIGHT2, expedite descent to 20000 feet."
+
+2. **Heading Change:**
+   - Adjusting the heading of either aircraft can increase the horizontal separation.
+   - Command to FLIGHT1: "FLIGHT1, turn left heading 050 degrees."
+   - Alternatively, command to FLIGHT2: "FLIGHT2, turn right heading 180 degrees."
+
+3. **Speed Modification:**
+   - Reducing the speed of either aircraft can alter the time to the closest point of approach.
+   - Command to FLIGHT1: "FLIGHT1, reduce speed to 240 knots."
+   - Alternatively, command to FLIGHT2: "FLIGHT2, reduce speed to 350 knots."
+
+Given the urgency (TLOS of 149.3 seconds), a combination of these commands might be necessary to ensure immediate and effective separation. A heading change combined with an altitude adjustment is often the most effective strategy. Here is a recommended course of action:
+
+- Command to FLIGHT1: "FLIGHT1, climb immediately to 21000 feet and turn left heading 050 degrees."
+- Command to FLIGHT2: "FLIGHT2, expedite descent to 20000 feet and turn right heading 180 degrees."
+
+These commands should help maintain safe separation by increasing both vertical and horizontal distances between the aircraft.

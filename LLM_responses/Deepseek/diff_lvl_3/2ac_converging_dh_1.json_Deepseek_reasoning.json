@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.7,
+            "reasoning": "Insufficient horizontal distance and altitude difference, with FLIGHT2 descending and flying at a higher speed.",
+            "issued_command": "FLIGHT2, descend and level off at 19,093 feet. FLIGHT2, turn right to a heading of 330 degrees. FLIGHT1, maintain current altitude and heading. FLIGHT2, reduce speed to 237 knots."
+        }
+    ]
+}

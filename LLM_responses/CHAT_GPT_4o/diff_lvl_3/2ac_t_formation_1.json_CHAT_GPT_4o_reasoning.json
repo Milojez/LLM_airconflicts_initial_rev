@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Both aircraft are at the same altitude and the horizontal distance is decreasing, leading to a potential loss of separation.",
+            "issued command": "FLIGHT1, climb and maintain 21,000 feet. FLIGHT2, turn left heading 140 degrees."
+        }
+    ]
+}

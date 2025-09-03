@@ -1,0 +1,77 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances over time. Let's break down the problem step-by-step:
+
+### Initial Conditions
+
+1. **FLIGHT1:**
+   - Position: (x1, y1) = (472742.1287403776, 8971041.113887483) meters
+   - Altitude: 18000 feet
+   - Ground Speed: 237 knots
+   - Heading: 319 degrees
+   - Vertical Rate: 0 feet/min
+
+2. **FLIGHT2:**
+   - Position: (x2, y2) = (500862.89848999906, 8968825.830293516) meters
+   - Altitude: 19093 feet
+   - Ground Speed: 335 knots
+   - Heading: 304 degrees
+   - Vertical Rate: -71 feet/min
+
+### Vertical Separation
+
+- Initial vertical separation = |19093 - 18000| = 1093 feet
+- Vertical rate of FLIGHT2 = -71 feet/min
+- FLIGHT1 has a vertical rate of 0 feet/min.
+
+To reach a vertical separation of less than 1000 feet:
+- Required change in vertical separation = 1093 - 1000 = 93 feet
+- Time to reach this change = 93 feet / 71 feet/min ≈ 1.31 minutes
+
+### Horizontal Separation
+
+Convert ground speed from knots to meters per second:
+- FLIGHT1 speed = 237 knots = 237 * 0.514444 = 121.98 m/s
+- FLIGHT2 speed = 335 knots = 335 * 0.514444 = 172.33 m/s
+
+Convert headings to radians for calculation:
+- FLIGHT1 heading = 319 degrees = 5.57 radians
+- FLIGHT2 heading = 304 degrees = 5.30 radians
+
+Calculate velocity components:
+- FLIGHT1 velocity: 
+  - vx1 = 121.98 * cos(5.57) = -88.92 m/s
+  - vy1 = 121.98 * sin(5.57) = 85.92 m/s
+
+- FLIGHT2 velocity:
+  - vx2 = 172.33 * cos(5.30) = -95.92 m/s
+  - vy2 = 172.33 * sin(5.30) = 144.92 m/s
+
+Relative velocity components:
+- v_rel_x = vx2 - vx1 = -95.92 - (-88.92) = -7 m/s
+- v_rel_y = vy2 - vy1 = 144.92 - 85.92 = 59 m/s
+
+Initial horizontal distance:
+- dx = x2 - x1 = 500862.89848999906 - 472742.1287403776 = 28120.77 meters
+- dy = y2 - y1 = 8968825.830293516 - 8971041.113887483 = -215.28 meters
+- Initial horizontal distance = sqrt(dx^2 + dy^2) = sqrt(28120.77^2 + (-215.28)^2) ≈ 28121.58 meters ≈ 15.18 nautical miles
+
+To reach a horizontal separation of less than 5 nautical miles (9260 meters):
+- Required change in horizontal distance = 28121.58 - 9260 = 18861.58 meters
+
+Relative speed = sqrt(v_rel_x^2 + v_rel_y^2) = sqrt((-7)^2 + 59^2) ≈ 59.41 m/s
+
+Time to reach this change = 18861.58 meters / 59.41 m/s ≈ 317.5 seconds ≈ 5.29 minutes
+
+### Conclusion
+
+- Vertical separation will be less than 1000 feet in approximately 1.31 minutes.
+- Horizontal separation will not be less than 5 nautical miles for at least 5.29 minutes.
+
+Since both conditions for loss of separation (vertical < 1000 feet and horizontal < 5 nautical miles) are not met simultaneously, there will be no loss of separation.
+
+### Command to Maintain Safe Separation
+
+To ensure continued safe separation, we can issue a command to FLIGHT2 to adjust its vertical rate to maintain a vertical separation greater than 1000 feet:
+
+- **Command to FLIGHT2:** "FLIGHT2, adjust your vertical rate to maintain at least 1000 feet separation from FLIGHT1." 
+
+Alternatively, a heading change could be issued to increase horizontal separation, but since the vertical separation is the more immediate concern, adjusting the vertical rate is a more direct solution.

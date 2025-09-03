@@ -1,0 +1,20 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. The current horizontal distance is 12.30 nautical miles, and the altitude difference is 1996.8 feet, but the predicted closest point of approach (DCPA) is only 6.68 meters, which is far below the required minimum separation standards.
+
+Given the current situation, we have a few options to consider:
+
+1. **Altitude Adjustment**: Since FLIGHT2 is descending at a rate of -200 feet/min, we can instruct FLIGHT1 to climb or FLIGHT2 to descend further to increase vertical separation.
+
+2. **Heading Change**: Adjusting the heading of one or both aircraft can increase horizontal separation.
+
+3. **Speed Adjustment**: Modifying the speed of one or both aircraft can alter the time to the closest point of approach, potentially avoiding the conflict.
+
+Considering the current data, here is a recommended course of action:
+
+1. **FLIGHT1 (B747)**:
+   - **Climb**: Instruct FLIGHT1 to climb to 24,500 feet. This will increase the vertical separation and help avoid the conflict.
+   - **Heading Change**: Instruct FLIGHT1 to adjust its heading slightly to the right, from 216 degrees to 220 degrees, to increase horizontal separation.
+
+2. **FLIGHT2 (A330)**:
+   - **Maintain or Increase Descent Rate**: Instruct FLIGHT2 to maintain its current descent rate or increase it slightly to expedite reaching a lower altitude, further increasing vertical separation.
+
+By implementing these changes, we can effectively increase both horizontal and vertical separation, reducing the risk of a loss of separation. Always ensure that any commands issued are coordinated with the pilots and comply with air traffic control regulations and procedures.

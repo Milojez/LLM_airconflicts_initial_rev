@@ -1,0 +1,36 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* Both aircraft are flying at the same altitude (16200 feet) with no vertical rate, which means they are not climbing or descending.
+* The horizontal distance between them is 45.20 nautical miles, which is relatively close.
+* The estimated time to loss of separation (TLOS) is 299.6 seconds, indicating that they will violate the minimum separation criteria soon.
+* The predicted closest point of approach (DCPA) is 97.01 meters, which is very close.
+
+**Analysis:**
+
+* Since both aircraft are flying at the same altitude, an altitude adjustment is not possible.
+* A heading change could be effective in resolving the conflict, but it would require a significant change in direction, which might not be feasible.
+* A speed modification could also be effective, but it would depend on the aircraft's performance capabilities.
+
+**Recommended Commands:**
+
+Based on the analysis, I recommend the following commands:
+
+1. **FLIGHT1: Turn right heading 160 degrees**. This will increase the horizontal distance between the two aircraft and reduce the likelihood of a loss of separation.
+2. **FLIGHT2: Turn left heading 340 degrees**. This will also increase the horizontal distance between the two aircraft and reduce the likelihood of a loss of separation.
+
+Alternatively, if a speed modification is preferred:
+
+1. **FLIGHT1: Reduce speed to 230 knots**. This will reduce the closure rate between the two aircraft and increase the time available to resolve the conflict.
+2. **FLIGHT2: Increase speed to 250 knots**. This will also reduce the closure rate between the two aircraft and increase the time available to resolve the conflict.
+
+**Monitoring:**
+
+After issuing these commands, it is essential to monitor the situation closely to ensure that the conflict is resolved and the minimum separation criteria are maintained. The air traffic controller should continue to track the aircraft's positions, speeds, and headings to ensure that the commands are effective in preventing a loss of separation.
+
+**Note:**
+
+These commands are based on the provided data and are intended to resolve the conflict in a timely and safe manner. However, the actual commands issued may vary depending on the specific air traffic control procedures and protocols in place.

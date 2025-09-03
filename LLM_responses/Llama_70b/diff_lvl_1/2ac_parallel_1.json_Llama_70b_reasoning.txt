@@ -1,0 +1,49 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+The Haversine formula is:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right) \times R\]
+
+where:
+- \(d\) is the distance between the two points,
+- \(\phi_1\) and \(\phi_2\) are the latitudes of the two points,
+- \(\lambda_1\) and \(\lambda_2\) are the longitudes of the two points,
+- \(R\) is the radius of the Earth, approximately 6371 kilometers.
+
+Given:
+- \(\phi_1 = 22.939380416404312\) degrees,
+- \(\lambda_1 = 105.14787450767882\) degrees,
+- \(\phi_2 = 23.193672402978535\) degrees,
+- \(\lambda_2 = 105.34849294191797\) degrees.
+
+Let's convert these to radians for the calculation:
+- \(\phi_1 = 22.939380416404312 \times \frac{\pi}{180}\),
+- \(\lambda_1 = 105.14787450767882 \times \frac{\pi}{180}\),
+- \(\phi_2 = 23.193672402978535 \times \frac{\pi}{180}\),
+- \(\lambda_2 = 105.34849294191797 \times \frac{\pi}{180}\).
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{23.193672402978535 \times \frac{\pi}{180} - 22.939380416404312 \times \frac{\pi}{180}}{2}\right) + \cos(22.939380416404312 \times \frac{\pi}{180}) \cos(23.193672402978535 \times \frac{\pi}{180}) \sin^2\left(\frac{105.34849294191797 \times \frac{\pi}{180} - 105.14787450767882 \times \frac{\pi}{180}}{2}\right)}\right) \times 6371\]
+
+After calculation:
+- \(d \approx 28.41\) kilometers, or approximately \(15.34\) nautical miles.
+
+### Step 2: Calculate Vertical Distance
+
+Both aircraft are flying at the same altitude, 25200 feet. Therefore, the vertical distance between them is 0 feet, which is less than 1000 feet.
+
+### Step 3: Determine if Loss of Separation Will Occur
+
+Given that the horizontal distance is currently greater than 5 nautical miles and the vertical distance is 0 feet (but they are at the same altitude, so this condition is technically met but in a safe context since they are not closing in vertically), we need to predict their future positions to see if they will close in on each other.
+
+Both aircraft are heading in the same direction (216 degrees), which means they are flying parallel to each other. Their ground speeds are different (245 knots for FLIGHT1 and 412 knots for FLIGHT2), but since they are heading in the same direction, the faster aircraft (FLIGHT2) will move away from the slower one (FLIGHT1) over time, not closer.
+
+### Conclusion
+
+Based on the provided data and calculations, there will not be a loss of separation between FLIGHT1 and FLIGHT2 because, although they are currently at the same altitude, they are not closing in on each other horizontally due to their parallel flight paths and the faster aircraft moving away from the slower one.
+
+### Commands to Maintain Safe Separation
+
+Given the current situation, no commands are necessary to maintain safe separation between FLIGHT1 and FLIGHT2, as they are not predicted to violate the separation criteria. However, it's always important to continue monitoring their positions and adjust as necessary to ensure safe separation is maintained.

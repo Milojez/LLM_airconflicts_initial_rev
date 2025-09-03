@@ -1,0 +1,37 @@
+**Conflict Resolution**
+
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective course of action.
+
+**Current Situation:**
+
+* Horizontal distance: 15.17 nautical miles (decreasing)
+* Altitude difference: 1093.9 feet (decreasing due to FLIGHT2's descent)
+* Azimuthal direction (QDR) from FLIGHT1 to FLIGHT2: 93.78 degrees
+* Estimated time to loss of separation (TLOS): 299.7 seconds
+* Predicted closest point of approach (DCPA): 3.34 meters (expected in 447.0 seconds)
+
+**Analysis:**
+
+1. The altitude difference is decreasing due to FLIGHT2's descent, which increases the risk of a vertical conflict.
+2. The horizontal distance is decreasing, and the predicted DCPA is very small (3.34 meters), indicating a high risk of a lateral conflict.
+3. The TLOS is relatively short (299.7 seconds), requiring immediate action to prevent a loss of separation.
+
+**Recommended Commands:**
+
+To maintain safe separation, we recommend the following commands:
+
+1. **FLIGHT2: Climb and maintain 20000 feet**. This will increase the altitude difference and reduce the risk of a vertical conflict.
+2. **FLIGHT1: Turn right heading 340 degrees**. This will increase the horizontal distance between the two aircraft and reduce the risk of a lateral conflict.
+3. **FLIGHT2: Reduce speed to 250 knots**. This will decrease the closure rate and provide more time to resolve the conflict.
+
+**Rationale:**
+
+* Climbing FLIGHT2 will increase the altitude difference and provide a larger buffer against a vertical conflict.
+* Turning FLIGHT1 right will increase the horizontal distance and reduce the risk of a lateral conflict.
+* Reducing FLIGHT2's speed will decrease the closure rate and provide more time to resolve the conflict.
+
+**Monitoring:**
+
+After issuing these commands, we will closely monitor the situation to ensure that the conflict is resolved and safe separation is maintained. We will also be prepared to issue additional commands if necessary to prevent a loss of separation.
+
+By taking these actions, we can minimize the risk of a loss of separation and ensure the safe passage of both aircraft.

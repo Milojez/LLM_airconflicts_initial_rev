@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299,
+            "reasoning": "The aircraft will reach a loss of separation in approximately 299 seconds due to their current headings and speeds.",
+            "issued command": "FLIGHT1: Change heading to 150 degrees to increase separation. FLIGHT2: Climb to 17200 feet to ensure vertical separation."
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Current Horizontal Distance
+
+First, we calculate the horizontal distance between the two aircraft using their latitudes and longitudes. The formula to calculate the distance between two points on the Earth's surface given their longitudes and latitudes is:
+
+\[d = \sqrt{(lat_2 - lat_1)^2 + (lon_2 - lon_1)^2}\]
+
+However, for more accurate calculations over long distances, we should use the Haversine formula. But given the close proximity of these points, the simple formula will suffice for an initial estimation, and then we'll consider the need for more precise calculations.
+
+Given:
+- \(lat_1 = 80.79824748338054\)
+- \(lon_1 = 151.47289323525703\)
+- \(lat_2 = 80.83771891697518\)
+- \(lon_2 = 152.44870540658468\)
+
+\[d = \sqrt{(80.83771891697518 - 80.79824748338054)^2 + (152.44870540658468 - 151.47289323525703)^2}\]
+
+\[d = \sqrt{(0.03947143359464)^2 + (0.97581217132765)^2}\]
+
+\[d = \sqrt{0.001555 + 0.9519}\]
+
+\[d \approx \sqrt{0.953455} \approx 0.976\, \text{degrees}\]
+
+To convert degrees to nautical miles, we use the fact that 1 degree of latitude or longitude at the equator is approximately equal to 60 nautical miles. However, since we are at a high latitude, the distance between degrees of longitude will be less. The exact conversion depends on the latitude, but for simplicity, let's first calculate as if we were at the equator and then adjust.
+
+\[0.976 \, \text{degrees} \times 60 \, \text{nautical miles/degree} \approx 58.56 \, \text{nautical miles}\]
+
+Given the high latitude, the actual distance will be less due to the Earth's slightly ellipsoidal shape and because degrees of longitude converge at the poles. A more accurate conversion considering latitude would use the formula for the distance between two points given their latitudes and longitudes, but for the purpose of this initial assessment, let's proceed with understanding that the horizontal distance is significantly greater than 5 nautical miles.
+
+### Step 2: Calculate Current Vertical Distance
+
+The current vertical distance is the difference in their altitudes.
+
+\[ \text{Vertical Distance} = |18084 - 16000| = 2084 \, \text{feet} \]
+
+This is well above the 1000 feet threshold for loss of separation.
+
+### Step 3: Predict Future Positions
+
+To predict if they will reach loss of separation, we need to consider their headings, speeds, and vertical rates.
+
+- FLIGHT1 is heading 319 degrees at 242 knots.
+- FLIGHT2 is heading 304 degrees at 290 knots and descending at 657 feet/min.
+
+Given their current headings, they are on slightly converging courses, but the exact future positions depend on their speeds and the time frame considered.
+
+### Step 4: Determine Time to Potential Loss of Separation
+
+Without precise calculations of their future positions based on their speeds and headings, we can't accurately predict the exact time to potential loss of separation. However, we can see that FLIGHT2 is descending, which could potentially reduce the vertical separation.
+
+Given the complexity of predicting their exact paths and the fact that we've established they are currently not in danger of losing separation (given the large horizontal distance and sufficient vertical separation), the critical factor is the descending aircraft (FLIGHT2) and its potential to close the vertical gap.
+
+### Commands to Maintain Safe Separation
+
+Given the current data and without predicting an immediate loss of separation, no immediate commands are necessary based solely on the information provided. However, to maintain safe separation, especially considering FLIGHT2's descent, monitoring their positions closely is advised. If FLIGHT2 continues to descend and their horizontal distance begins to close, a command to level off or adjust altitude might be necessary for FLIGHT2.
+
+Additionally, considering their slightly converging courses, a heading adjustment for one or both aircraft could be considered if their paths are predicted to bring them within the loss of separation criteria in the future.
+
+### Conclusion
+
+Based on the provided data, there is no immediate indication that the aircraft will reach loss of separation. However, continued monitoring of their positions, especially considering FLIGHT2's descent, is necessary to ensure safe separation is maintained. Adjustments to altitude, heading, or speed may be required based on future predictions of their flight paths.

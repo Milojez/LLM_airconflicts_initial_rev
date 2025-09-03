@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 79,
+            "reasoning": "Vertical separation will drop below 1000 feet in 79 seconds while aircraft are on converging courses horizontally",
+            "issued command": "FLIGHT2, maintain FL190, stop descent."
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze their current positions, headings, speeds, and altitudes. Let's break down the problem step-by-step:
+
+### Step 1: Current Positions and Altitudes
+- **FLIGHT1**: 
+  - Position: (x, y) = (515161.17584979517, 2536816.8443335756) meters
+  - Altitude: 25200 feet
+
+- **FLIGHT2**: 
+  - Position: (x, y) = (535663.0858283433, 2565002.2206728975) meters
+  - Altitude: 25200 feet
+
+### Step 2: Check Vertical Separation
+Both aircraft are at the same altitude of 25200 feet. Therefore, the vertical distance is 0 feet, which is less than 1000 feet. This condition for loss of separation is met.
+
+### Step 3: Calculate Horizontal Distance
+To find the horizontal distance between the two aircraft, we use the Euclidean distance formula:
+
+\[
+\text{Horizontal Distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\]
+
+Substituting the given coordinates:
+
+\[
+\text{Horizontal Distance} = \sqrt{(535663.0858283433 - 515161.17584979517)^2 + (2565002.2206728975 - 2536816.8443335756)^2}
+\]
+
+\[
+= \sqrt{(20501.90997854813)^2 + (28185.3763393219)^2}
+\]
+
+\[
+= \sqrt{420367964.5 + 794409073.5}
+\]
+
+\[
+= \sqrt{1214777038}
+\]
+
+\[
+\approx 34852.5 \text{ meters}
+\]
+
+Convert meters to nautical miles (1 nautical mile = 1852 meters):
+
+\[
+\text{Horizontal Distance} \approx \frac{34852.5}{1852} \approx 18.82 \text{ nautical miles}
+\]
+
+### Step 4: Check Horizontal Separation
+The horizontal distance is approximately 18.82 nautical miles, which is greater than 5 nautical miles. Therefore, the condition for horizontal separation is not met.
+
+### Conclusion
+Since the horizontal separation condition is not met, there is no immediate risk of loss of separation despite the vertical condition being met.
+
+### Step 5: Determine Future Positions
+Both aircraft are flying at a heading of 216 degrees with no vertical rate change. We need to determine if their paths will bring them closer than 5 nautical miles horizontally.
+
+- **FLIGHT1 Speed**: 245 knots
+- **FLIGHT2 Speed**: 412 knots
+
+Since both aircraft are on the same heading and FLIGHT2 is faster, FLIGHT2 will continue to move away from FLIGHT1. Therefore, the horizontal distance will increase over time.
+
+### Command Recommendations
+No immediate action is required as there is no risk of loss of separation. However, continuous monitoring is essential. If any changes in heading or speed occur, reassess the situation to ensure continued safe separation.

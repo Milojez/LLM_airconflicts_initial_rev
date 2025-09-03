@@ -1,0 +1,33 @@
+Okay, analyzing the situation:
+
+1.  **Conflict Type:** Converging courses with decreasing vertical separation. FLIGHT2 is descending towards FLIGHT1's altitude.
+2.  **Urgency:** TLOS is 149 seconds (~2.5 minutes), and DCPA is extremely small (56 meters). Action is required promptly.
+3.  **Vertical Situation:** FLIGHT1 is level at FL202. FLIGHT2 is at FL223 descending (-550 ft/min). The current 2091 ft separation is decreasing. FLIGHT2 will pass through FLIGHT1's altitude if descent continues.
+4.  **Horizontal Situation:** Aircraft are 24 NM apart but converging rapidly (FLIGHT2 is faster). FLIGHT2 is NE of FLIGHT1 (QDR 16 deg). FLIGHT1 heading 071, FLIGHT2 heading 161.
+5.  **Resolution Strategy:** Need to ensure both vertical and horizontal separation minima (typically 1000 ft vertically below FL290, and 5 NM horizontally) are maintained. Addressing the vertical component is critical due to FLIGHT2's descent. A horizontal maneuver is also needed due to the very small predicted DCPA.
+
+**Decision:**
+
+The most direct way to resolve the immediate vertical conflict is to stop FLIGHT2's descent above FLIGHT1. Combining this with a turn will resolve the horizontal conflict simultaneously.
+
+*   **Stop Descent:** Instruct FLIGHT2 to stop descent at an altitude that ensures at least 1000 ft separation from FLIGHT1 (FL202). Stopping at FL220 provides 1800 ft separation. Stopping at FL210 would only provide 800 ft, which is insufficient. Therefore, FL220 is the appropriate minimum level-off altitude for FLIGHT2.
+*   **Turn:** FLIGHT2 is heading 161. FLIGHT1 is roughly SW of FLIGHT2. A right turn for FLIGHT2 will increase separation. A turn to heading 190 degrees should effectively diverge the tracks.
+
+**Command(s):**
+
+**Primary Command (Issued to FLIGHT2):**
+
+"**FLIGHT2, stop descent IMMEDIATELY, maintain Flight Level 220. Turn right heading 190.**"
+
+*   `Stop descent IMMEDIATELY`: Emphasizes the urgency due to the conflict.
+*   `Maintain Flight Level 220`: Ensures vertical separation (1800 ft) from FLIGHT1 at FL202.
+*   `Turn right heading 190`: Creates horizontal divergence.
+
+**Alternative Command (If FLIGHT2 cannot comply or controller preference, issued to FLIGHT1):**
+
+"**FLIGHT1, turn left heading 040. Descend and maintain Flight Level 190.**"
+
+*   `Turn left heading 040`: Creates horizontal divergence from FLIGHT2's track (161).
+*   `Descend and maintain Flight Level 190`: Creates vertical separation (FL190 vs FL223 descending).
+
+The primary command targeting FLIGHT2 is generally preferred as it directly addresses the aircraft whose maneuver (descent) is contributing most significantly to the reduction in separation.

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.3,
+            "reasoning": "Aircraft are on similar headings with a decreasing altitude difference and closing horizontal distance",
+            "issued_command": "FLIGHT2, climb and maintain 25,000 feet. FLIGHT1, turn right heading 240 degrees. FLIGHT2, reduce ground speed to 300 knots."
+        }
+    ]
+}

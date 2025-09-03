@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 450,
+            "reasoning": "Predicted breach of both vertical (<1000ft) and horizontal (<5NM) separation minima at the closest point of approach in approximately 7.5 minutes.",
+            "issued command": "FLIGHT2, maintain one niner thousand."
+        }
+    ]
+}

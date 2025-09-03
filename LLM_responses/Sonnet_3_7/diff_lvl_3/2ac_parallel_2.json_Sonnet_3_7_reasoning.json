@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.3,
+            "reasoning": "FLIGHT2 is descending and will overtake FLIGHT1 with extremely close predicted proximity (6.68 meters) in 335.6 seconds. Current vertical separation is sufficient but will reduce as FLIGHT2 descends.",
+            "issued_command": "FLIGHT2 instructed to stop descent and maintain FL242. FLIGHT1 instructed to turn right heading 240 degrees."
+        }
+    ]
+}

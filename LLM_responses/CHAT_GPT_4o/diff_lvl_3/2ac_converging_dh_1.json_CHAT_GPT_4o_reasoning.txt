@@ -1,0 +1,34 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. The goal is to ensure that the aircraft maintain the required minimum horizontal and vertical separation standards.
+
+Given the current situation:
+- The horizontal distance is 15.17 nautical miles, with a predicted closest point of approach (DCPA) of 3.34 meters, which is extremely close.
+- The altitude difference is 1093.9 feet, which is below the standard vertical separation minimum of 1000 feet for aircraft at these altitudes.
+- The estimated time to loss of separation (TLOS) is 299.7 seconds.
+
+To resolve this conflict, we can consider the following options:
+
+1. **Altitude Adjustment:**
+   - Since FLIGHT2 is descending at a vertical rate of -71 feet/min, we can instruct FLIGHT2 to stop its descent and maintain its current altitude or climb slightly to increase vertical separation.
+   - Command to FLIGHT2: "FLIGHT2, stop descent and maintain flight level 190."
+
+2. **Heading Change:**
+   - Adjusting the heading of one or both aircraft can increase horizontal separation.
+   - Command to FLIGHT1: "FLIGHT1, turn right heading 340 degrees."
+   - Command to FLIGHT2: "FLIGHT2, turn left heading 290 degrees."
+
+3. **Speed Adjustment:**
+   - Reducing the speed of one or both aircraft can delay the time to the closest point of approach, allowing more time for other maneuvers to take effect.
+   - Command to FLIGHT1: "FLIGHT1, reduce speed to 220 knots."
+   - Command to FLIGHT2: "FLIGHT2, reduce speed to 300 knots."
+
+Considering the urgency and the predicted DCPA, a combination of heading and altitude adjustments is likely the most effective immediate action. Here is a recommended set of commands:
+
+- **FLIGHT1:**
+  - "FLIGHT1, turn right heading 340 degrees."
+  - "FLIGHT1, reduce speed to 220 knots."
+
+- **FLIGHT2:**
+  - "FLIGHT2, stop descent and maintain flight level 190."
+  - "FLIGHT2, turn left heading 290 degrees."
+
+These commands should be issued promptly to ensure the aircraft maintain safe separation. Continuous monitoring and further adjustments may be necessary based on the aircraft's responses and updated positions.

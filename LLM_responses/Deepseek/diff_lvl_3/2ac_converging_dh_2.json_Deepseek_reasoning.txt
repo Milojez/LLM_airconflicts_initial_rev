@@ -1,0 +1,33 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation. Based on the provided data, here's a step-by-step analysis:
+
+1. **Current Situation**:
+	* FLIGHT1 (A330) is at 16,000 feet, heading 319°, and ground speed 242 knots.
+	* FLIGHT2 (A330) is at 18,084 feet, heading 304°, and ground speed 290 knots.
+	* Horizontal distance: 9.65 nautical miles.
+	* Altitude difference: 2,084.6 feet.
+	* Azimuthal direction (QDR) from FLIGHT1 to FLIGHT2: 75.78°.
+2. **Conflict Analysis**:
+	* The estimated time to loss of separation (TLOS) is 198.5 seconds, indicating a potential violation of minimum separation criteria.
+	* The predicted closest point of approach (DCPA) is 5.26 meters, expected to occur in 412.1 seconds.
+3. **Resolution Options**:
+	* **Altitude Adjustment**: FLIGHT2 is currently descending at -657 feet/min. To increase the altitude difference, we could instruct FLIGHT2 to level off or climb. However, this might not be sufficient to resolve the conflict, given the relatively small altitude difference.
+	* **Heading Change**: A heading change for either aircraft could help increase the horizontal distance. Since FLIGHT1 is heading 319° and FLIGHT2 is heading 304°, a turn to the right for FLIGHT1 or a turn to the left for FLIGHT2 could help.
+	* **Speed Modification**: A speed reduction for FLIGHT2 could help decrease the closure rate and increase the time available to resolve the conflict.
+
+**Recommended Commands**:
+
+To maintain safe separation, we recommend the following commands:
+
+1. **FLIGHT1**: Turn right heading 350° to increase the horizontal distance and reduce the closure rate.
+2. **FLIGHT2**: Reduce speed to 260 knots to decrease the closure rate and provide more time to resolve the conflict.
+
+**Rationale**:
+
+* The heading change for FLIGHT1 will increase the horizontal distance and reduce the closure rate, making it easier to maintain safe separation.
+* The speed reduction for FLIGHT2 will decrease the closure rate, providing more time to resolve the conflict and reducing the risk of a loss of separation.
+
+**Monitoring and Follow-up**:
+
+After issuing these commands, we will closely monitor the situation and adjust the instructions as necessary to ensure safe separation is maintained. The estimated time to loss of separation (TLOS) and predicted closest point of approach (DCPA) will be continuously evaluated to determine the effectiveness of the commands and make any necessary adjustments.

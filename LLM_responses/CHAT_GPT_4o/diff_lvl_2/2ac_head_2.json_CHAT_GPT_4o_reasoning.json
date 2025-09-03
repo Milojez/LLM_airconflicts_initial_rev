@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 600,
+            "reasoning": "The horizontal distance will reduce to less than 5 nautical miles while the vertical separation will be less than 1000 feet.",
+            "issued command": "FLIGHT2, climb and maintain 18500 feet."
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitudes and longitudes. We'll use the Haversine formula for this purpose, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Given:
+- Latitude of FLIGHT1: \(lat_1 = -55.51339915996272\) degrees
+- Longitude of FLIGHT1: \(lon_1 = 13.064955990620039\) degrees
+- Latitude of FLIGHT2: \(lat_2 = -55.12472416548402\) degrees
+- Longitude of FLIGHT2: \(lon_2 = 13.260548768995166\) degrees
+
+The Haversine formula is:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{lat_2 - lat_1}{2}\right) + \cos(lat_1) \cos(lat_2) \sin^2\left(\frac{lon_2 - lon_1}{2}\right)}\right) \times R\]
+
+where \(R\) is the radius of the Earth, approximately 6371 kilometers. We need to convert the result into nautical miles (1 nautical mile = 1.852 kilometers).
+
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{-55.12472416548402 - (-55.51339915996272)}{2}\right) + \cos(-55.51339915996272) \cos(-55.12472416548402) \sin^2\left(\frac{13.260548768995166 - 13.064955990620039}{2}\right)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{0.38867499447872}{2}\right) + \cos(-55.51339915996272) \cos(-55.12472416548402) \sin^2\left(\frac{0.195592778375127}{2}\right)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2(0.19433749723936) + \cos(-55.51339915996272) \cos(-55.12472416548402) \sin^2(0.0977963891875635)}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0377 + 0.5734 \times 0.5735 \times 0.0095}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0377 + 0.0031}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0408}\right) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times \arcsin(0.202) \times 6371 \, \text{km}\]
+
+\[d \approx 2 \times 0.202 \times \frac{\pi}{2} \times 6371 \, \text{km} \approx 2 \times 0.202 \times 1.5708 \times 6371 \, \text{km}\]
+
+\[d \approx 4011.7 \, \text{km}\]
+
+To convert kilometers to nautical miles:
+\[d \approx \frac{4011.7 \, \text{km}}{1.852 \, \text{km/nm}} \approx 2167.5 \, \text{nm}\]
+
+This distance is far beyond the 5 nautical mile threshold for loss of separation.
+
+### Step 2: Calculate Vertical Distance
+
+The current vertical distance between the two aircraft is:
+\[|20200 - 22290| = 2090 \, \text{feet}\]
+
+This is well below the 1000 feet threshold, but since the horizontal distance is so large, we don't have an immediate loss of separation issue based on the current positions alone.
+
+### Step 3: Predict Future Positions
+
+To predict if there will be a loss of separation, we need to consider the aircraft's speeds, headings, and vertical rates. However, given the significant horizontal distance and the fact that one aircraft is descending while the other is not changing altitude, the critical factor will be how their trajectories intersect or not.
+
+Given the complexity of predicting exact future positions without specific time frames or more detailed trajectory data, and considering the aircraft are currently over 2000 nautical miles apart horizontally, it's unlikely they will reach a point of loss of separation based on the information provided.
+
+### Commands to Maintain Safe Separation
+
+Given the current data, there's no immediate need for commands to adjust altitude, heading, or speed to maintain safe separation because the aircraft are far apart. However, air traffic control should continue to monitor their trajectories and issue commands as necessary to prevent loss of separation if their paths are predicted to converge.
+
+In general, to prevent loss of separation, ATC might consider:
+- Altitude adjustments: If FLIGHT2's descent brings it closer to FLIGHT1's altitude, and their horizontal distance decreases, ATC might instruct one or both aircraft to change altitude.
+- Heading changes: If the aircraft are on a collision course, changing the heading of one or both could increase the horizontal distance between them.
+- Speed modifications: Adjusting the speed of one or both aircraft could also affect their relative positions and prevent loss of separation.
+
+Without more specific trajectory predictions or closer proximity, these actions are not currently required based on the provided data. Continuous monitoring of the aircraft's positions and velocities is necessary to ensure safe separation.

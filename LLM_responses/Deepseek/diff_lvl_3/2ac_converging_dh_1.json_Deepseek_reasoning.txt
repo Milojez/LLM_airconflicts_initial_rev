@@ -1,0 +1,37 @@
+**Conflict Resolution**
+
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective course of action.
+
+**Current Situation:**
+
+* FLIGHT1 (A330) is at 18,000 feet, heading 319 degrees, ground speed 237 knots.
+* FLIGHT2 (A330) is at 19,093 feet, heading 304 degrees, ground speed 335 knots.
+* Horizontal distance: 15.17 nautical miles.
+* Altitude difference: 1,093.9 feet.
+* Estimated time to loss of separation (TLOS): 299.7 seconds.
+* Predicted closest point of approach (DCPA): 3.34 meters in 447.0 seconds.
+
+**Analysis:**
+
+1. **Altitude**: FLIGHT2 is 1,093.9 feet above FLIGHT1. However, FLIGHT2 is descending at a rate of -71 feet/min, which may increase the risk of a vertical collision.
+2. **Horizontal Distance**: The current horizontal distance is 15.17 nautical miles, which is relatively close.
+3. **Heading**: Both aircraft are flying in similar directions (319 degrees and 304 degrees), which increases the risk of a collision.
+4. **Speed**: FLIGHT2 is flying significantly faster than FLIGHT1 (335 knots vs. 237 knots).
+
+**Recommended Actions:**
+
+To maintain safe separation, we recommend the following:
+
+1. **FLIGHT2: Descend and Level Off**: Instruct FLIGHT2 to level off at its current altitude (19,093 feet) to prevent further descent and potential vertical collision.
+2. **FLIGHT2: Turn Right**: Instruct FLIGHT2 to turn right by 20-30 degrees (e.g., to a heading of 324-334 degrees) to increase the horizontal distance and reduce the risk of collision.
+3. **FLIGHT1: Maintain Current Altitude and Heading**: Instruct FLIGHT1 to maintain its current altitude (18,000 feet) and heading (319 degrees) to ensure a stable and predictable trajectory.
+4. **FLIGHT2: Reduce Speed**: Instruct FLIGHT2 to reduce its speed to match FLIGHT1's speed (237 knots) to reduce the closing rate and increase the time available for conflict resolution.
+
+**Example Commands:**
+
+* "FLIGHT2, descend and level off at 19,093 feet."
+* "FLIGHT2, turn right to a heading of 330 degrees."
+* "FLIGHT1, maintain current altitude and heading."
+* "FLIGHT2, reduce speed to 237 knots."
+
+By issuing these commands, we can increase the horizontal distance, reduce the risk of vertical collision, and maintain safe separation between the two aircraft.

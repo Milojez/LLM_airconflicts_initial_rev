@@ -1,0 +1,81 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontally and vertically) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Convert Coordinates to a Common Unit
+
+First, let's convert all coordinates to meters for simplicity. The y and x coordinates are already in meters.
+
+### Step 2: Calculate Current Horizontal Distance
+
+To calculate the horizontal distance, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given:
+- \(x_1 = 472742.1287403776\) meters
+- \(y_1 = 8971041.113887483\) meters
+- \(x_2 = 500862.89848999906\) meters
+- \(y_2 = 8968825.830293516\) meters
+
+\[d = \sqrt{(500862.89848999906 - 472742.1287403776)^2 + (8968825.830293516 - 8971041.113887483)^2}\]
+\[d = \sqrt{(28020.76974962144)^2 + (-215.283593967)^2}\]
+\[d = \sqrt{784431380.191 + 46353.191}\]
+\[d = \sqrt{788866733.382}\]
+\[d \approx 28103.77 \text{ meters}\]
+
+To convert meters to nautical miles, we use the conversion factor: \(1 \text{ nautical mile} = 1852 \text{ meters}\).
+
+\[d \approx \frac{28103.77}{1852} \approx 15.17 \text{ nautical miles}\]
+
+### Step 3: Calculate Current Vertical Distance
+
+Given:
+- Altitude of FLIGHT1 = 18000 feet
+- Altitude of FLIGHT2 = 19093 feet
+
+\[ \text{Vertical distance} = |19093 - 18000| = 1093 \text{ feet} \]
+
+### Step 4: Determine Current Loss of Separation
+
+- Horizontal distance = 15.17 nautical miles (greater than 5 nautical miles)
+- Vertical distance = 1093 feet (less than 1000 feet)
+
+Currently, there is no loss of separation because the horizontal distance condition is not met.
+
+### Step 5: Predict Future Positions
+
+To predict if there will be a loss of separation in the future, we need to calculate the relative speed and direction of the two aircraft.
+
+#### Relative Speed and Direction
+
+First, convert speeds to meters per second:
+- FLIGHT1 speed = 237 knots * (1852 meters / 1 nautical mile) / (3600 seconds / 1 hour) ≈ 104.55 m/s
+- FLIGHT2 speed = 335 knots * (1852 meters / 1 nautical mile) / (3600 seconds / 1 hour) ≈ 155.41 m/s
+
+Given headings:
+- FLIGHT1 heading = 319 degrees
+- FLIGHT2 heading = 304 degrees
+
+We need to find the relative velocity vector. However, without explicit vectors, we simplify by considering the difference in headings and speeds to estimate if they are closing in on each other.
+
+The difference in heading is \(319 - 304 = 15\) degrees, indicating they are not directly heading towards each other but are somewhat converging.
+
+#### Vertical Rate
+
+FLIGHT2 is descending at -71 feet/min. This could potentially decrease the vertical distance over time.
+
+### Step 6: Assess Potential for Loss of Separation
+
+Given the current distances and the fact that FLIGHT2 is descending, there is a potential for the vertical distance to decrease further. However, the horizontal distance is currently quite large (15.17 nautical miles), and without precise calculations of their trajectories, it's difficult to predict exactly when or if they will be within 5 nautical miles of each other.
+
+### Necessary Commands
+
+To maintain safe separation, consider the following:
+
+1. **Altitude Adjustment**: If FLIGHT2 continues to descend, consider instructing FLIGHT1 to ascend or FLIGHT2 to level off or climb to increase the vertical separation.
+2. **Heading Change**: A heading change for one or both aircraft could be considered to increase the horizontal distance or prevent further convergence.
+3. **Speed Modification**: Adjusting the speed of one or both aircraft could also help in maintaining or increasing the horizontal distance.
+
+Without precise trajectory predictions, it's challenging to provide exact commands. Continuous monitoring of their positions and velocities is necessary to determine the best course of action to prevent loss of separation.
+
+### Conclusion
+
+Based on the provided data, there is currently no loss of separation. However, the situation requires close monitoring due to the descending trajectory of FLIGHT2 and the potential for convergence. Commands to adjust altitude, heading, or speed may be necessary in the future to maintain safe separation.

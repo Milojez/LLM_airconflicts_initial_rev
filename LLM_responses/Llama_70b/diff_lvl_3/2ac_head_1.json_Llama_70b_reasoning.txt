@@ -1,0 +1,36 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* Both aircraft are flying at the same altitude (16200 feet) with no vertical separation.
+* The horizontal distance between them is 45.20 nautical miles, which is currently not a concern.
+* The estimated time to loss of separation (TLOS) is 299.6 seconds, indicating that the aircraft will be in close proximity soon.
+* The predicted closest point of approach (DCPA) is 97.01 meters, which is below the minimum separation criteria.
+
+**Analysis:**
+
+* Since both aircraft are flying at the same altitude, a vertical separation is not possible.
+* A heading change for one or both aircraft could be effective in increasing the horizontal separation.
+* A speed modification could also be considered, but it may not be sufficient to resolve the conflict on its own.
+
+**Recommended Commands:**
+
+To maintain safe separation, the following commands are recommended:
+
+1. **Heading Change:** Issue a heading change command to FLIGHT1 to turn right to a heading of 160 degrees. This will increase the horizontal separation between the two aircraft and reduce the likelihood of a loss of separation.
+2. **Speed Modification:** Additionally, consider issuing a speed reduction command to FLIGHT1 to reduce its ground speed to 240 knots. This will further increase the time available to resolve the conflict and reduce the risk of a loss of separation.
+
+**Rationale:**
+
+* The heading change will increase the horizontal separation between the two aircraft, making it less likely that they will violate the minimum separation criteria.
+* The speed reduction will provide more time to resolve the conflict and reduce the risk of a loss of separation.
+* By issuing these commands, we can maintain safe separation between the two aircraft and prevent a potential loss of separation.
+
+**Example Commands:**
+
+* "FLIGHT1, turn right heading 160 degrees, reduce speed to 240 knots."
+* "FLIGHT1, descend and maintain 15800 feet, or turn right heading 160 degrees and reduce speed to 240 knots, pilot's discretion."
+
+Note: The actual commands issued will depend on the specific air traffic control procedures and protocols in place, as well as the discretion of the air traffic controller.

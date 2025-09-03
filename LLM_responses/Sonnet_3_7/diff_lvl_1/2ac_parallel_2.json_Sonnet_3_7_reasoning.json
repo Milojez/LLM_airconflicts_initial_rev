@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 600,
+            "reasoning": "FLIGHT2 is descending at 200 feet/min and will violate the 1,000 feet vertical separation minimum in approximately 10-12 minutes while horizontal separation also decreases due to speed differential on parallel tracks.",
+            "issued_command": "FLIGHT2, Air Traffic Control. To maintain separation, level off at flight level 240. Maintain current heading and speed. Acknowledge."
+        }
+    ]
+}

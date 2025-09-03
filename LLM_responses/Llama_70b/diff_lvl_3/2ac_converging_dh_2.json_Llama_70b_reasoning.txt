@@ -1,0 +1,35 @@
+**Conflict Resolution**
+
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to analyze the situation and determine the most effective course of action.
+
+**Current Situation:**
+
+* Horizontal distance: 9.65 nautical miles ( decreasing)
+* Altitude difference: 2084.6 feet (decreasing due to FLIGHT2's descent)
+* Time to loss of separation (TLOS): 198.5 seconds
+* Predicted closest point of approach (DCPA): 5.26 meters (expected in 412.1 seconds)
+
+**Analysis:**
+
+1. **Altitude**: FLIGHT2 is descending at a rate of -657 feet/min, which is contributing to the decreasing altitude difference. To increase the altitude difference, we can instruct FLIGHT2 to level off or climb.
+2. **Heading**: The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 75.78 degrees, which means FLIGHT2 is approaching FLIGHT1 from the east-northeast. A heading change for either aircraft could help increase the horizontal distance.
+3. **Speed**: FLIGHT2 is flying faster than FLIGHT1, which may contribute to the decreasing horizontal distance. Reducing FLIGHT2's speed could help increase the time available to resolve the conflict.
+
+**Recommended Commands:**
+
+To maintain safe separation, we recommend the following commands:
+
+1. **FLIGHT2: Climb and maintain 19000 feet**. This will increase the altitude difference and reduce the rate of closure.
+2. **FLIGHT2: Turn right heading 320 degrees**. This will increase the horizontal distance between the two aircraft and reduce the likelihood of a close encounter.
+3. **FLIGHT2: Reduce speed to 250 knots**. This will reduce the rate of closure and provide more time to resolve the conflict.
+
+**Alternative Options:**
+
+If the above commands are not feasible, alternative options could be:
+
+1. **FLIGHT1: Descend and maintain 15000 feet**. This would increase the altitude difference, but may not be desirable due to other traffic or airspace constraints.
+2. **FLIGHT1: Turn left heading 300 degrees**. This would increase the horizontal distance, but may not be as effective as the recommended commands.
+
+**Monitoring and Follow-up:**
+
+After issuing the recommended commands, we will closely monitor the situation and adjust the commands as necessary to ensure safe separation is maintained. The estimated time to loss of separation (TLOS) and predicted closest point of approach (DCPA) will be continuously updated to ensure the conflict is resolved.

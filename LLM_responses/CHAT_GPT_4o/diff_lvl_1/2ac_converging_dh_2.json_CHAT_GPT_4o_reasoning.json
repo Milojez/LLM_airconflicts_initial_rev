@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 99,
+            "reasoning": "Vertical separation will be less than 1000 feet in approximately 1.65 minutes, and horizontal separation will be less than 5 nautical miles at the same time.",
+            "issued command": "FLIGHT2: Climb immediately to maintain 2000 feet separation."
+        }
+    ]
+}

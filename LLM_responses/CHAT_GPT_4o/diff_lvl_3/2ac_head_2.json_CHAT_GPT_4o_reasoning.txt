@@ -1,0 +1,28 @@
+To maintain safe separation between FLIGHT1 and FLIGHT2, we need to issue commands that will prevent the predicted loss of separation. The goal is to ensure that the aircraft maintain the required minimum horizontal and vertical separation standards.
+
+Given the current situation:
+- The horizontal distance is 48.23 nautical miles, with a predicted closest point of approach (DCPA) of 110.39 meters.
+- The altitude difference is 1498.4 feet, with FLIGHT2 descending at -100 feet/min.
+- The estimated time to loss of separation (TLOS) is 299.6 seconds.
+
+To resolve this conflict, we can consider the following options:
+
+1. **Altitude Adjustment:**
+   - Since FLIGHT2 is descending, instruct FLIGHT2 to stop its descent and maintain its current altitude of 18298 feet. This will prevent the altitude difference from decreasing further.
+
+2. **Heading Change:**
+   - Instruct FLIGHT1 to alter its heading to increase the horizontal separation. A heading change of approximately 20-30 degrees to the left (e.g., to 110-120 degrees) could help increase the lateral distance between the aircraft.
+
+3. **Speed Adjustment:**
+   - If necessary, adjust the speed of either aircraft to alter the timing of their closest approach. For instance, instruct FLIGHT1 to reduce its speed slightly to increase the time to the closest point of approach.
+
+Considering these options, the following commands could be issued:
+
+- **FLIGHT1:**
+  - "FLIGHT1, turn left heading 120 degrees."
+  - "FLIGHT1, reduce speed to 270 knots."
+
+- **FLIGHT2:**
+  - "FLIGHT2, maintain current altitude, stop descent."
+
+These commands should be issued promptly to ensure that the aircraft maintain safe separation and avoid any potential conflict. Continuous monitoring of the situation is necessary to make further adjustments if required.

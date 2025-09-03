@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Aircraft are at the same altitude with predicted closest point of approach below minimum separation criteria",
+            "issued_command": "FLIGHT1, turn right heading 160 degrees, reduce speed to 240 knots."
+        }
+    ]
+}

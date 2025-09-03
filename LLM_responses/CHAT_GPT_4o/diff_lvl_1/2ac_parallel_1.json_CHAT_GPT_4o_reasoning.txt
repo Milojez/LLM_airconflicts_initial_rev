@@ -1,0 +1,98 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate both the horizontal and vertical distances between the two aircraft and see if they meet the criteria for a loss of separation.
+
+### Step 1: Check Vertical Separation
+
+Both aircraft are flying at the same altitude of 25,200 feet. Therefore, the vertical distance between them is 0 feet, which is less than the 1,000 feet required to avoid a loss of separation.
+
+### Step 2: Calculate Horizontal Separation
+
+To calculate the horizontal distance between the two aircraft, we can use the Haversine formula, which calculates the distance between two points on the Earth's surface given their latitude and longitude.
+
+#### Haversine Formula
+
+The formula is:
+
+\[ a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right) \]
+
+\[ c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right) \]
+
+\[ d = R \cdot c \]
+
+Where:
+- \(\phi_1, \phi_2\) are the latitudes of the two points in radians,
+- \(\lambda_1, \lambda_2\) are the longitudes of the two points in radians,
+- \(\Delta\phi = \phi_2 - \phi_1\),
+- \(\Delta\lambda = \lambda_2 - \lambda_1\),
+- \(R\) is the Earth's radius (mean radius = 3,440 nautical miles).
+
+#### Convert Degrees to Radians
+
+\[
+\phi_1 = 22.939380416404312 \times \frac{\pi}{180}
+\]
+\[
+\phi_2 = 23.193672402978535 \times \frac{\pi}{180}
+\]
+\[
+\lambda_1 = 105.14787450767882 \times \frac{\pi}{180}
+\]
+\[
+\lambda_2 = 105.34849294191797 \times \frac{\pi}{180}
+\]
+
+#### Calculate Differences
+
+\[
+\Delta\phi = \phi_2 - \phi_1
+\]
+\[
+\Delta\lambda = \lambda_2 - \lambda_1
+\]
+
+#### Apply Haversine Formula
+
+\[
+a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right)
+\]
+
+\[
+c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
+\]
+
+\[
+d = 3440 \cdot c
+\]
+
+After calculating, if \(d < 5\) nautical miles, then the horizontal separation is insufficient.
+
+### Step 3: Determine Time to Potential Loss of Separation
+
+Both aircraft are flying at the same heading (216 degrees) and have different ground speeds. We need to calculate the relative speed and determine how long it will take for the horizontal distance to reduce to less than 5 nautical miles.
+
+#### Relative Speed Calculation
+
+The relative speed along the line of sight can be calculated using the difference in ground speeds since they are on the same heading:
+
+\[
+\text{Relative Speed} = \text{Speed of FLIGHT2} - \text{Speed of FLIGHT1} = 412 \text{ knots} - 245 \text{ knots} = 167 \text{ knots}
+\]
+
+#### Time to Loss of Separation
+
+If the initial horizontal distance \(d\) is greater than 5 nautical miles, calculate the time \(t\) it takes to reduce to 5 nautical miles:
+
+\[
+t = \frac{d - 5}{\text{Relative Speed}}
+\]
+
+### Step 4: Issue Commands
+
+If a potential loss of separation is detected, issue commands to maintain safe separation. Possible commands include:
+
+- **Altitude Adjustment**: If vertical separation is insufficient, instruct one aircraft to change altitude.
+- **Heading Change**: Instruct one aircraft to change heading to increase horizontal separation.
+- **Speed Modification**: Adjust the speed of one or both aircraft to prevent closing the distance too quickly.
+
+### Conclusion
+
+Perform the calculations to determine the initial horizontal distance and time to potential loss of separation. If a loss of separation is imminent, issue the necessary commands to maintain safe separation.

@@ -1,0 +1,28 @@
+# Air Traffic Control Response - Loss of Separation Alert
+
+## Situation Analysis
+- FLIGHT1 (A330): FL180, 237 knots, heading 319°, level flight
+- FLIGHT2 (A330): FL191 (19093 ft), 335 knots, heading 304°, descending at 71 ft/min
+- Current separation: 15.17 NM horizontal, 1093.9 ft vertical
+- TLOS: 299.7 seconds (approximately 5 minutes)
+- DCPA: 3.34 meters in 447 seconds (approximately 7.5 minutes)
+- QDR from FLIGHT1 to FLIGHT2: 93.78° (FLIGHT2 is east of FLIGHT1)
+
+## Resolution Decision
+Given that:
+1. The aircraft are converging with a very small predicted CPA (3.34 meters)
+2. FLIGHT2 is faster and will overtake FLIGHT1 from the right side
+3. Current vertical separation is adequate but FLIGHT2's descent could reduce this margin
+4. There is sufficient time to implement a resolution (5 minutes until LOS)
+
+## ATC Instructions
+
+"FLIGHT2, Traffic alert. For separation, turn left heading 290 degrees and maintain FL190."
+
+"FLIGHT1, Traffic alert. For separation, descend and maintain FL170."
+
+## Rationale
+- The heading change for FLIGHT2 increases lateral separation by moving it away from FLIGHT1's path
+- The altitude change for FLIGHT1 increases vertical separation to 2000 feet, well above the minimum required
+- This solution is preferable to speed adjustments as it provides more immediate separation
+- The instructions are clear, concise, and executable within the available timeframe

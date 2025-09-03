@@ -1,0 +1,32 @@
+Okay, analyzing the situation:
+
+1.  **Identify the Conflict:** The core issue is a loss of separation predicted due to FLIGHT2 descending towards FLIGHT1's altitude while on a nearly parallel, slightly converging, overtaking track.
+2.  **Vertical Situation:** FLIGHT1 is level at FL222. FLIGHT2 is at FL242 (approx) but descending at 200 ft/min. The current vertical separation is ~2000 ft, but this is decreasing. Below FL290, the minimum vertical separation is 1000 ft. FLIGHT2's descent will violate this.
+3.  **Horizontal Situation:** Current separation is 12.3 NM, which is adequate *now*. However, they are on very similar headings (216° vs 215°), and FLIGHT2 is significantly faster (365 kts vs 233 kts), meaning it's overtaking FLIGHT1. The predicted DCPA of 6.68 meters is extremely alarming, indicating their paths will cross very closely if they reach the same altitude.
+4.  **Urgency:** TLOS is ~5 minutes, and TCPA is ~5.6 minutes. Action is required promptly.
+
+**Decision Process:**
+
+*   The most immediate threat is the loss of vertical separation caused by FLIGHT2's descent. Stopping this descent is the highest priority.
+*   Given the extremely small predicted DCPA, even with vertical separation maintained, their tracks are too close. A horizontal maneuver is also necessary for robust separation.
+*   Turning the faster, overtaking aircraft (FLIGHT2) is generally more effective for creating horizontal separation quickly. Since FLIGHT2 is roughly NE of FLIGHT1 (QDR ~36°), turning FLIGHT2 *right* will increase the distance between them.
+
+**Commands:**
+
+The most efficient way to resolve this is to issue commands to FLIGHT2, addressing both vertical and horizontal aspects:
+
+1.  **Primary Command (Vertical):** Stop FLIGHT2's descent immediately to maintain vertical separation. Maintaining FL240 is the simplest action.
+    *   `FLIGHT2, MAINTAIN FLIGHT LEVEL 240.`
+
+2.  **Secondary Command (Horizontal):** Initiate a turn for FLIGHT2 to increase horizontal spacing, given the near-zero predicted DCPA. A turn to the right is appropriate based on the QDR. A 20-30 degree turn should be sufficient initially.
+    *   `FLIGHT2, TURN RIGHT HEADING 240.`
+
+**Combined Command:**
+
+For efficiency, these can often be combined:
+
+*   **`FLIGHT2, TURN RIGHT HEADING 240, MAINTAIN FLIGHT LEVEL 240.`**
+
+**Rationale:**
+
+This command immediately halts the reduction in vertical separation by keeping FLIGHT2 at FL240 (maintaining approx. 1800 ft vertical separation, well above the 1000 ft minimum). Simultaneously, the right turn creates horizontal divergence from FLIGHT1, addressing the close pass predicted by the small DCPA and the overtaking situation. This provides both immediate vertical safety and ensures increasing horizontal separation.

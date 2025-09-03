@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.5,
+            "reasoning": "Aircraft are flying at the same altitude with a predicted closest point of approach of 193.24 meters, indicating a high risk of collision.",
+            "issued_command": "FLIGHT1, turn right heading 095 degrees. FLIGHT2, reduce speed to 370 knots."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 20.1,
+            "reasoning": "Aircraft are at the same altitude and closing in on each other horizontally.",
+            "issued_command": "Instruct FLIGHT2 to climb to 26200 feet to ensure a vertical separation of at least 1000 feet."
+        }
+    ]
+}

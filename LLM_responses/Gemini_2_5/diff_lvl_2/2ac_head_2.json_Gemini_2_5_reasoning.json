@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 334,
+            "reasoning": "Predicted loss of separation at CPA. Horizontal separation will be ~0.3 NM and vertical separation will be ~942 ft in ~5.6 minutes.",
+            "issued command": "FLIGHT2, maintain altitude one eight thousand."
+        }
+    ]
+}

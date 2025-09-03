@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 348,
+            "reasoning": "FLIGHT2 is closing in on FLIGHT1 horizontally and descending, potentially reducing separation below safe limits.",
+            "issued_command": "Command FLIGHT2 to level off or climb to prevent reduction in vertical separation."
+        }
+    ]
+}

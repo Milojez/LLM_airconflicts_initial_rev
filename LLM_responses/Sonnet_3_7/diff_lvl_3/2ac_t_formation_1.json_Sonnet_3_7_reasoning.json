@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 337.3,
+            "reasoning": "Aircraft are at the same altitude (20,800 feet) with predicted closest approach of only 0.1 NM (193.24 meters), well below the 5 NM minimum horizontal separation requirement.",
+            "issued_command": "FLIGHT1, Air Traffic Control. For traffic separation, climb immediately to flight level two three zero. Maintain present heading."
+        }
+    ]
+}

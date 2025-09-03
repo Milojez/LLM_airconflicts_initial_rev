@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 149.3,
+            "reasoning": "Potential violation of minimum separation criteria due to small altitude difference and high rate of closure",
+            "issued_command": "FLIGHT2: Reduce ground speed to 280 knots and level off at current altitude (22,290 feet)"
+        }
+    ]
+}

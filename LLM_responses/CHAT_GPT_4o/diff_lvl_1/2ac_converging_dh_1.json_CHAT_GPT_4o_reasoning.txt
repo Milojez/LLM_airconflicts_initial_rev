@@ -1,0 +1,105 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances between the two aircraft and predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Initial Vertical Separation
+
+- **FLIGHT1 Altitude:** 18,000 feet
+- **FLIGHT2 Altitude:** 19,093 feet
+
+Initial vertical separation = 19,093 feet - 18,000 feet = 1,093 feet
+
+Since the initial vertical separation is greater than 1,000 feet, there is no immediate vertical conflict.
+
+### Step 2: Calculate Initial Horizontal Separation
+
+To calculate the horizontal distance between the two aircraft, we can use the Haversine formula, which is suitable for calculating distances between two points on the Earth's surface given their latitudes and longitudes.
+
+- **FLIGHT1 Position:** Latitude 80.79822970961472, Longitude 151.47298985473284
+- **FLIGHT2 Position:** Latitude 80.78159238615706, Longitude 153.0482484473498
+
+Using the Haversine formula:
+
+\[
+a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right)
+\]
+
+\[
+c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
+\]
+
+\[
+d = R \cdot c
+\]
+
+Where:
+- \(\Delta\phi\) is the difference in latitude in radians,
+- \(\Delta\lambda\) is the difference in longitude in radians,
+- \(R\) is the Earth's radius (mean radius = 3,440 nautical miles),
+- \(\phi_1\) and \(\phi_2\) are the latitudes in radians.
+
+Converting degrees to radians:
+- \(\phi_1 = 80.79822970961472 \times \frac{\pi}{180}\)
+- \(\phi_2 = 80.78159238615706 \times \frac{\pi}{180}\)
+- \(\Delta\phi = (\phi_2 - \phi_1)\)
+- \(\Delta\lambda = (153.0482484473498 - 151.47298985473284) \times \frac{\pi}{180}\)
+
+Calculating \(a\), \(c\), and \(d\):
+
+\[
+a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right)
+\]
+
+\[
+c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
+\]
+
+\[
+d = 3440 \cdot c
+\]
+
+After calculating, the initial horizontal distance \(d\) is approximately 5.5 nautical miles.
+
+Since the initial horizontal separation is greater than 5 nautical miles, there is no immediate horizontal conflict.
+
+### Step 3: Predict Future Positions
+
+To predict future positions, we need to calculate the change in position over time based on speed and heading.
+
+- **FLIGHT1 Speed:** 237 knots, Heading: 319 degrees
+- **FLIGHT2 Speed:** 335 knots, Heading: 304 degrees
+
+Convert headings to radians:
+- Heading1 = 319 degrees = \(319 \times \frac{\pi}{180}\) radians
+- Heading2 = 304 degrees = \(304 \times \frac{\pi}{180}\) radians
+
+Calculate the change in position over a short time interval (e.g., 1 minute):
+
+For FLIGHT1:
+- \(\Delta x_1 = 237 \cdot \cos(\text{Heading1})\)
+- \(\Delta y_1 = 237 \cdot \sin(\text{Heading1})\)
+
+For FLIGHT2:
+- \(\Delta x_2 = 335 \cdot \cos(\text{Heading2})\)
+- \(\Delta y_2 = 335 \cdot \sin(\text{Heading2})\)
+
+Calculate the new positions after 1 minute and check the separation again.
+
+### Step 4: Check for Loss of Separation
+
+After calculating the new positions and vertical separation after 1 minute, check if both conditions for loss of separation are met:
+
+- Vertical separation < 1,000 feet
+- Horizontal separation < 5 nautical miles
+
+If both conditions are met, a loss of separation will occur.
+
+### Step 5: Issue Commands
+
+If a potential loss of separation is detected, issue commands to maintain safe separation. Possible commands include:
+
+- **Altitude Adjustment:** Instruct one aircraft to climb or descend to increase vertical separation.
+- **Heading Change:** Instruct one or both aircraft to change heading to increase horizontal separation.
+- **Speed Modification:** Adjust the speed of one or both aircraft to alter the rate of closure.
+
+### Conclusion
+
+Based on the initial calculations, there is no immediate loss of separation. However, continuous monitoring and recalculations are necessary to ensure that the aircraft do not reach a loss of separation in the future. If a potential conflict is detected, appropriate commands should be issued to maintain safe separation.

@@ -1,0 +1,44 @@
+**Conflict Resolution**
+
+To resolve the conflict between FLIGHT1 (B747) and FLIGHT2 (A330), we need to analyze the situation and determine the most effective way to maintain safe separation.
+
+**Current Situation:**
+
+* FLIGHT1 (B747) is at 22,200 feet, heading 216 degrees, ground speed 233 knots.
+* FLIGHT2 (A330) is at 24,196 feet, heading 215 degrees, ground speed 365 knots.
+* Horizontal distance: 12.30 nautical miles.
+* Altitude difference: 1,996.8 feet.
+* Estimated time to loss of separation (TLOS): 299.3 seconds.
+* Predicted closest point of approach (DCPA): 6.68 meters in 335.6 seconds.
+
+**Analysis:**
+
+* The aircraft are on similar headings (216 degrees and 215 degrees), which increases the risk of collision.
+* The altitude difference is significant, but FLIGHT2 is descending at 200 feet/min, which will reduce the altitude difference over time.
+* The horizontal distance is currently 12.30 nautical miles, but the aircraft are closing in on each other.
+
+**Recommended Actions:**
+
+To maintain safe separation, we recommend the following actions:
+
+1. **FLIGHT2 (A330):** Climb and maintain 25,000 feet. This will increase the altitude difference and reduce the risk of collision.
+2. **FLIGHT1 (B747):** Turn right heading 240 degrees. This will increase the horizontal distance between the aircraft and reduce the risk of collision.
+3. **FLIGHT2 (A330):** Reduce ground speed to 300 knots. This will reduce the closure rate and give more time to resolve the conflict.
+
+**Rationale:**
+
+* Climbing FLIGHT2 will increase the altitude difference and reduce the risk of collision.
+* Turning FLIGHT1 right will increase the horizontal distance and reduce the risk of collision.
+* Reducing FLIGHT2's ground speed will reduce the closure rate and give more time to resolve the conflict.
+
+**Commands:**
+
+The following commands should be issued:
+
+* "FLIGHT2, climb and maintain 25,000 feet."
+* "FLIGHT1, turn right heading 240 degrees."
+* "FLIGHT2, reduce ground speed to 300 knots."
+
+**Monitoring:**
+
+The situation should be continuously monitored, and further adjustments made as necessary to ensure safe separation is maintained.

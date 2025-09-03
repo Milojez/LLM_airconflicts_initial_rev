@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.7,
+            "reasoning": "Predicted closest point of approach is extremely close with insufficient vertical separation.",
+            "issued_command": "FLIGHT1, turn right heading 340 degrees and reduce speed to 220 knots. FLIGHT2, stop descent and maintain flight level 190, turn left heading 290 degrees."
+        }
+    ]
+}

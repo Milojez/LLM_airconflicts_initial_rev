@@ -1,0 +1,83 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Current Horizontal Distance
+
+First, we calculate the horizontal distance between the two aircraft using their latitudes and longitudes. The formula to calculate the distance between two points on the Earth's surface given their longitudes and latitudes is:
+
+\[d = \sqrt{(lat_2 - lat_1)^2 + (lon_2 - lon_1)^2}\]
+
+However, for more accurate calculations over long distances, we should use the Haversine formula. But for simplicity and given the relatively close proximity of the aircraft, we'll use the simpler formula for an initial estimation, keeping in mind that this might not be perfectly accurate for all cases.
+
+Given:
+- \(lat_1 = 22.93942528778623\)
+- \(lon_1 = 105.14790990819345\)
+- \(lat_2 = 23.105184605643952\)
+- \(lon_2 = 105.27868248803264\)
+
+\[d = \sqrt{(23.105184605643952 - 22.93942528778623)^2 + (105.27868248803264 - 105.14790990819345)^2}\]
+\[d = \sqrt{(0.1657593178577197)^2 + (0.13077257983919)^2}\]
+\[d = \sqrt{0.0275 + 0.0171}\]
+\[d = \sqrt{0.0446}\]
+\[d \approx 0.2112 \, \text{degrees}\]
+
+To convert degrees to nautical miles, we use the fact that 1 degree of latitude or longitude at the equator is approximately equal to 60 nautical miles. However, since the aircraft are not at the equator, and longitude degrees vary with latitude, we'll use an approximation for simplicity:
+
+\[d \approx 0.2112 \times 60 \, \text{nautical miles}\]
+\[d \approx 12.672 \, \text{nautical miles}\]
+
+This is a rough estimate and does not take into account the Earth's slightly ellipsoidal shape or the variation in longitude degree length with latitude. For precise calculations, especially over larger distances or near the poles, the Haversine formula should be used.
+
+### Step 2: Calculate Current Vertical Distance
+
+The current vertical distance is simply the difference in their altitudes:
+
+\[Vertical \, distance = |24196 - 22200| = 1996 \, \text{feet}\]
+
+### Step 3: Predict Future Positions
+
+To predict if they will reach a loss of separation, we need to consider their speeds, headings, and vertical rates.
+
+- FLIGHT1 is heading 216 degrees at 233 knots.
+- FLIGHT2 is heading 215 degrees at 365 knots.
+- FLIGHT1 has a vertical rate of 0 feet/min.
+- FLIGHT2 has a vertical rate of -200 feet/min.
+
+Given their similar headings, they are essentially flying in the same direction, but FLIGHT2 is faster and descending.
+
+### Step 4: Determine Time to Potential Loss of Separation
+
+To determine if and when they might reach a loss of separation, we need to calculate how long it would take for the horizontal distance to be less than 5 nautical miles and the vertical distance to be less than 1000 feet, considering their current trajectories.
+
+#### Horizontal Distance Reduction
+
+Given FLIGHT2's speed advantage, it will close the distance horizontally. The relative speed between them in the horizontal plane can be approximated by the difference in their speeds because they are flying in nearly the same direction:
+
+\[Relative \, speed = 365 - 233 = 132 \, \text{knots}\]
+
+Time to close the current distance of approximately 12.672 nautical miles at a relative speed of 132 knots:
+
+\[Time = \frac{Distance}{Speed} = \frac{12.672 \, \text{nautical miles}}{132 \, \text{knots}}\]
+\[Time \approx 0.096 \, \text{hours} \, \text{or} \, 5.76 \, \text{minutes}\]
+
+However, this calculation does not account for the exact directions and assumes a direct closure, which might not perfectly reflect the actual flight paths.
+
+#### Vertical Distance Reduction
+
+FLIGHT2 is descending at 200 feet/min. The current vertical distance is 1996 feet. To reduce this to less than 1000 feet:
+
+\[Time = \frac{Distance \, to \, reduce}{Vertical \, rate} = \frac{1996 - 1000}{200}\]
+\[Time = \frac{996}{200} = 4.98 \, \text{minutes}\]
+
+### Conclusion
+
+Based on these calculations, FLIGHT2 will close the horizontal distance to less than 5 nautical miles in approximately 5.76 minutes, and it will reduce the vertical distance to less than 1000 feet in about 4.98 minutes. Given that both conditions for loss of separation (horizontal distance < 5 nautical miles and vertical distance < 1000 feet) could be met within a similar timeframe, there is a potential risk of loss of separation.
+
+### Necessary Commands
+
+To maintain safe separation, one or more of the following commands could be issued:
+
+1. **Altitude Adjustment**: Command FLIGHT2 to level off or climb to prevent the vertical distance from reducing below 1000 feet.
+2. **Heading Change**: Issue a heading change to one or both aircraft to increase the horizontal distance between them.
+3. **Speed Modification**: Command FLIGHT2 to reduce its speed to decrease the rate at which it closes the distance to FLIGHT1, or command FLIGHT1 to increase its speed, though this might be less effective given the significant speed difference.
+
+Given the descending trajectory of FLIGHT2 and its higher speed, the most immediate and effective action would likely be to command FLIGHT2 to level off or climb to prevent the reduction in vertical separation, and consider a heading change or speed adjustment to manage the horizontal separation.

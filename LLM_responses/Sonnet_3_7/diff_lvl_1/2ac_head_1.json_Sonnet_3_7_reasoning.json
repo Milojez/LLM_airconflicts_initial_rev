@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 330,
+            "reasoning": "Aircraft are at the same altitude (16200 feet) with 0 vertical separation and on opposite headings (140° vs 320°). Current horizontal separation is ~47 nm but will decrease below 5 nm in approximately 5-6 minutes due to their converging paths and combined closing speed of 482 knots.",
+            "issued_command": "FLIGHT1, climb and maintain flight level 180. Traffic is FLIGHT2, a Boeing 777, at your 12 o'clock, 47 miles, opposite direction at flight level 162."
+        }
+    ]
+}

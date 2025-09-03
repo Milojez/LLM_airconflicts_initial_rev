@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 149,
+            "reasoning": "Converging courses with decreasing vertical separation (FLIGHT2 descending towards FLIGHT1's altitude FL202) and very small predicted DCPA (56m).",
+            "issued command": "FLIGHT2, stop descent IMMEDIATELY, maintain Flight Level 220. Turn right heading 190."
+        }
+    ]
+}

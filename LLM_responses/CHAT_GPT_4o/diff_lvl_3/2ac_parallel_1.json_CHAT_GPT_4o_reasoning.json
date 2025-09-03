@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 300,
+            "reasoning": "Both aircraft are at the same altitude and on converging paths, risking a loss of separation.",
+            "issued command": "FLIGHT1 to turn right by 10 degrees to a heading of 226 degrees; FLIGHT2 to turn left by 5 degrees to a heading of 211 degrees."
+        }
+    ]
+}

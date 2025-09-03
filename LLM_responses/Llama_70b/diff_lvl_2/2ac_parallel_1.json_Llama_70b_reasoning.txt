@@ -1,0 +1,65 @@
+To determine if there will be a loss of separation between FLIGHT1 (B747) and FLIGHT2 (A330), we need to calculate their current distance and project their future positions based on their speeds and headings.
+
+### Step 1: Convert Coordinates to a Common Reference
+
+First, let's understand the coordinates given are in meters. We'll keep them in meters for simplicity since we're comparing distances and not converting between different units of measurement for navigation.
+
+### Step 2: Calculate Current Distance
+
+To find the current distance between the two aircraft, we use the distance formula:
+\[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]
+
+Given:
+- \(x_1 = 515161.17584979517\) meters
+- \(y_1 = 2536816.8443335756\) meters
+- \(x_2 = 535663.0858283433\) meters
+- \(y_2 = 2565002.2206728975\) meters
+
+\[d = \sqrt{(535663.0858283433 - 515161.17584979517)^2 + (2565002.2206728975 - 2536816.8443335756)^2}\]
+\[d = \sqrt{(20401.90997854813)^2 + (28185.376339322)^2}\]
+\[d = \sqrt{41571519.193 + 79455191.111}\]
+\[d = \sqrt{121026710.304}\]
+\[d \approx 10994.43 \, \text{meters}\]
+
+To convert meters to nautical miles, we use the conversion factor: \(1 \, \text{nautical mile} = 1852 \, \text{meters}\).
+
+\[d \approx \frac{10994.43}{1852} \approx 5.93 \, \text{nautical miles}\]
+
+### Step 3: Determine Vertical Separation
+
+Both aircraft are flying at the same altitude: 25200 feet. Thus, their vertical separation is 0 feet, which is less than 1000 feet, meeting one condition for loss of separation.
+
+### Step 4: Project Future Positions
+
+Given both aircraft have the same heading (216 degrees) and no vertical rate, we only need to consider their ground speeds to determine if they will close the distance to less than 5 nautical miles.
+
+- FLIGHT1 speed: 245 knots
+- FLIGHT2 speed: 412 knots
+
+Since they are flying in the same direction, the relative speed between them is the difference in their speeds:
+\[412 - 245 = 167 \, \text{knots}\]
+
+### Step 5: Calculate Time to Close Distance
+
+First, convert the relative speed to meters per second (since the distance is in meters):
+\[167 \, \text{knots} \times \frac{1852 \, \text{meters}}{1 \, \text{nautical mile}} \times \frac{1 \, \text{knot}}{3600 \, \text{seconds}} = 167 \times \frac{1852}{3600} \approx 85.69 \, \text{meters/second}\]
+
+The distance to close is from 5.93 nautical miles to 5 nautical miles, which is:
+\[5.93 - 5 = 0.93 \, \text{nautical miles}\]
+\[0.93 \times 1852 \approx 1722.36 \, \text{meters}\]
+
+Time to close this distance:
+\[t = \frac{d}{v} = \frac{1722.36}{85.69} \approx 20.1 \, \text{seconds}\]
+
+However, this calculation doesn't directly apply since we're considering if they'll reach a point of loss of separation based on their current trajectories and speeds. The critical factor is their current distance is already close to the 5 nautical mile threshold, and they are at the same altitude.
+
+### Step 6: Determine Action
+
+Given the current distance is approximately 5.93 nautical miles and they are at the same altitude, with FLIGHT2 closing in due to its higher speed, there's a potential risk of loss of separation. However, the exact time to reach less than 5 nautical miles depends on their exact flight paths and any potential turns or speed adjustments.
+
+To maintain safe separation, a command could be issued to either aircraft to adjust its altitude, heading, or speed. Given FLIGHT2 is faster and they are on the same heading, a simple adjustment could be to instruct FLIGHT2 to climb or descend by at least 1000 feet to ensure vertical separation, or to adjust its speed to increase the horizontal separation.
+
+**Command:**
+- Instruct FLIGHT2 to climb to 26200 feet to ensure a vertical separation of at least 1000 feet.
+
+This command would ensure that even if the horizontal distance closes to less than 5 nautical miles, the vertical separation condition for loss of separation would not be met.

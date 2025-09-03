@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Converging tracks (near reciprocal headings) with decreasing vertical separation (FLIGHT2 descending towards FLIGHT1's level). Predicted minimum distance 110m.",
+            "issued command": "FLIGHT2, MAINTAIN FLIGHT LEVEL ONE EIGHT ZERO."
+        }
+    ]
+}

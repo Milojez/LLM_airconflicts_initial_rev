@@ -1,0 +1,81 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances between the two aircraft and see if they meet the criteria for loss of separation.
+
+### Step 1: Vertical Separation
+
+Both FLIGHT1 and FLIGHT2 are flying at the same altitude of 20,800 feet. Therefore, the vertical distance between them is:
+
+\[ \text{Vertical Distance} = |20800 - 20800| = 0 \text{ feet} \]
+
+Since the vertical distance is 0 feet, it is less than the required 1000 feet for safe separation.
+
+### Step 2: Horizontal Separation
+
+To calculate the horizontal distance, we first need to convert the coordinates from meters to nautical miles. The conversion factor is approximately 1 nautical mile = 1852 meters.
+
+#### Convert Coordinates to Nautical Miles
+
+- FLIGHT1:
+  - \( x_1 = \frac{377813.17429230036}{1852} \approx 203.99 \text{ nautical miles} \)
+  - \( y_1 = \frac{3846375.103096159}{1852} \approx 2076.92 \text{ nautical miles} \)
+
+- FLIGHT2:
+  - \( x_2 = \frac{397988.16415116284}{1852} \approx 214.92 \text{ nautical miles} \)
+  - \( y_2 = \frac{3926444.887643315}{1852} \approx 2120.57 \text{ nautical miles} \)
+
+#### Calculate Initial Horizontal Distance
+
+Using the Pythagorean theorem, the initial horizontal distance \( D \) between the two aircraft is:
+
+\[ D = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
+
+\[ D = \sqrt{(214.92 - 203.99)^2 + (2120.57 - 2076.92)^2} \]
+
+\[ D = \sqrt{(10.93)^2 + (43.65)^2} \]
+
+\[ D = \sqrt{119.45 + 1905.32} \]
+
+\[ D = \sqrt{2024.77} \]
+
+\[ D \approx 44.98 \text{ nautical miles} \]
+
+The initial horizontal distance is approximately 44.98 nautical miles, which is greater than the 5 nautical miles required for loss of separation.
+
+### Step 3: Relative Motion Analysis
+
+Since both aircraft have a vertical rate of 0 feet/min, they will remain at the same altitude. We need to determine if their paths will bring them within 5 nautical miles of each other.
+
+#### Calculate Relative Velocity Components
+
+- FLIGHT1:
+  - Ground speed: 268 knots
+  - Heading: 71 degrees
+
+  Velocity components:
+  - \( V_{x1} = 268 \times \cos(71^\circ) \)
+  - \( V_{y1} = 268 \times \sin(71^\circ) \)
+
+- FLIGHT2:
+  - Ground speed: 392 knots
+  - Heading: 161 degrees
+
+  Velocity components:
+  - \( V_{x2} = 392 \times \cos(161^\circ) \)
+  - \( V_{y2} = 392 \times \sin(161^\circ) \)
+
+#### Calculate Relative Velocity
+
+Relative velocity components:
+- \( V_{x\text{rel}} = V_{x2} - V_{x1} \)
+- \( V_{y\text{rel}} = V_{y2} - V_{y1} \)
+
+#### Determine Time to Minimum Horizontal Distance
+
+The relative velocity will determine how quickly the horizontal distance changes. However, given the initial distance of 44.98 nautical miles and the relative velocities, it is unlikely that the aircraft will come within 5 nautical miles of each other without a significant change in heading or speed.
+
+### Conclusion
+
+Given the initial conditions and the relative velocities, there is no immediate risk of loss of separation. However, to ensure continued safe separation, it is advisable to issue a command to one of the aircraft to adjust its heading or speed to increase the horizontal separation margin.
+
+### Recommended Command
+
+To maintain safe separation, consider issuing a heading change to FLIGHT1 or FLIGHT2. For example, a slight heading adjustment of 10-15 degrees for either aircraft could increase the horizontal separation over time. Alternatively, a speed reduction for FLIGHT2, which is traveling faster, could also help maintain separation.

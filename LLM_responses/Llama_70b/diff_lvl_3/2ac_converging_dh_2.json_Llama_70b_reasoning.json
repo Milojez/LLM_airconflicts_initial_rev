@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 198.5,
+            "reasoning": "Decreasing horizontal distance and altitude difference due to FLIGHT2's descent",
+            "issued_command": "FLIGHT2: Climb and maintain 19000 feet, turn right heading 320 degrees, and reduce speed to 250 knots"
+        }
+    ]
+}

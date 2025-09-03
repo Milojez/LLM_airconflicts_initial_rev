@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 299.6,
+            "reasoning": "Predicted closest point of approach (DCPA) is 110.39 meters, which is very close to the minimum separation criteria.",
+            "issued_command": "FLIGHT1: Turn right heading 160 degrees, reduce ground speed to 250 knots. FLIGHT2: Descend to 17000 feet."
+        }
+    ]
+}

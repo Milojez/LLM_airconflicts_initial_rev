@@ -1,0 +1,83 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to analyze both the vertical and horizontal distances between the two aircraft over time. Let's break down the steps:
+
+### Step 1: Initial Conditions
+- **FLIGHT1**: 
+  - Latitude: -55.513395271749374
+  - Longitude: 13.064975933954887
+  - Altitude: 20800 feet
+  - Ground Speed: 268 knots
+  - Heading: 71 degrees
+  - Vertical Rate: 0 feet/min
+
+- **FLIGHT2**: 
+  - Latitude: -54.79878387242545
+  - Longitude: 13.41314403634625
+  - Altitude: 20800 feet
+  - Ground Speed: 392 knots
+  - Heading: 161 degrees
+  - Vertical Rate: 0 feet/min
+
+### Step 2: Vertical Separation
+Both aircraft are flying at the same altitude of 20800 feet with a vertical rate of 0 feet/min. Therefore, the vertical distance is 0 feet, which is less than 1000 feet. This condition for loss of separation is met.
+
+### Step 3: Horizontal Separation
+To calculate the horizontal distance, we need to convert the latitudes and longitudes into a common coordinate system and calculate the distance between the two points.
+
+#### Convert Latitude and Longitude to Cartesian Coordinates
+For simplicity, we can use the haversine formula to calculate the great-circle distance between the two points on the Earth's surface.
+
+- **Haversine Formula**:
+  \[
+  a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1) \cdot \cos(\phi_2) \cdot \sin^2\left(\frac{\Delta\lambda}{2}\right)
+  \]
+  \[
+  c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
+  \]
+  \[
+  d = R \cdot c
+  \]
+
+Where:
+- \(\phi_1, \phi_2\) are the latitudes in radians,
+- \(\lambda_1, \lambda_2\) are the longitudes in radians,
+- \(R\) is the Earth's radius (mean radius = 3440 nautical miles),
+- \(\Delta\phi = \phi_2 - \phi_1\),
+- \(\Delta\lambda = \lambda_2 - \lambda_1\).
+
+#### Calculate Initial Horizontal Distance
+Convert degrees to radians:
+- \(\phi_1 = -55.513395271749374 \times \frac{\pi}{180}\)
+- \(\phi_2 = -54.79878387242545 \times \frac{\pi}{180}\)
+- \(\lambda_1 = 13.064975933954887 \times \frac{\pi}{180}\)
+- \(\lambda_2 = 13.41314403634625 \times \frac{\pi}{180}\)
+
+Calculate \(\Delta\phi\) and \(\Delta\lambda\):
+- \(\Delta\phi = \phi_2 - \phi_1\)
+- \(\Delta\lambda = \lambda_2 - \lambda_1\)
+
+Plug these into the haversine formula to find \(d\).
+
+#### Calculate Relative Motion
+Determine the relative velocity vector between the two aircraft. Convert headings to radians and calculate the components of velocity:
+- **FLIGHT1**: \(v_{x1} = 268 \cdot \cos(71^\circ)\), \(v_{y1} = 268 \cdot \sin(71^\circ)\)
+- **FLIGHT2**: \(v_{x2} = 392 \cdot \cos(161^\circ)\), \(v_{y2} = 392 \cdot \sin(161^\circ)\)
+
+Relative velocity:
+- \(v_{x} = v_{x2} - v_{x1}\)
+- \(v_{y} = v_{y2} - v_{y1}\)
+
+Calculate the rate of change of distance:
+- \(v_{rel} = \sqrt{v_{x}^2 + v_{y}^2}\)
+
+#### Time to Potential Loss of Separation
+Calculate the time it would take for the horizontal distance to reduce to less than 5 nautical miles, if possible.
+
+### Step 4: Determine Commands
+If the calculations show that the horizontal distance will reduce to less than 5 nautical miles while the vertical distance is already less than 1000 feet, a loss of separation will occur. In this case, issue commands to maintain safe separation:
+
+- **Altitude Adjustment**: Instruct one aircraft to change altitude by at least 1000 feet.
+- **Heading Change**: Instruct one or both aircraft to change heading to increase horizontal separation.
+- **Speed Modification**: Adjust speed to alter the rate of closure.
+
+### Conclusion
+Perform the calculations to determine if and when the horizontal distance will fall below 5 nautical miles. If a loss of separation is predicted, issue the necessary commands to prevent it.
