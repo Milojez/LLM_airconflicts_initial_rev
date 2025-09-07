@@ -1,3 +1,4 @@
+#This script serves for sending a prompt through API and saving the responses
 import json
 import os
 import LLM_airconflicts_initial_rev.prompt_generator as prompt_generator
@@ -8,9 +9,9 @@ from LLM_airconflicts_initial_rev.LLM_model_config import MODEL_CONFIGS
 # Setting the folder with files
 
 # in_folder = "./Milo_code_minisky/json_files"
-in_folder = "./Milo_code_minisky/json_files_aircraft/2ac/Head_exp/Head_exp_sp" #use this folder to perform a specific run, the result still will be saved in the correct file
+in_folder = "./LLM_airconflicts_initial_rev/aircraft_info_conf_2ac/detecting_conflict" #specify folder where all json files on conflicting aircraft are
 
-out_folder = "./Milo_code_minisky/LLM_responses/Head_exp/Head_exp_free_choice" #usually  = MODEL, prompt_6_opt_command_with_dist
+out_folder = "./LLM_airconflicts_initial_rev/LLM_responses" #specify where the folder with LLM subfolders are located for saving all data.
 
 #Setting the model
 # available model : Deepseek, Llama_70b, CHAT_GPT_4o, Gemini_2_5, Sonnet_3_7, CHAT_GPT_o3_mini
@@ -48,7 +49,7 @@ for DATA_FILE in os.listdir(in_folder):
     # Load aircraft CONFLICT data from JSON
     new_DATA_FILE_name = DATA_FILE.rstrip(".json")
     CONFLICT_DATA_FILE = DATA_FILE.replace(".json", "_con.json")
-    with open(f"./Milo_code_minisky/json_conflicts/2ac/Head_exp/Head_exp_sp/{CONFLICT_DATA_FILE}", "r") as file:
+    with open(f"./LLM_airconflicts_initial_rev/confl_info_ac/detecting_conflict{CONFLICT_DATA_FILE}", "r") as file:
         conflict_data = json.load(file)
 
     #----------------------STEP 3: GENERATING THE MAIN PROMPT-------------------
@@ -89,13 +90,7 @@ for DATA_FILE in os.listdir(in_folder):
     with open(f"{out_folder}/{MODEL}/{new_DATA_FILE_name}_{MODEL}_reasoning.txt", "w", encoding="utf-8") as f:
         f.write(reasoning_text)
 
-    # os.makedirs(f"./Milo_code_minisky/LLM_responses/{out_folder}/diff_lvl_{gen_main_prompt}", exist_ok=True)
-    # # Save reasoning separately with UTF-8 encoding
-    # with open(f"./Milo_code_minisky/LLM_responses/{out_folder}/diff_lvl_{gen_main_prompt}/{DATA_FILE}_{MODEL}_reasoning.txt", "w", encoding="utf-8") as f:
-    #     f.write(reasoning_text)
 
-    # print("\n--- Reasoning ---\n")
-    # print(reasoning_text)
 
     # ------------------- STEP 6: GENERATE PROMPT FOR JSON GENERATION -------------------
     json_prompt = gen_prompt_json_function(reasoning_text, aircraft_data, conflict_data)
@@ -148,24 +143,3 @@ for DATA_FILE in os.listdir(in_folder):
             f.write(json_text)
 
         print("Raw output saved")
-
-
-    # try:
-    #     response_json = json.loads(json_text)  # Attempt to parse JSON
-
-    #     with open(f"./Milo_code_minisky/LLM_responses/{out_folder}/diff_lvl_{gen_main_prompt}/{DATA_FILE}_{MODEL}_reasoning.json", "w", encoding="utf-8") as f:
-    #         json.dump(response_json, f, indent=4, ensure_ascii=False)
-
-    #     print("\n--- JSON Saved ---\n")
-
-    # except json.JSONDecodeError:
-    #     print("Error: JSON output invalid. Saving raw output.")
-    #     with open(f"./Milo_code_minisky/LLM_responses/{out_folder}/diff_lvl_{gen_main_prompt}/{DATA_FILE}_{MODEL}_raw_output.json", "w", encoding="utf-8") as f:
-    #         f.write(json_text)
-
-    #     print("Raw output saved")
-
-
-                    # messages = [{"role": "system", "content":   "You are a professional Air Traffic Controller assisting pilots in real-time. "
-                    #                                     "Your responses must be clear, concise, and follow standard aviation phraseology."},
-                    #     {"role": "user", "content": reasoning_prompt}]

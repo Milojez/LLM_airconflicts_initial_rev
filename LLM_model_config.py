@@ -1,8 +1,9 @@
+#This script is used for defining a dictionnary of LLM models to connect with API
 from huggingface_hub import InferenceClient
 import openai
 import anthropic
 
-# API Keys (Should be securely stored, e.g., environment variables)
+# API Keys (Should be securely stored, e.g., environment variables), fill them in to use your own API
 api_key_hug = "-"
 api_key_gpt = "-"
 api_key_gem = "-"
