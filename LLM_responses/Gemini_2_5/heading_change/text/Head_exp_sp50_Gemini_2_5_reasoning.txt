@@ -1,0 +1,27 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Nature:** The core issue is a loss of vertical separation (0 ft difference) combined with a predicted loss of horizontal separation (< 5 NM). The aircraft are on near-reciprocal headings (140° vs 320°) and converging rapidly, confirmed by the QDR (139.96° from FLIGHT1 to FLIGHT2, almost identical to FLIGHT1's heading) and the very small predicted DCPA (38.39 meters).
+2.  **Constraint:** Only FLIGHT1's heading can be changed.
+3.  **Objective:** Ensure horizontal separation remains above 5 NM while vertical separation is less than 1000 ft.
+4.  **FLIGHT1 Speed:** FLIGHT1 is very slow (64 knots TAS). This means heading changes will result in relatively slow changes to its lateral track compared to a faster aircraft. Therefore, a decisive turn is needed.
+5.  **Optimality:** The optimal turn should be the minimum required to safely resolve the conflict efficiently. Given the direct head-on nature, turning perpendicular (90 degrees) is highly effective but might be excessive. A turn of 45-60 degrees should create sufficient lateral separation quickly. Turning *away* from the bearing of the conflicting traffic (140°) is necessary. A right turn is generally standard practice in many regions and works well here.
+
+**Chosen Action:** A turn to the right by 50 degrees for FLIGHT1.
+
+*   Current Heading: 140°
+*   Turn Magnitude: +50° (Right Turn)
+*   New Heading: 190°
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one niner zero.**"
+
+**Rationale:**
+
+1.  **Immediate Conflict Resolution:** The aircraft are on a direct collision course at the same altitude. Turning FLIGHT1 right by 50 degrees (from 140° to 190°) immediately changes its track to diverge from FLIGHT2's track (320°).
+2.  **Sufficient Separation:** A 50-degree turn creates significant angular difference between the tracks. Even with FLIGHT1's slow speed, this substantial turn angle will generate lateral separation much faster than a smaller turn, ensuring the horizontal distance remains well above the 5 NM minimum requirement.
+3.  **Addressing Head-on Geometry:** This turn directly addresses the head-on conflict geometry by vectoring FLIGHT1 away from the reciprocal track of FLIGHT2.
+4.  **Operational Consideration:** A right turn is chosen as a standard maneuver, and the 50-degree magnitude is decisive enough given the slow speed of FLIGHT1 and the high closure rate, without being an unnecessarily large deviation like a full 90-degree turn initially.
+5.  **Constraint Compliance:** This command adheres strictly to the constraint of only changing FLIGHT1's heading.

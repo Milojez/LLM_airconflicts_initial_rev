@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 119,
+            "FLIGHT_1_TAS": 153,
+            "issued_command": "Change heading of FLIGHT1",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 100,
+            "reasoning": "By changing the heading to 100 degrees, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance between them and maintaining the required separation."
+        }
+    ]
+}

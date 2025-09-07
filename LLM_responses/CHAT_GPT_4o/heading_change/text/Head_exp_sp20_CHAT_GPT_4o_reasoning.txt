@@ -1,0 +1,32 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 25 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 25.20 nautical miles
+- **Altitude Difference**: 0 feet
+- **TLOS**: 299.5 seconds
+- **DCPA**: 30.23 meters (predicted closest point of approach)
+
+### Objective:
+- Avoid loss of separation by ensuring horizontal distance remains above 5 nautical miles.
+
+### Strategy:
+1. **Change Heading of FLIGHT1**: Since FLIGHT1 is moving at a much slower speed (25 knots) compared to FLIGHT2 (217 knots), altering FLIGHT1's heading will have a significant impact on the relative motion between the two aircraft.
+
+2. **Optimal Heading Change**: 
+   - The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.96 degrees. To increase the horizontal separation, FLIGHT1 should turn away from FLIGHT2.
+   - A heading change to the left (counter-clockwise) will increase the separation more effectively given the current headings.
+
+3. **Proposed Heading Change**:
+   - Change FLIGHT1's heading from 140 degrees to approximately 100 degrees. This 40-degree left turn will direct FLIGHT1 away from the path of FLIGHT2, increasing the horizontal separation.
+
+### Rationale:
+- **Increased Separation**: By turning left, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance between them.
+- **Maintaining Safe Separation**: The new heading will ensure that the horizontal distance remains above the 5 nautical mile threshold, preventing a loss of separation.
+- **Minimal Impact**: Given FLIGHT1's low speed, this heading change will have a minimal impact on its overall flight path and can be adjusted further if needed.
+
+### Command:
+- **FLIGHT1, turn left heading 100 degrees. Maintain current altitude.**
+
+This command should effectively resolve the conflict by increasing the horizontal separation between the two aircraft, ensuring compliance with the minimum separation criteria.

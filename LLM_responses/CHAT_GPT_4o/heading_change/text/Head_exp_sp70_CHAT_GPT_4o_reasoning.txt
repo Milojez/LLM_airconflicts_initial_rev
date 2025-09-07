@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+Given the current situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is not an option.
+- The horizontal distance is currently 30.54 nautical miles, but it is predicted to reduce to 44.37 meters (approximately 0.024 nautical miles) at the closest point of approach (DCPA).
+
+To prevent the loss of separation, we need to adjust FLIGHT1's heading to increase the horizontal distance at the time of closest approach. Here’s how we can achieve this:
+
+1. **Current Situation Analysis:**
+   - FLIGHT1 is heading 140 degrees.
+   - FLIGHT2 is heading 320 degrees.
+   - The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.96 degrees, which means FLIGHT1 is almost directly heading towards FLIGHT2.
+
+2. **Optimal Heading Change:**
+   - To increase the horizontal separation, FLIGHT1 should alter its course to move away from the direct path towards FLIGHT2.
+   - A heading change to the left (counter-clockwise) or right (clockwise) can be considered. However, since FLIGHT1 is moving slower (89 knots) compared to FLIGHT2 (217 knots), a more significant heading change might be necessary to ensure adequate separation.
+
+3. **Recommended Heading Change:**
+   - Change FLIGHT1's heading to approximately 100 degrees. This change of 40 degrees to the left will direct FLIGHT1 away from the path of FLIGHT2, increasing the horizontal separation at the closest point of approach.
+   - This heading change should be sufficient to ensure that the horizontal distance remains greater than 5 nautical miles at the time of closest approach, given the current speeds and headings.
+
+4. **Rationale:**
+   - By changing the heading to 100 degrees, FLIGHT1 will move away from the direct line towards FLIGHT2, increasing the horizontal separation.
+   - This adjustment is calculated to prevent the predicted DCPA from falling below the minimum required horizontal separation of 5 nautical miles.
+   - The change is made considering the slower speed of FLIGHT1, ensuring that the aircraft has enough time to adjust its path and maintain safe separation.
+
+Instruct FLIGHT1: "FLIGHT1, turn left heading 100 degrees immediately to resolve conflict with FLIGHT2."

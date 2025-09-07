@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 9,
+            "FLIGHT_1_TAS": 12,
+            "issued_command": "FLIGHT1, turn right heading 185.",
+            "heading_change": 45,
+            "new_heading_FLIGHT1": 185,
+            "reasoning": "Resolve head-on conflict (0 ft vertical, < 5 NM horizontal predicted) by turning FLIGHT1 right (standard procedure). A 45-degree turn to 185 is optimal to ensure >5 NM separation before CPA, considering FLIGHT1's low speed."
+        }
+    ]
+}

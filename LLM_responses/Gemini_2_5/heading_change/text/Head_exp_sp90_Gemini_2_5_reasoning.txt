@@ -1,0 +1,23 @@
+Okay, analyzing the situation:
+
+1.  **Conflict:** FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft) and converging.
+2.  **Geometry:** FLIGHT1 heading 140°, FLIGHT2 heading 320°. These are nearly reciprocal headings (180° difference), indicating a head-on or near head-on encounter. The QDR of 139.95° confirms FLIGHT2 is almost directly ahead of FLIGHT1.
+3.  **Urgency:** TLOS is ~5 minutes (299.5s), and the predicted closest approach (DCPA) is extremely small (50.76m), well below the 5 NM minimum horizontal separation required when vertical separation is less than 1000 ft (which it is, at 0 ft). Action is required.
+4.  **Constraint:** Only change FLIGHT1's heading.
+5.  **Objective:** Increase the horizontal separation at the closest point of approach (CPA) to be greater than 5 NM.
+
+**Reasoning for Optimal Heading Change:**
+
+*   Since the aircraft are nearly head-on (140° vs 320°), turning either left or right will increase separation.
+*   Standard air traffic control practice often favors right turns for conflict resolution, especially in head-on scenarios, mirroring the "rules of the road".
+*   A small turn might not be sufficient given the high closing speed (115 kts + 217 kts = 332 kts) and the very small predicted DCPA.
+*   A significant turn is needed to guarantee separation quickly and effectively. A turn of 30-45 degrees is typically effective in such scenarios.
+*   Turning FLIGHT1 right by 40 degrees results in a new heading of 180 degrees (140° + 40° = 180°). This creates a substantial divergence from FLIGHT2's track (320°).
+
+**ATC Command:**
+
+"FLIGHT1, turn right heading one eight zero."
+
+**Rationale:**
+
+A loss of separation is predicted between FLIGHT1 and FLIGHT2 as they are converging at the same altitude (16200 ft) on nearly reciprocal tracks. The predicted closest point of approach is significantly less than the required 5 NM minimum horizontal separation. To resolve this conflict, FLIGHT1 is instructed to turn right to a heading of 180 degrees. This 40-degree turn provides immediate and sufficient horizontal divergence from FLIGHT2's track, ensuring that the minimum separation standard of 5 NM horizontally will be maintained while the aircraft are at the same altitude. A right turn is chosen based on standard practices for head-on scenarios. The situation will be monitored.

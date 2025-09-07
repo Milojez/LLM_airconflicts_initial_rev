@@ -1,0 +1,29 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 292 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 47.38 nautical miles
+- **Altitude Difference**: 0 feet
+- **TLOS**: 299.6 seconds
+- **DCPA**: 106.54 meters (approximately 0.057 nautical miles)
+
+### Objective:
+- Avoid loss of separation by ensuring horizontal distance remains above 5 nautical miles.
+
+### Strategy:
+1. **Change Heading of FLIGHT1**: Since FLIGHT1 is heading 140 degrees and the azimuthal direction to FLIGHT2 is 139.93 degrees, FLIGHT1 is essentially on a converging path with FLIGHT2. To increase the horizontal separation, we need to adjust FLIGHT1's heading away from FLIGHT2.
+
+2. **Calculate New Heading**: 
+   - FLIGHT1 should turn to a heading that increases the horizontal distance between the two aircraft. A turn to the left (counter-clockwise) will increase the separation more effectively given the current headings.
+   - A heading change of approximately 20-30 degrees to the left should be sufficient to increase separation, as it will create a more divergent path.
+
+3. **New Heading Command**:
+   - Command FLIGHT1 to change its heading from 140 degrees to approximately 110-120 degrees. This will direct FLIGHT1 away from FLIGHT2, increasing the horizontal separation.
+
+### Rationale:
+- **Increased Divergence**: By turning FLIGHT1 to a heading of 110-120 degrees, the aircraft will diverge from FLIGHT2's path, increasing the horizontal separation.
+- **Maintaining Speed and Altitude**: The speed and altitude remain unchanged, ensuring that the aircraft's performance and safety are not compromised.
+- **Avoiding Immediate Conflict**: The new heading ensures that the aircraft will not reach the predicted closest point of approach (DCPA) within the critical separation limits.
+
+By implementing this heading change, FLIGHT1 will maintain a safe distance from FLIGHT2, effectively resolving the conflict without violating the minimum separation criteria.

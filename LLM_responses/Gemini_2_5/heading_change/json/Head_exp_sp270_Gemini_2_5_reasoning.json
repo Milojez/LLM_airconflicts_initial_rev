@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 270,
+            "FLIGHT_1_TAS": 341,
+            "issued_command": "FLIGHT1, turn right heading one eight zero.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 180,
+            "reasoning": "Converging head-on at same altitude (16200 ft), predicted loss of separation (TLOS 299.6s, DCPA 125.75m). 40-degree right turn for FLIGHT1 to 180 degrees increases horizontal separation to resolve conflict."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 60,
+            "FLIGHT_1_TAS": 77,
+            "issued_command": "Change heading",
+            "heading_change": -30,
+            "new_heading_FLIGHT1": 110,
+            "reasoning": "Adjusting FLIGHT1's heading to 110 degrees will increase the horizontal separation from FLIGHT2, ensuring the distance remains above the 5 nautical mile threshold and preventing a loss of separation."
+        }
+    ]
+}

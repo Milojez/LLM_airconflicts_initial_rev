@@ -1,0 +1,31 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 378 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 54.54 nautical miles
+- **Current Altitude**: Both at 16,200 feet (0 feet vertical separation)
+- **TLOS**: 299.7 seconds
+- **DCPA**: 141.03 meters (less than 5 nautical miles)
+
+### Objective:
+To adjust the heading of FLIGHT1 to increase the horizontal separation at the time of closest approach, ensuring it remains above 5 nautical miles.
+
+### Analysis:
+1. **Current Trajectory**: FLIGHT1 is on a heading of 140 degrees, and FLIGHT2 is on a heading of 320 degrees. The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.92 degrees, indicating they are nearly on a direct collision course.
+
+2. **Optimal Heading Change**: To increase separation, FLIGHT1 should alter its heading to move away from the direct path to FLIGHT2. Since FLIGHT1 is heading southeast (140 degrees), a turn to the left (towards the east) or right (towards the south) could be considered.
+
+3. **Heading Adjustment**:
+   - **Left Turn (Eastward)**: A left turn would increase the angle between the two aircraft, potentially increasing separation. However, this could also bring FLIGHT1 closer to FLIGHT2 initially, depending on the rate of turn.
+   - **Right Turn (Southward)**: A right turn would also increase the angle and could be more effective in quickly increasing separation, as it would move FLIGHT1 away from the azimuthal line towards FLIGHT2.
+
+### Recommended Action:
+- **Command FLIGHT1 to turn right to a heading of 180 degrees.**
+
+### Rationale:
+- **Increased Separation**: A right turn to 180 degrees will increase the angle between the two aircraft, moving FLIGHT1 away from the direct path to FLIGHT2.
+- **Time to Implement**: The turn should be initiated immediately to maximize the time available to increase separation before the predicted closest point of approach.
+- **Safety Margin**: This heading change is expected to increase the horizontal separation at the time of closest approach, ensuring it remains above the 5 nautical mile threshold.
+
+By executing this heading change, FLIGHT1 will be able to maintain safe separation from FLIGHT2, avoiding a loss of separation incident.

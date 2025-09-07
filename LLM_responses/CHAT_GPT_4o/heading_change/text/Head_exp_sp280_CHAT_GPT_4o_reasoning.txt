@@ -1,0 +1,28 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+Given the current situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is not an option.
+- The horizontal distance is currently 52.51 nautical miles, but it is predicted to reduce to 130.76 meters (approximately 0.07 nautical miles) at the closest point of approach (DCPA).
+
+To prevent the loss of separation, we need to adjust FLIGHT1's heading to increase the horizontal distance at the time of closest approach. Here’s how we can do it:
+
+1. **Current Heading and Conflict Direction:**
+   - FLIGHT1 is currently heading 140 degrees.
+   - The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.92 degrees, indicating that FLIGHT2 is almost directly ahead of FLIGHT1.
+
+2. **Optimal Heading Change:**
+   - To increase separation, FLIGHT1 should alter its course to move away from the azimuthal direction of 139.92 degrees.
+   - A heading change to the right (clockwise) or left (counterclockwise) can be considered. However, since the azimuthal direction is very close to FLIGHT1's current heading, a right turn would be more effective in quickly increasing separation.
+
+3. **Suggested Heading Change:**
+   - Change FLIGHT1's heading to approximately 160 degrees. This 20-degree right turn will direct FLIGHT1 away from FLIGHT2, increasing the horizontal separation at the time of closest approach.
+
+4. **Rationale:**
+   - By changing the heading to 160 degrees, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance between the two aircraft.
+   - This adjustment should be sufficient to maintain a horizontal separation of at least 5 nautical miles, thus preventing a loss of separation.
+
+5. **Monitoring and Adjustment:**
+   - Continuously monitor the situation to ensure the separation criteria are met.
+   - Be prepared to make further adjustments if necessary, based on real-time data and aircraft response.
+
+By implementing this heading change, we aim to resolve the conflict while maintaining safe separation standards.

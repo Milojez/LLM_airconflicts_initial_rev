@@ -1,0 +1,25 @@
+Okay, here is the plan and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Severity:** The aircraft are at the same altitude (16200 ft, 0 ft vertical separation) and on nearly reciprocal headings (140° vs 320°), indicating a direct head-on conflict course.
+2.  **Prediction:** The predicted closest point of approach (DCPA) is extremely small (84.49 meters), confirming a high-risk situation. Loss of separation (horizontal < 5 NM) is predicted in ~5 minutes (299.6s).
+3.  **Constraint:** Only FLIGHT1's heading can be changed.
+4.  **Requirement:** Ensure horizontal separation remains >= 5 NM since vertical separation is 0 ft.
+5.  **Optimality:** The optimal solution requires ensuring safety with a reasonably minimal deviation for FLIGHT1. Given the head-on nature, a turn is necessary. A standard procedure in many regions for head-on traffic is for each aircraft to turn right. Since we can only control FLIGHT1, turning it right is consistent with this principle and immediately creates divergence. A turn of sufficient magnitude is needed to guarantee the 5 NM separation is maintained well beyond the predicted CPA. A 30-degree turn is a standard, effective vectoring instruction in such cases.
+
+**Command:**
+
+"FLIGHT1, turn right heading one seven zero."
+
+**Rationale:**
+
+1.  **Conflict Identification:** FLIGHT1 and FLIGHT2 are currently at the same altitude (16200 ft) with 0 ft vertical separation.
+2.  **Converging Tracks:** Their headings (140° and 320°) are reciprocal, placing them on a direct collision course, confirmed by the predicted DCPA of only 84.49 meters.
+3.  **Imminent Loss of Separation:** A loss of separation (horizontal distance < 5 NM while vertical < 1000 ft) is predicted in approximately 5 minutes (TLOS 299.6s).
+4.  **Action Taken:** FLIGHT1 is instructed to turn right by 30 degrees to a new heading of 170°.
+5.  **Justification for Action:**
+    *   **Safety:** This turn immediately changes FLIGHT1's trajectory away from FLIGHT2, increasing the horizontal distance at the predicted closest point of approach well above the 5 NM minimum required.
+    *   **Direction:** A right turn is chosen, consistent with standard procedures for resolving head-on encounters.
+    *   **Magnitude:** A 30-degree heading change is substantial enough to ensure separation is achieved effectively and quickly, providing a clear resolution to the conflict with a single instruction, while being a standard vectoring value.
+    *   **Optimality:** This command resolves the conflict using the only permitted parameter (FLIGHT1 heading) in a standard, safe, and efficient manner.

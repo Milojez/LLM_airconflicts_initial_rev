@@ -1,0 +1,25 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to adjust the heading of FLIGHT1 to ensure that the aircraft maintain the required minimum separation criteria. The goal is to prevent the horizontal distance from dropping below 5 nautical miles while keeping the vertical separation criteria in mind, which is already satisfied since both aircraft are at the same altitude.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 64 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 28.41 nautical miles
+- **TLOS**: 299.5 seconds
+- **DCPA**: 38.39 meters (predicted closest point of approach)
+
+### Strategy:
+1. **Change Heading of FLIGHT1**: Since FLIGHT1 is moving slower, altering its heading will have a more immediate effect on the separation distance. We need to increase the horizontal separation by changing the heading away from FLIGHT2's path.
+
+2. **Calculate New Heading**: The azimuthal direction from FLIGHT1 to FLIGHT2 is approximately 140 degrees. To increase separation, we should adjust FLIGHT1's heading to move away from this azimuth. A heading change to the left (counter-clockwise) or right (clockwise) can be considered, but given the current heading of 140 degrees, a right turn will be more effective in increasing separation quickly.
+
+3. **Determine Optimal Heading**: A right turn to a heading of approximately 180 degrees (south) will direct FLIGHT1 away from FLIGHT2's path, increasing the horizontal separation. This change should be sufficient to prevent the horizontal distance from dropping below 5 nautical miles.
+
+### Command:
+- **FLIGHT1, turn right heading 180 degrees.**
+
+### Rationale:
+- **Increased Separation**: By turning to a heading of 180 degrees, FLIGHT1 will move away from the azimuthal direction towards FLIGHT2, increasing the horizontal separation.
+- **Avoiding Conflict**: This heading change ensures that the horizontal distance remains above the 5 nautical mile threshold, preventing a loss of separation.
+- **Minimal Disruption**: The change in heading is moderate and should not significantly disrupt FLIGHT1's overall flight path, allowing for a safe resolution of the conflict.
+
+By implementing this heading change, we can effectively resolve the conflict while maintaining safe separation standards.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 100,
+            "FLIGHT_1_TAS": 128,
+            "issued_command": "FLIGHT1, turn right heading one seven zero, traffic opposite direction Boeing 777 at your altitude.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Aircraft are converging head-on at the same altitude (0 ft vertical separation). A 30-degree right turn for FLIGHT1 is a standard maneuver to create sufficient horizontal separation and resolve the conflict."
+        }
+    ]
+}

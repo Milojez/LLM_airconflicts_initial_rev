@@ -1,0 +1,34 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is 0 feet.
+- The current horizontal distance is 43.22 nautical miles, which is well above the minimum required 5 nautical miles.
+- The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.94 degrees.
+- FLIGHT1 is heading 140 degrees, and FLIGHT2 is heading 320 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to ensure that the horizontal distance does not fall below 5 nautical miles at any point.
+
+### Analysis:
+1. **Current Trajectories**: 
+   - FLIGHT1 is moving southeast (heading 140 degrees).
+   - FLIGHT2 is moving northwest (heading 320 degrees).
+   - The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is almost aligned with FLIGHT1's current heading, indicating they are on a converging path.
+
+2. **Conflict Resolution Strategy**:
+   - To increase the horizontal separation, we can adjust FLIGHT1's heading to move it away from the direct path towards FLIGHT2.
+   - A heading change to the left (counter-clockwise) will increase the angle between the two aircraft's paths, thus increasing the horizontal separation.
+
+3. **Optimal Heading Change**:
+   - A small heading change to the left will be sufficient to ensure the aircraft diverge rather than converge.
+   - Changing FLIGHT1's heading from 140 degrees to approximately 120 degrees will create a greater divergence angle, increasing the horizontal separation over time.
+
+### Command:
+- **FLIGHT1, turn left heading 120 degrees.**
+
+### Rationale:
+- By changing FLIGHT1's heading to 120 degrees, we increase the divergence between the two aircraft, ensuring that the horizontal distance remains above the 5 nautical mile threshold.
+- This heading change is minimal, reducing the impact on FLIGHT1's flight path and minimizing fuel consumption and passenger discomfort.
+- The new heading ensures that the aircraft will not violate the minimum separation criteria, as the increased divergence will prevent the horizontal distance from dropping below 5 nautical miles.
+
+This solution effectively resolves the conflict while maintaining safety and operational efficiency.

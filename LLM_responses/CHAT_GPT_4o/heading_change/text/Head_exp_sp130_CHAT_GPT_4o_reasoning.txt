@@ -1,0 +1,33 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the required minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is 0 feet.
+- The horizontal distance is currently 36.91 nautical miles, but it is predicted to reduce to 64.77 meters (approximately 0.035 nautical miles) at the closest point of approach (DCPA).
+- The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.95 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to ensure that the horizontal distance remains greater than 5 nautical miles at all times.
+
+### Strategy:
+1. **Determine the Current Heading and Relative Position:**
+   - FLIGHT1 is heading 140 degrees.
+   - FLIGHT2 is heading 320 degrees.
+   - The QDR from FLIGHT1 to FLIGHT2 is 139.95 degrees, indicating that FLIGHT2 is almost directly ahead of FLIGHT1.
+
+2. **Calculate the Required Heading Change:**
+   - To increase the horizontal separation, FLIGHT1 should alter its course to move away from the direct path to FLIGHT2.
+   - Since FLIGHT2 is moving in the opposite direction (320 degrees), FLIGHT1 should turn to the right to increase separation.
+
+3. **Implement the Heading Change:**
+   - A right turn of approximately 30 degrees should be sufficient to increase the separation distance. This would change FLIGHT1's heading from 140 degrees to 170 degrees.
+   - This adjustment will direct FLIGHT1 away from the path of FLIGHT2, increasing the horizontal separation over time.
+
+### Rationale:
+- By changing FLIGHT1's heading to 170 degrees, we are effectively increasing the lateral distance between the two aircraft, ensuring that the horizontal separation remains above the 5 nautical mile threshold.
+- This heading change is optimal because it minimizes the deviation from FLIGHT1's original path while effectively resolving the conflict.
+- The adjustment is made early enough (with TLOS at 299.6 seconds) to ensure that the aircraft do not come within the minimum separation distance.
+
+### Command:
+- Instruct FLIGHT1: "FLIGHT1, turn right heading 170 degrees immediately."
+
+This command should resolve the conflict by ensuring that the horizontal separation remains above the required minimum, thus maintaining safe separation between the two aircraft.

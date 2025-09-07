@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum required separation. The goal is to adjust FLIGHT1's heading to increase the horizontal distance at the closest point of approach (DCPA) to be greater than 5 nautical miles, while also ensuring that the vertical separation remains above 1000 feet, which is already satisfied as both aircraft are at the same altitude with a vertical rate of 0 feet/min.
+
+### Current Situation:
+- **Current Horizontal Distance:** 39.03 nautical miles
+- **Current Altitude Difference:** 0 feet
+- **DCPA:** 72.37 meters (approximately 0.039 nautical miles)
+- **TLOS:** 299.6 seconds
+- **Current Heading of FLIGHT1:** 140 degrees
+- **Current Heading of FLIGHT2:** 320 degrees
+
+### Strategy:
+1. **Objective:** Increase the DCPA to be greater than 5 nautical miles.
+2. **Action:** Change the heading of FLIGHT1 to steer it away from the predicted path of FLIGHT2.
+
+### Calculation:
+- The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.94 degrees, which is almost directly aligned with FLIGHT1's current heading of 140 degrees.
+- To increase separation, FLIGHT1 should turn away from FLIGHT2. Since FLIGHT2 is heading 320 degrees, FLIGHT1 should adjust its heading to the left (counter-clockwise) to increase the separation.
+
+### Recommended Heading Change:
+- **New Heading for FLIGHT1:** 100 degrees
+
+### Rationale:
+- By changing FLIGHT1's heading to 100 degrees, it will turn approximately 40 degrees to the left, moving it away from the direct path towards FLIGHT2.
+- This change will increase the horizontal separation at the closest point of approach, ensuring that the DCPA exceeds 5 nautical miles.
+- The new heading will maintain the current altitude, as the vertical rate is 0 feet/min, ensuring no vertical conflict arises.
+
+This heading adjustment should be communicated to FLIGHT1 promptly to ensure the conflict is resolved well before the TLOS. Continuous monitoring is necessary to ensure the separation criteria are maintained as the situation evolves.

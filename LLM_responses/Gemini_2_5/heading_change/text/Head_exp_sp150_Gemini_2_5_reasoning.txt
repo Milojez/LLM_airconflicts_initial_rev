@@ -1,0 +1,18 @@
+Okay, analyzing the situation:
+
+1.  **Conflict Confirmation:** Both aircraft are at the same altitude (16200 ft), meaning vertical separation is 0 ft, which is less than the 1000 ft minimum. They are on reciprocal headings (140° and 320°), indicating a direct head-on convergence. The predicted DCPA is extremely small (72.37 meters), confirming a high risk of collision if no action is taken. The TLOS is ~5 minutes, requiring immediate action.
+2.  **Resolution Constraint:** Only FLIGHT1's heading can be changed.
+3.  **Objective:** Change FLIGHT1's heading to ensure horizontal separation remains >= 5 NM at all times.
+4.  **Optimal Solution:** Generally means the minimum deviation required to safely resolve the conflict, allowing the aircraft to return to its intended path sooner. Standard procedure for head-on conflicts is for aircraft to turn right.
+5.  **Action Selection:** Since FLIGHT1 is heading 140° and FLIGHT2 is approaching from effectively the same direction (QDR 139.94°), a turn is necessary. A right turn aligns with standard procedures and will create lateral separation. Given the high closing speed (191 + 217 = 408 knots) and the direct head-on geometry, a decisive turn is needed. A 30-degree turn is a common and usually effective initial vectoring instruction in such scenarios.
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one seven zero.**"
+
+**Rationale:**
+
+1.  **Conflict:** A loss of separation is predicted between FLIGHT1 and FLIGHT2. Both aircraft are level at FLIGHT LEVEL 160 (16200 ft) on converging, near-reciprocal tracks (140° and 320°).
+2.  **Risk:** The predicted closest point of approach (DCPA) is 72.37 meters, well below the 5 NM minimum horizontal separation required when vertical separation is less than 1000 ft.
+3.  **Action:** To resolve this conflict using only a heading change for FLIGHT1, a turn is required.
+4.  **Chosen Command:** A turn to the right is standard procedure for aircraft in head-on situations. A 30-degree heading change ("turn right heading one seven zero" from the current 140°) provides a significant and immediate change in track. This will rapidly increase the lateral distance between the aircraft's predicted paths, ensuring the horizontal separation remains safely above the 5 NM minimum and resolving the predicted conflict. This is considered an optimal command as it's a standard, decisive maneuver sufficient for the geometry without being excessively large.

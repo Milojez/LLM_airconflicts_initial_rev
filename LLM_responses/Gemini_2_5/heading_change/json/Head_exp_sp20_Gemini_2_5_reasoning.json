@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 20,
+            "FLIGHT_1_TAS": 25,
+            "issued_command": "FLIGHT1, turn right heading one eight five.",
+            "heading_change": 45,
+            "new_heading_FLIGHT1": 185,
+            "reasoning": "A 45-degree right turn for FLIGHT1 (to 185 degrees) provides significant and immediate divergence from FLIGHT2's head-on track, ensuring separation is rapidly increased given the zero vertical separation and close predicted CPA."
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is 0 feet.
+- The horizontal distance is currently 40.08 nautical miles, but it is predicted to reduce to 76.31 meters (approximately 0.041 nautical miles) at the closest point of approach (DCPA).
+- The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.94 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to increase the horizontal separation at the closest point of approach to at least 5 nautical miles.
+
+### Strategy:
+1. **Determine the Current Relative Motion:**
+   - FLIGHT1 is heading 140 degrees.
+   - FLIGHT2 is heading 320 degrees.
+   - The relative motion is such that they are converging, with FLIGHT1 moving towards FLIGHT2.
+
+2. **Calculate the Required Heading Change:**
+   - To increase separation, FLIGHT1 should alter its course to move away from the predicted path of FLIGHT2.
+   - Since the azimuthal direction from FLIGHT1 to FLIGHT2 is 139.94 degrees, FLIGHT1 should turn to a heading that increases this angle, moving away from FLIGHT2's path.
+
+3. **Implement the Heading Change:**
+   - A heading change to the left (counter-clockwise) will increase the separation. 
+   - A new heading of approximately 100 degrees for FLIGHT1 will direct it away from FLIGHT2, increasing the horizontal separation.
+
+### Command:
+- **FLIGHT1, turn left to a heading of 100 degrees.**
+
+### Rationale:
+- By turning FLIGHT1 to a heading of 100 degrees, we increase the angle between the two aircraft, thereby increasing the horizontal separation at the closest point of approach.
+- This heading change is calculated to ensure that the horizontal distance remains above the minimum required 5 nautical miles, thus preventing a loss of separation.
+- The change is optimal as it directly addresses the conflict by increasing separation without requiring altitude changes or speed adjustments, which could complicate the situation further.

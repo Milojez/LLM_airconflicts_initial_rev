@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 60,
+            "FLIGHT_1_TAS": 77,
+            "issued_command": "FLIGHT1, turn right heading one eight zero.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 180,
+            "reasoning": "Turn right by 40 degrees to create divergence from head-on collision course and ensure separation."
+        }
+    ]
+}

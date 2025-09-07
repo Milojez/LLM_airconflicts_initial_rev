@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 119,
+            "FLIGHT_1_TAS": 153,
+            "issued_command": "FLIGHT1, turn right heading one seven zero.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Head-on convergence at same altitude with predicted DCPA < 5 NM. Right turn 30 degrees for FLIGHT1 provides sufficient horizontal separation."
+        }
+    ]
+}

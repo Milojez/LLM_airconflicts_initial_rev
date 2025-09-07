@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.7,
+            "FLIGHT_1_CAS": 289,
+            "FLIGHT_1_TAS": 365,
+            "issued_command": "FLIGHT1, turn right heading one seven zero.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Aircraft are at the same altitude on converging courses. A 30-degree right turn for FLIGHT1 (to 170 degrees) is issued to create lateral separation and prevent loss of separation, following standard procedure for head-on encounters."
+        }
+    ]
+}

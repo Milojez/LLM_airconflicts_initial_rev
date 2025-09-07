@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 279,
+            "FLIGHT_1_TAS": 353,
+            "issued_command": "Change heading",
+            "heading_change": 20,
+            "new_heading_FLIGHT1": 160,
+            "reasoning": "To increase horizontal separation at the time of closest approach, a 20-degree right turn will direct FLIGHT1 away from FLIGHT2, maintaining a safe distance."
+        }
+    ]
+}

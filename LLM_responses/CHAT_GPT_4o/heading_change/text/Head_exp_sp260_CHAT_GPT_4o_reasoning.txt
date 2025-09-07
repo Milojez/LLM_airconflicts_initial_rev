@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+Given the current situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is not an option.
+- The horizontal distance is currently 50.47 nautical miles, but it is predicted to reduce to 120.82 meters (approximately 0.065 nautical miles) at the closest point of approach (DCPA).
+
+To prevent the loss of separation, we need to adjust the heading of FLIGHT1 to increase the horizontal distance at the time of closest approach. Here's how we can do it:
+
+1. **Current Heading and QDR:**
+   - FLIGHT1 is currently heading 140 degrees.
+   - The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.93 degrees, indicating that FLIGHT1 is almost directly heading towards FLIGHT2.
+
+2. **Optimal Heading Change:**
+   - To increase the horizontal separation, we should adjust FLIGHT1's heading away from FLIGHT2's current position.
+   - Since FLIGHT1 is heading 140 degrees and the QDR is 139.93 degrees, a change in heading to the left (counter-clockwise) or right (clockwise) could be considered. However, turning right (clockwise) will likely increase the separation more effectively because it will move FLIGHT1 away from the direct path towards FLIGHT2.
+
+3. **Suggested Heading Change:**
+   - Change FLIGHT1's heading to approximately 160 degrees. This 20-degree right turn will direct FLIGHT1 away from the path towards FLIGHT2, increasing the horizontal separation at the time of closest approach.
+
+4. **Rationale:**
+   - By changing the heading to 160 degrees, FLIGHT1 will move away from the direct line towards FLIGHT2, increasing the horizontal distance at the closest point of approach.
+   - This adjustment should be sufficient to maintain a horizontal separation greater than 5 nautical miles, thus preventing a loss of separation.
+
+5. **Monitoring:**
+   - After the heading change, continuously monitor the separation distance and adjust further if necessary to ensure compliance with separation standards.
+
+By implementing this heading change, we aim to resolve the conflict while maintaining safe separation between the two aircraft.

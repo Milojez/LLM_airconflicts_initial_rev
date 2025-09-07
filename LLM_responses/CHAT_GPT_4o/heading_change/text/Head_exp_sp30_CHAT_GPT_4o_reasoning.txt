@@ -1,0 +1,30 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 51 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 26.27 nautical miles
+- **Current Vertical Distance**: 0 feet
+- **Estimated Time to Loss of Separation (TLOS)**: 299.5 seconds
+- **Predicted Closest Point of Approach (DCPA)**: 32.84 meters in 369.9 seconds
+
+### Strategy:
+To avoid the loss of separation, we can adjust the heading of FLIGHT1 to increase the horizontal distance at the closest point of approach. Since FLIGHT1 is moving much slower than FLIGHT2, a small change in heading can have a significant impact on the separation distance.
+
+### Calculation:
+1. **Current Relative Motion**: FLIGHT1 is moving at 51 knots on a heading of 140 degrees, while FLIGHT2 is moving at 217 knots on a heading of 320 degrees. The azimuthal direction from FLIGHT1 to FLIGHT2 is approximately 140 degrees, indicating they are on a converging path.
+
+2. **Optimal Heading Change**: To increase the separation, FLIGHT1 should turn away from the azimuthal direction to FLIGHT2. Since the azimuthal direction is approximately 140 degrees, turning FLIGHT1 to a heading that diverges from this path will increase separation.
+
+3. **Proposed Heading Change**: 
+   - Change FLIGHT1's heading from 140 degrees to approximately 180 degrees. This change will direct FLIGHT1 more southward, away from the path of FLIGHT2, increasing the horizontal separation at the closest point of approach.
+
+### Rationale:
+- **Increased Separation**: By turning FLIGHT1 to a heading of 180 degrees, we increase the divergence between the two aircraft, thereby increasing the horizontal separation at the closest point of approach.
+- **Maintaining Safety**: This heading change ensures that the horizontal distance remains greater than 5 nautical miles, thus maintaining the required separation criteria.
+- **Minimal Impact**: The change in heading is minimal and should not significantly impact FLIGHT1's overall flight path or fuel consumption.
+
+### Command:
+"FLIGHT1, turn right heading 180 degrees immediately."
+
+This command should be issued promptly to ensure that the aircraft have sufficient time to adjust their paths and maintain safe separation.

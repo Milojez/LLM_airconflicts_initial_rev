@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.7,
+            "FLIGHT_1_CAS": 299,
+            "FLIGHT_1_TAS": 378,
+            "issued_command": "FLIGHT1, turn right heading 170 degrees for separation.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "FLIGHT1 and FLIGHT2 are converging head-on at the same altitude with a predicted DCPA < 5 NM. A 30-degree right turn for FLIGHT1 to heading 170 is a standard procedure to increase separation."
+        }
+    ]
+}

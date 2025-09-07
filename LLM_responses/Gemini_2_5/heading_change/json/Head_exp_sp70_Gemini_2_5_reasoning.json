@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 70,
+            "FLIGHT_1_TAS": 89,
+            "issued_command": "FLIGHT1, turn right heading one seven zero.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Resolve converging tracks at same altitude with small predicted separation by turning FLIGHT1 right 30 degrees."
+        }
+    ]
+}

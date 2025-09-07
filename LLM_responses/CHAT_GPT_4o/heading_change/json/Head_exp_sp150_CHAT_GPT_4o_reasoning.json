@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 149,
+            "FLIGHT_1_TAS": 191,
+            "issued_command": "Change heading",
+            "heading_change": -40,
+            "new_heading_FLIGHT1": 100,
+            "reasoning": "By changing FLIGHT1's heading to 100 degrees, it will turn approximately 40 degrees to the left, moving it away from the direct path towards FLIGHT2. This change will increase the horizontal separation at the closest point of approach, ensuring that the DCPA exceeds 5 nautical miles."
+        }
+    ]
+}

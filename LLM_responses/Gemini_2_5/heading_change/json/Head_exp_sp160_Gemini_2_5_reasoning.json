@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 159,
+            "FLIGHT_1_TAS": 204,
+            "issued_command": "FLIGHT1, turn right heading one eight zero.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 180,
+            "reasoning": "A right turn to heading 180 for FLIGHT1 increases horizontal separation above 5 NM minimum, resolving the head-on conflict at the same altitude (16200 ft) with a predicted DCPA of 76.31m."
+        }
+    ]
+}

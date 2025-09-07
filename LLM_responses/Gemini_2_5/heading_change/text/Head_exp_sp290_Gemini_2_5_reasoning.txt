@@ -1,0 +1,29 @@
+Okay, here is the analysis and command based on the provided data:
+
+**Analysis:**
+
+1.  **Conflict:** FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft), meaning vertical separation is 0 ft, which is less than the 1000 ft minimum required if horizontal separation is also lost.
+2.  **Convergence:** Their headings (FLIGHT1: 140°, FLIGHT2: 320°) are almost perfectly reciprocal (140° + 180° = 320°). This indicates a direct head-on conflict course. The QDR of 139.92° from FLIGHT1 to FLIGHT2 confirms FLIGHT2 is almost directly ahead of FLIGHT1.
+3.  **Prediction:** A loss of separation (horizontal distance < 5 NM while vertical < 1000 ft) is predicted in ~5 minutes (TLOS 299.7s), with the aircraft passing extremely close horizontally (DCPA 135.85m) shortly after (~5.5 minutes).
+4.  **Constraint:** Only FLIGHT1's heading can be changed.
+5.  **Objective:** Change FLIGHT1's heading to ensure horizontal separation *never* drops below 5 NM.
+6.  **Optimal Solution:**
+    *   Since it's a head-on conflict, a turn is necessary.
+    *   Standard procedure for head-on traffic is for aircraft to alter course to the *right*.
+    *   A small turn might not be sufficient given the high closing speed (365 kts + 217 kts = 582 kts) and very small predicted DCPA.
+    *   A moderate turn to the right provides a balance between ensuring separation and minimizing deviation. A 30-degree turn is a standard initial vectoring value that should provide sufficient lateral spacing quickly.
+
+**Command:**
+
+"**FLIGHT1, turn right heading one seven zero.**"
+
+**Rationale:**
+
+1.  **Immediate Conflict:** Both aircraft are at the same altitude (16200 ft) with 0 ft vertical separation.
+2.  **Converging Courses:** The aircraft are on near-reciprocal headings (140° vs 320°), leading to a predicted violation of the minimum horizontal separation (DCPA of 135.85 meters is significantly less than 5 NM).
+3.  **Action Required:** To prevent the loss of separation (Horizontal < 5 NM and Vertical < 1000 ft), horizontal separation must be increased and maintained above 5 NM.
+4.  **Chosen Command:** A 30-degree turn to the right for FLIGHT1 (New Heading 170°) is issued.
+5.  **Justification:**
+    *   Turning right follows standard procedure for resolving head-on encounters.
+    *   A 30-degree heading change is substantial enough to create immediate lateral separation at a sufficient rate, given the high closing speed and very close predicted CPA.
+    *   This action directly addresses the predicted conflict by ensuring the horizontal separation will remain well above the 5 NM minimum while the aircraft are at the same altitude, thus resolving the predicted loss of separation using the allowed parameter (FLIGHT1 heading change).

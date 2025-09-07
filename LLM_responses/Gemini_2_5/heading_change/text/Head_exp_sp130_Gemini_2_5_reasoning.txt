@@ -1,0 +1,30 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Type:** The aircraft are at the same altitude (FL162) with 0 ft vertical separation. Their headings (140° and 320°) are exactly reciprocal, meaning they are on a direct head-on collision course.
+2.  **Urgency:** The TLOS is ~5 minutes (299.6s), and the predicted CPA is extremely small (64.77m), confirming a high-risk conflict requiring immediate action.
+3.  **Resolution Constraint:** Only FLIGHT1's heading can be changed.
+4.  **Objective:** Increase horizontal separation to maintain > 5 NM, as vertical separation cannot be achieved with the given constraints.
+5.  **Optimal Action:** The most efficient way to resolve a head-on conflict with a heading change is to turn the aircraft away from the conflicting traffic's track. Since FLIGHT2 is approaching from FLIGHT1's 139.95° QDR (almost directly ahead), turning either left or right will create divergence. A standard ATC vectoring turn is typically 30 degrees or more to ensure positive separation is achieved quickly. A right turn is often preferred in head-on situations.
+
+**Decision:**
+
+A right turn for FLIGHT1 is chosen. A 30-degree heading change is a standard, effective maneuver that will quickly increase the distance between the aircraft tracks and ensure the CPA remains well above the 5 NM minimum.
+
+*   Current Heading FLIGHT1: 140°
+*   Chosen Turn: Right 30 degrees
+*   New Heading FLIGHT1: 140° + 30° = 170°
+
+**Command:**
+
+"**FLIGHT1, turn right heading one seven zero, traffic is opposite direction Boeing 777 at your altitude, report clear of conflict.**"
+
+**Rationale:**
+
+1.  **Identifies Aircraft:** Clearly addresses FLIGHT1.
+2.  **Clear Instruction:** "Turn right heading one seven zero" provides an unambiguous heading change.
+3.  **Reason/Traffic Information:** "traffic is opposite direction Boeing 777 at your altitude" informs the pilot of the immediate reason for the turn and the nature/location of the conflicting traffic, enhancing situational awareness.
+4.  **Effectiveness:** Turning FLIGHT1 from 140° to 170° immediately changes the geometry from head-on to diverging tracks. This rapidly increases the predicted CPA and ensures the horizontal separation will not decrease below the 5 NM minimum.
+5.  **Optimality:** A 30-degree turn is generally considered an efficient vectoring angle – large enough to guarantee separation quickly but not excessively large to deviate the aircraft too far off course unnecessarily.
+6.  **Follow-up:** "report clear of conflict" prompts the pilot to confirm when they visually acquire and pass the traffic, aiding the controller in monitoring the situation's resolution.

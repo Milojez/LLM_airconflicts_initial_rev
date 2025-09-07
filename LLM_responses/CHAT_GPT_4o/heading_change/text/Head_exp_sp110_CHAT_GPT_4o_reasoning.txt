@@ -1,0 +1,33 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so the vertical separation is 0 feet.
+- The horizontal distance is currently 34.80 nautical miles, but it is predicted to reduce to 57.56 meters (approximately 0.03 nautical miles) at the closest point of approach (DCPA).
+- The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.95 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to increase the horizontal separation at the time of closest approach to at least 5 nautical miles.
+
+### Strategy:
+1. **Determine the Current Trajectory:**
+   - FLIGHT1 is heading 140 degrees.
+   - FLIGHT2 is heading 320 degrees.
+
+2. **Calculate the Required Change in Heading:**
+   - Since FLIGHT1 is heading towards FLIGHT2, we need to alter its course to increase the separation.
+   - A heading change that moves FLIGHT1 away from the direct path to FLIGHT2 will increase the horizontal separation.
+
+3. **Optimal Heading Change:**
+   - To increase separation, FLIGHT1 should turn away from the azimuthal direction to FLIGHT2 (139.95 degrees).
+   - A turn to the left (counter-clockwise) will be more effective given the current headings and the need to increase separation quickly.
+
+4. **Command for FLIGHT1:**
+   - Change heading from 140 degrees to approximately 100 degrees. This 40-degree left turn will direct FLIGHT1 away from FLIGHT2, increasing the horizontal separation.
+
+### Rationale:
+- By changing FLIGHT1's heading to 100 degrees, we are effectively increasing the angle between the two aircraft's paths, which will increase the horizontal separation at the closest point of approach.
+- This heading change is significant enough to ensure that the horizontal distance remains above the 5 nautical mile threshold, thus preventing a loss of separation.
+- The change is calculated to be optimal in terms of minimizing the deviation from the original path while ensuring safety.
+
+### Conclusion:
+- Instruct FLIGHT1 to change its heading to 100 degrees immediately. This adjustment will help maintain safe separation and prevent a conflict with FLIGHT2.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 169,
+            "FLIGHT_1_TAS": 217,
+            "issued_command": "FLIGHT1, turn right heading one eight five.",
+            "heading_change": 45,
+            "new_heading_FLIGHT1": 185,
+            "reasoning": "Turn right 45 degrees to heading 185 creates immediate horizontal divergence from FLIGHT2, resolving the head-on conflict at the same altitude and ensuring separation remains above 5 NM."
+        }
+    ]
+}

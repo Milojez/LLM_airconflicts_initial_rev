@@ -1,0 +1,32 @@
+Okay, here is the plan and command to resolve the conflict for FLIGHT1:
+
+**Analysis:**
+
+1.  **Conflict:** Predicted Loss of Separation (LOS) between FLIGHT1 and FLIGHT2.
+2.  **Critical Factor:** Both aircraft are at the same altitude (16200 ft), meaning vertical separation is 0 ft. Therefore, horizontal separation *must* be maintained above 5 NM at all times.
+3.  **Current Geometry:** FLIGHT1 (HDG 140°) and FLIGHT2 (HDG 320°) are on nearly reciprocal headings (180° difference). This indicates a near head-on convergence. The QDR of 139.93° confirms FLIGHT2 is almost directly ahead of FLIGHT1 relative to FLIGHT1's track.
+4.  **Prediction:** The predicted closest point of approach (DCPA) is 120.82 meters, which is significantly less than the 5 NM (approx. 9260 meters) minimum required horizontal separation. Action is required immediately.
+5.  **Constraint:** Only FLIGHT1's heading can be changed.
+6.  **Objective:** Change FLIGHT1's heading to increase the horizontal distance at the closest point of approach to be greater than 5 NM.
+
+**Optimal Solution Strategy:**
+
+*   Since the aircraft are converging nearly head-on, a turn is required to create lateral space.
+*   Turning *away* from the conflicting traffic is necessary. FLIGHT2 is on a bearing of ~140° from FLIGHT1.
+*   Turning FLIGHT1 to the right (increasing heading) will move its track south-southeast, away from FLIGHT2's northwest-bound track.
+*   Turning FLIGHT1 to the left (decreasing heading) will move its track east-southeast, also away from FLIGHT2's track.
+*   A standard vectoring turn for conflict resolution is typically 30-45 degrees. Given the very small predicted DCPA (120m) and the high closure speed (329 + 217 = 546 knots), a reasonably decisive turn is needed.
+*   Turning right is often a standard procedure in near head-on situations to ensure coordinated separation. A 30-degree turn right seems appropriate as an initial measure.
+
+**Command:**
+
+"**FLIGHT1, turn right heading one seven zero.**"
+
+**Rationale:**
+
+1.  **Conflict Identification:** A loss of separation is predicted between FLIGHT1 and FLIGHT2 as they are converging on nearly reciprocal tracks at the same altitude (16200 ft).
+2.  **Separation Requirement:** With zero vertical separation, a minimum of 5 nautical miles horizontal separation must be maintained. The predicted closest point of approach (DCPA) is currently 120.82 meters, well below this minimum.
+3.  **Action Taken:** FLIGHT1 is instructed to turn right by 30 degrees, from its current heading of 140 degrees to a new heading of 170 degrees.
+4.  **Reason for Action:** This turn increases the angle between the aircraft's tracks, creating immediate lateral divergence. Turning right moves FLIGHT1's projected path away from FLIGHT2's projected path, directly increasing the horizontal separation at the future closest point of approach.
+5.  **Optimality:** A 30-degree heading change is a standard, effective vectoring technique sufficient to resolve the immediate conflict by ensuring the DCPA will be greater than 5 NM, while minimizing excessive deviation from FLIGHT1's original route. Turning right aligns with common procedures for near head-on encounters.
+6.  **Monitoring:** The situation will be monitored closely to ensure separation is maintained. Further instructions, potentially including resuming original navigation, will be issued once the conflict is resolved.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 169,
+            "FLIGHT_1_TAS": 217,
+            "issued_command": "Change heading",
+            "heading_change": -20,
+            "new_heading_FLIGHT1": 120,
+            "reasoning": "By turning FLIGHT1 to a heading of 120 degrees, we increase the angle between the two aircraft's paths, which will help maintain a horizontal separation greater than 5 nautical miles."
+        }
+    ]
+}

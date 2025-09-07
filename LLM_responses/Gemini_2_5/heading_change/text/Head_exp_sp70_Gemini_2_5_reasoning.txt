@@ -1,0 +1,18 @@
+Okay, here is the ATC command and rationale based on the provided data:
+
+**ATC Command:**
+
+"FLIGHT1, turn right heading one seven zero."
+
+**Rationale:**
+
+1.  **Conflict Identification:** A loss of separation is predicted between FLIGHT1 and FLIGHT2. Both aircraft are level at 16200 feet (0 ft vertical separation), which is below the 1000 ft minimum vertical separation requirement.
+2.  **Converging Tracks:** FLIGHT1 (heading 140°) and FLIGHT2 (heading 320°) are on nearly reciprocal tracks, indicating a head-on or near head-on situation. This is confirmed by the QDR of 140° from FLIGHT1 to FLIGHT2, which is almost identical to FLIGHT1's heading.
+3.  **Imminent Threat:** The predicted closest point of approach (DCPA) is extremely small (44.37 meters), well below the 5 NM minimum horizontal separation required when vertical separation is less than 1000 ft. The TLOS is approximately 5 minutes, requiring immediate action.
+4.  **Action Constraint:** The instruction requires resolving the conflict *only* by changing the heading of FLIGHT1.
+5.  **Chosen Solution (Turn Right Heading 170°):**
+    *   **Direction (Right Turn):** A turn to the right is standard procedure in head-on or near head-on encounters to ensure predictable separation maneuvers.
+    *   **Magnitude (30-degree turn to 170°):** A 30-degree heading change is a decisive maneuver that will quickly increase the horizontal distance between the aircraft and significantly increase the predicted CPA. It provides a clear and immediate divergence from the conflicting track of FLIGHT2.
+    *   **Optimality:** This 30-degree turn is considered optimal because it's substantial enough to clearly resolve the conflict without requiring an unnecessarily large deviation from FLIGHT1's likely intended route. It directly addresses the head-on geometry and ensures separation will be maintained well above the 5 NM minimum.
+
+This command provides immediate action to increase horizontal separation, resolving the conflict by ensuring the minimum separation criteria (less than 1000 ft vertically *and* less than 5 NM horizontally) are not met simultaneously.

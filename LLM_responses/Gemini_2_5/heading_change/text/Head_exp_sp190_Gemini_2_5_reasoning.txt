@@ -1,0 +1,32 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Identification:** FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft), resulting in 0 ft vertical separation. This means the minimum separation requirement relies entirely on maintaining at least 5 NM horizontal separation.
+2.  **Geometry:** The aircraft are on nearly reciprocal headings (FLIGHT1: 140°, FLIGHT2: 320°). The QDR from FLIGHT1 to FLIGHT2 (139.94°) confirms they are approaching almost exactly head-on.
+3.  **Prediction:** The system predicts a loss of separation (horizontal distance < 5 NM) in approximately 5 minutes (TLOS 299.6s) and an extremely close pass (DCPA 88.72 meters) shortly after. This confirms immediate action is required.
+4.  **Constraint:** The only available action is to change the heading of FLIGHT1.
+5.  **Objective:** Turn FLIGHT1 sufficiently to ensure the horizontal distance at the closest point of approach remains greater than 5 NM.
+
+**Optimal Solution Strategy:**
+
+*   Since the aircraft are head-on, any turn by FLIGHT1 will increase separation.
+*   A turn to the right is often standard procedure and predictable for pilots.
+*   A moderate turn (e.g., 30-45 degrees) is usually sufficient to resolve a head-on conflict without causing excessive deviation from the original track. A 30-degree turn is a common initial vector.
+
+**Chosen Command:**
+
+*   Turn FLIGHT1 right by 30 degrees.
+*   New heading: 140° + 30° = 170°
+
+**ATC Command:**
+
+**"FLIGHT1, turn right heading one seven zero, vector for traffic."**
+
+**Rationale:**
+
+1.  **Immediate Conflict:** FLIGHT1 and FLIGHT2 are currently at the same altitude (16200 ft) on reciprocal headings (140° and 320°), leading to a predicted violation of the minimum 5 NM horizontal separation standard (DCPA is predicted to be only 88.72 meters).
+2.  **Action Required:** Due to the 0 ft vertical separation, maintaining >5 NM horizontal separation is mandatory. A heading change for FLIGHT1 is required as per the constraints.
+3.  **Chosen Vector:** A 30-degree right turn to heading 170° for FLIGHT1 is issued.
+4.  **Effectiveness:** This turn immediately changes the geometry from a direct head-on encounter. It creates divergence, rapidly increasing the predicted horizontal separation at the closest point of approach (DCPA) to well above the 5 NM minimum.
+5.  **Optimality:** A 30-degree turn is a standard vectoring increment that effectively resolves the conflict while minimizing deviation from FLIGHT1's original course compared to a larger turn. A right turn is chosen for predictability and standard practice. This action directly addresses the predicted loss of separation within the available timeframe (TLOS ~5 minutes).

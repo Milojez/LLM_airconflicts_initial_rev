@@ -1,0 +1,32 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is 0 feet.
+- The current horizontal distance is 41.13 nautical miles, which is well above the minimum required 5 nautical miles.
+- The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.94 degrees.
+- FLIGHT1 is heading 140 degrees, and FLIGHT2 is heading 320 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to ensure that the horizontal distance does not fall below 5 nautical miles at any point.
+
+### Analysis:
+1. **Current Trajectories**: 
+   - FLIGHT1 is heading 140 degrees, and FLIGHT2 is heading 320 degrees, which means they are on converging paths.
+   - The predicted closest point of approach (DCPA) is 80.35 meters, which is significantly less than 5 nautical miles (9260 meters).
+
+2. **Required Action**:
+   - To increase the horizontal separation at the closest point of approach, we need to adjust FLIGHT1's heading to diverge from FLIGHT2's path.
+
+3. **Optimal Heading Change**:
+   - Since the azimuthal direction from FLIGHT1 to FLIGHT2 is 139.94 degrees, FLIGHT1 should turn to a heading that increases the angle between its path and the line towards FLIGHT2.
+   - A heading change to the left (counter-clockwise) would increase the separation more effectively, as it would move FLIGHT1 away from the direct path towards FLIGHT2.
+
+4. **Suggested Heading**:
+   - Change FLIGHT1's heading from 140 degrees to approximately 120 degrees. This 20-degree left turn will increase the divergence between the two aircraft's paths, thereby increasing the horizontal separation at the closest point of approach.
+
+### Rationale:
+- By turning FLIGHT1 to a heading of 120 degrees, we increase the angle between the two aircraft's paths, which will help maintain a horizontal separation greater than 5 nautical miles.
+- This heading change is calculated to ensure that the aircraft do not violate the minimum separation criteria while maintaining a safe and efficient trajectory for FLIGHT1.
+- The adjustment is minimal, ensuring that FLIGHT1 can return to its original course after the conflict is resolved without significant deviation from its planned route.
+
+This solution effectively resolves the conflict by ensuring that the horizontal separation remains above the required minimum, thus maintaining safety and compliance with air traffic control regulations.

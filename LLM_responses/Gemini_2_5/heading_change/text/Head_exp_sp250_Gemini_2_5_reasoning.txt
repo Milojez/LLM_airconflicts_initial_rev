@@ -1,0 +1,19 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Severity:** The aircraft are at the same altitude (16200 ft) with 0 ft vertical separation. Their headings (140° and 320°) are almost perfectly reciprocal, indicating a direct head-on conflict course. The predicted closest point of approach (DCPA) is extremely small (115.97 meters / ~0.06 NM), confirming the severity.
+2.  **Loss of Separation Criteria:** Since vertical separation is already less than 1000 ft (it's 0 ft), a loss of separation *will* occur if the horizontal separation drops below 5 NM. The TLOS of ~300 seconds indicates this is predicted to happen.
+3.  **Resolution Constraint:** Only the heading of FLIGHT1 can be changed.
+4.  **Optimal Solution:** The goal is to create sufficient horizontal separation (> 5 NM) with the minimum necessary deviation for FLIGHT1. Given the head-on geometry, a turn is required. A turn to the right is standard procedure in many regions for head-on conflicts unless circumstances dictate otherwise. A turn of sufficient magnitude is needed to ensure the flight paths diverge quickly and effectively. A 30-degree turn is a standard initial vectoring value that typically provides adequate separation without excessive deviation.
+
+**Command:**
+
+"**FLIGHT1, turn right heading one seven zero.**"
+
+**Rationale:**
+
+1.  **Identify Conflict:** FLIGHT1 and FLIGHT2 are on reciprocal headings at the same altitude (16200 ft), resulting in a predicted loss of separation (horizontal separation < 5 NM) with a very small predicted closest point of approach (DCPA ~0.06 NM).
+2.  **Action Required:** As vertical separation is zero, horizontal separation must be established and maintained above the 5 NM minimum.
+3.  **Chosen Action:** A heading change for FLIGHT1 is the only permitted action. A turn to the right is chosen as a standard resolution for head-on conflicts.
+4.  **Magnitude Justification:** A 30-degree turn (from 140° to 170°) is issued. This creates a significant angle of divergence between the tracks of FLIGHT1 (now 170°) and FLIGHT2 (320°). This turn is substantial enough to quickly increase the predicted closest point of approach well above the 5 NM minimum, resolving the conflict effectively while representing a reasonably minimal deviation for FLIGHT1 compared to larger turns.

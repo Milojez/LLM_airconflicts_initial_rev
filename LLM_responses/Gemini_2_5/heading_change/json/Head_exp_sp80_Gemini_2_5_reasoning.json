@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 79,
+            "FLIGHT_1_TAS": 102,
+            "issued_command": "FLIGHT1, turn right heading one seven zero, vector for traffic avoidance.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Head-on conflict at same altitude (16200 ft). Standard procedure is right turn. 30-degree turn right to heading 170 for FLIGHT1 provides sufficient separation."
+        }
+    ]
+}

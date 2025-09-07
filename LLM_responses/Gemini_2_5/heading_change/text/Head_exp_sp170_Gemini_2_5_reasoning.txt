@@ -1,0 +1,29 @@
+Okay, analyzing the situation:
+
+1.  **Conflict:** FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft), meaning vertical separation is 0 ft (< 1000 ft).
+2.  **Convergence:** They are on nearly reciprocal headings (FLIGHT1: 140°, FLIGHT2: 320°), indicating a head-on conflict course.
+3.  **Prediction:** A loss of separation (horizontal distance < 5 NM) is predicted (TLOS ~5 min), with a very close CPA (80 meters).
+4.  **Constraint:** Resolution must *only* involve changing FLIGHT1's heading.
+5.  **Objective:** Ensure horizontal separation remains >= 5 NM.
+
+**Reasoning for Optimal Command:**
+
+*   The aircraft are converging head-on at the same altitude. The most immediate threat is the rapidly decreasing horizontal separation.
+*   Standard procedure and the most efficient way to create horizontal separation in a head-on scenario is to turn the aircraft away from the conflicting traffic's track.
+*   Since FLIGHT2 is approaching from FLIGHT1's approximate 140° bearing (QDR 139.94°) and FLIGHT1 is heading 140°, FLIGHT2 is directly ahead.
+*   A turn to the right is standard practice in many regions for head-on conflicts to ensure predictability.
+*   A turn of at least 30 degrees is typically sufficient to create adequate divergence quickly. A 45-degree turn provides a larger margin of safety without being excessively large. Turning FLIGHT1 right by 45 degrees results in a new heading of 185° (140° + 45°). This creates immediate divergence from FLIGHT2's track (320°).
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one eight five.**"
+
+**Rationale:**
+
+*   **Conflict Identification:** A loss of separation is predicted between FLIGHT1 and FLIGHT2, who are currently at the same altitude (16200 ft) on converging, near-reciprocal tracks (140° and 320°). The predicted closest point of approach is significantly less than the 5 NM minimum horizontal separation required.
+*   **Action Taken:** FLIGHT1 is instructed to turn right by 45 degrees to a new heading of 185°.
+*   **Justification:**
+    *   This heading change creates immediate horizontal divergence from FLIGHT2's track.
+    *   Turning right aligns with standard practices for resolving head-on conflicts.
+    *   A 45-degree turn provides a sufficient and timely increase in horizontal separation to ensure the 5 NM minimum is maintained, resolving the predicted loss of separation.
+    *   This action adheres to the constraint of only modifying FLIGHT1's heading.

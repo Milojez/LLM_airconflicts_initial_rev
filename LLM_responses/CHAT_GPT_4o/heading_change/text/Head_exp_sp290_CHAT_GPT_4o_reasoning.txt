@@ -1,0 +1,31 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so the vertical separation is 0 feet.
+- The horizontal distance is currently 53.53 nautical miles, but it is predicted to reduce to 135.85 meters (approximately 0.073 nautical miles) at the closest point of approach (DCPA).
+- The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.92 degrees.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to increase the horizontal separation at the closest point of approach to at least 5 nautical miles.
+
+### Strategy:
+1. **Determine the Current Trajectory:**
+   - FLIGHT1 is heading 140 degrees.
+   - FLIGHT2 is heading 320 degrees.
+
+2. **Calculate the Required Change in Heading:**
+   - Since the azimuthal direction from FLIGHT1 to FLIGHT2 is 139.92 degrees, FLIGHT1 is almost directly heading towards FLIGHT2.
+   - To increase separation, FLIGHT1 should alter its course to move away from the direct path to FLIGHT2.
+
+3. **Optimal Heading Change:**
+   - A significant change in heading is required to ensure the horizontal separation increases.
+   - A turn to the left (counter-clockwise) would be optimal to move away from the path of FLIGHT2.
+   - A heading change of approximately 30-40 degrees to the left should be sufficient to increase the separation distance. This would mean changing the heading of FLIGHT1 from 140 degrees to approximately 100-110 degrees.
+
+### Command:
+- **FLIGHT1, turn left heading 110 degrees.**
+
+### Rationale:
+- By turning left to a heading of 110 degrees, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal separation.
+- This heading change is significant enough to ensure that the horizontal distance at the closest point of approach will be greater than 5 nautical miles, thus maintaining safe separation.
+- The change in heading is calculated to be optimal based on the current trajectory and predicted DCPA, ensuring that the minimum separation criteria are not violated.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.7,
+            "FLIGHT_1_CAS": 299,
+            "FLIGHT_1_TAS": 378,
+            "issued_command": "Turn right to heading 180 degrees",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 180,
+            "reasoning": "A right turn to 180 degrees will increase the angle between the two aircraft, moving FLIGHT1 away from the direct path to FLIGHT2, ensuring horizontal separation remains above 5 nautical miles."
+        }
+    ]
+}

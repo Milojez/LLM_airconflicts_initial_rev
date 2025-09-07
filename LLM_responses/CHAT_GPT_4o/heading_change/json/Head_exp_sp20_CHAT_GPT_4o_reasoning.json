@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 20,
+            "FLIGHT_1_TAS": 25,
+            "issued_command": "FLIGHT1, turn left heading 100 degrees. Maintain current altitude.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 100,
+            "reasoning": "By turning left, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance between them and maintaining safe separation."
+        }
+    ]
+}

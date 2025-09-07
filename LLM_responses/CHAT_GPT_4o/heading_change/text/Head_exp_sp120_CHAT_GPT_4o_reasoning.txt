@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- Both aircraft are at the same altitude (16200 feet), so vertical separation is 0 feet.
+- The current horizontal distance is 35.86 nautical miles, which is well above the minimum required 5 nautical miles.
+- The estimated time to loss of separation (TLOS) is 299.5 seconds, and the predicted closest point of approach (DCPA) is 61.12 meters, expected in 348.1 seconds.
+
+### Objective:
+- Adjust the heading of FLIGHT1 to ensure that the horizontal distance remains greater than 5 nautical miles at all times.
+
+### Analysis:
+- FLIGHT1 is currently heading 140 degrees, and FLIGHT2 is heading 320 degrees.
+- The azimuthal direction (QDR) from FLIGHT1 to FLIGHT2 is 139.95 degrees, indicating that FLIGHT2 is almost directly ahead of FLIGHT1 in its current path.
+
+### Solution:
+To increase the horizontal separation, we can adjust the heading of FLIGHT1 to move it away from the path of FLIGHT2. Since FLIGHT2 is moving in a northwesterly direction (320 degrees), we can turn FLIGHT1 more towards the east to increase the separation.
+
+1. **Change the heading of FLIGHT1 to 100 degrees.**
+   - This change will direct FLIGHT1 more towards the east, away from the path of FLIGHT2, which is moving northwest.
+   - By turning FLIGHT1 to 100 degrees, we increase the lateral separation between the two aircraft, reducing the risk of loss of separation.
+
+### Rationale:
+- By changing the heading to 100 degrees, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance between them.
+- This adjustment ensures that the horizontal separation remains above the 5 nautical mile threshold, preventing a loss of separation.
+- The new heading is a moderate change that allows for a safe and efficient resolution of the conflict without drastic maneuvers.
+
+This heading change should be communicated promptly to FLIGHT1 to ensure timely execution and maintain safe separation standards.

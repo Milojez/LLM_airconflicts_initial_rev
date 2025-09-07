@@ -1,0 +1,27 @@
+Okay, analyzing the situation:
+
+1.  **Conflict Core:** Both aircraft are at the same altitude (16200 ft), meaning vertical separation is 0 ft. The minimum required is 1000 ft. Therefore, *any* horizontal separation less than 5 NM constitutes a Loss of Separation (LOS).
+2.  **Geometry:** FLIGHT1 is heading 140 degrees. FLIGHT2 is heading 320 degrees (180 degrees opposite). The QDR from FLIGHT1 to FLIGHT2 is 139.95 degrees, almost identical to FLIGHT1's heading. This confirms they are on a direct collision course or very nearly so.
+3.  **Prediction:** The DCPA is extremely small (54.11 meters), confirming the head-on trajectory. TLOS is ~5 minutes, and CPA is ~5.9 minutes. Action is required.
+4.  **Constraint:** Only FLIGHT1's heading can be changed.
+5.  **Objective:** Change FLIGHT1's heading to ensure horizontal separation *never* drops below 5 NM. The "optimal" way usually implies the minimum necessary deviation that safely resolves the conflict.
+
+**Reasoning for Action:**
+
+*   Since the aircraft are converging head-on at the same altitude, a turn is necessary to create horizontal separation.
+*   A turn to the right is standard procedure in many airspaces for traffic avoidance when aircraft are head-on.
+*   We need a turn significant enough to ensure the 5 NM minimum is maintained. A small turn might not be sufficient given the closure speed (128 kts + 217 kts = 345 kts relative speed).
+*   A 30-degree turn is a common initial vector for traffic avoidance. Turning FLIGHT1 right by 30 degrees (from 140 to 170) will immediately change the geometry from head-on to diverging tracks. This will rapidly increase the predicted CPA distance well beyond the 5 NM minimum.
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one seven zero, traffic opposite direction Boeing 777 at your altitude.**"
+
+**Rationale:**
+
+*   **Command:** "FLIGHT1, turn right heading one seven zero..." - This clearly instructs FLIGHT1 to change its heading by 30 degrees to the right.
+*   **Reason:** "...traffic opposite direction Boeing 777 at your altitude." - This provides the pilot with the necessary context for the vector:
+    *   Identifies the conflicting traffic is approaching head-on ("opposite direction").
+    *   Specifies the type ("Boeing 777" - FLIGHT2).
+    *   Highlights the critical element ("at your altitude"), reinforcing why the turn is essential as there is no vertical separation.
+*   **Optimality:** A 30-degree turn right is chosen as it's a standard, effective maneuver for a near head-on conflict. It provides sufficient deviation to quickly ensure the 5 NM horizontal separation minimum will be maintained without requiring an excessively large turn, thus being reasonably optimal in terms of track deviation for FLIGHT1.

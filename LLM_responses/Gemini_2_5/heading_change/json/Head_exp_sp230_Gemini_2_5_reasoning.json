@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 230,
+            "FLIGHT_1_TAS": 292,
+            "issued_command": "FLIGHT1, turn right heading one eight zero.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 180,
+            "reasoning": "Head-on conflict at same altitude (FL162). Turning FLIGHT1 right 40 degrees to 180 provides immediate separation increase, preventing predicted loss of separation."
+        }
+    ]
+}

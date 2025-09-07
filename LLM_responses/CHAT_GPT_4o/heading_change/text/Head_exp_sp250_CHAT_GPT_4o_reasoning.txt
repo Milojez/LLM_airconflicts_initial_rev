@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the required minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 316 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 49.44 nautical miles
+- **Current Vertical Distance**: 0 feet
+- **TLOS**: 299.6 seconds
+- **DCPA**: 115.97 meters (approximately 0.0626 nautical miles)
+
+### Objective:
+- Avoid loss of separation by ensuring horizontal distance remains above 5 nautical miles.
+
+### Strategy:
+To prevent the predicted loss of separation, we can adjust the heading of FLIGHT1 to increase the horizontal distance at the closest point of approach (CPA). Since the azimuthal direction from FLIGHT1 to FLIGHT2 is approximately 139.93 degrees, FLIGHT1 is currently heading almost directly towards FLIGHT2. By altering FLIGHT1's heading to the right (clockwise), we can increase the horizontal separation at CPA.
+
+### Recommended Heading Change for FLIGHT1:
+1. **New Heading**: Increase FLIGHT1's heading from 140 degrees to approximately 160 degrees. This change will direct FLIGHT1 more to the right, increasing the lateral separation between the two aircraft.
+
+2. **Rationale**:
+   - By changing the heading to 160 degrees, FLIGHT1 will move away from the direct path towards FLIGHT2, increasing the horizontal distance at CPA.
+   - This adjustment should be sufficient to maintain a horizontal separation greater than 5 nautical miles, given the current speeds and headings.
+   - The change is moderate enough to avoid drastic maneuvers, ensuring passenger comfort and operational safety.
+
+3. **Monitoring**: Continuously monitor the situation to ensure the new heading maintains the required separation and adjust further if necessary.
+
+By implementing this heading change, we aim to resolve the conflict while maintaining safe separation standards.

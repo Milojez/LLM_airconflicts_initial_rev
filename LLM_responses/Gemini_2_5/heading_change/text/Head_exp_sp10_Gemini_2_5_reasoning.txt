@@ -1,0 +1,27 @@
+Okay, analyzing the situation:
+
+1.  **Conflict:** FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft), meaning vertical separation is 0 ft (< 1000 ft).
+2.  **Prediction:** They are predicted to come within 27.72 meters horizontally (DCPA), which is far less than the 5 NM minimum. A loss of separation (LOS) is predicted in ~5 minutes (TLOS 299.5s).
+3.  **Geometry:** Headings are 140 (FLIGHT1) and 320 (FLIGHT2). These are almost perfectly reciprocal (140 + 180 = 320). The QDR from FLIGHT1 to FLIGHT2 (139.96 deg) is almost identical to FLIGHT1's heading, confirming they are essentially on a head-on collision course.
+4.  **Constraint:** Only FLIGHT1's heading can be changed.
+5.  **Speeds:** FLIGHT1 is extremely slow (12 kts GS), while FLIGHT2 is much faster (217 kts GS). The closing speed is high (~229 kts). FLIGHT1's slow speed means its heading change needs to be substantial enough to create lateral distance effectively over the next ~6 minutes (time to CPA).
+6.  **Optimality:** The optimal solution is typically the minimum necessary change that ensures separation is maintained, minimizing disruption. Given the head-on geometry, a turn is required. A right turn is standard procedure in many regions for head-on situations.
+
+**Decision:**
+
+To resolve the head-on conflict, FLIGHT1 needs to turn. A right turn is standard. Given the near-zero predicted CPA and the 5 NM minimum horizontal separation required (since vertical separation is zero), a significant turn is needed. A 45-degree turn should provide sufficient lateral separation over the ~6 minutes until the predicted CPA, ensuring the horizontal distance remains well above 5 NM. A smaller turn might be insufficient given FLIGHT1's very low speed, while a larger turn (e.g., 90 degrees) might be excessive ("non-optimal").
+
+*   Current Heading FLIGHT1: 140 degrees
+*   Proposed Turn: 45 degrees right
+*   New Heading FLIGHT1: 140 + 45 = 185 degrees
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading 185.**"
+
+**Rationale:**
+
+1.  **Conflict Identification:** A loss of separation is predicted between FLIGHT1 and FLIGHT2. Both aircraft are level at 16200 ft (0 ft vertical separation), and their current tracks are converging head-on (headings 140 vs 320, confirmed by QDR 139.96). The predicted closest point of approach (DCPA) is 27.72 meters, well below the 5 NM minimum horizontal separation required when vertical separation is less than 1000 ft.
+2.  **Resolution Strategy:** The only permitted action is to change the heading of FLIGHT1.
+3.  **Chosen Command:** A turn to the right for FLIGHT1 is issued, consistent with standard procedures for resolving head-on conflicts.
+4.  **Optimality Justification:** A 45-degree heading change (from 140 to 185 degrees) is deemed optimal. It is substantial enough to create the necessary lateral separation (>5 NM) before the point of closest approach (~378 seconds away), effectively resolving the conflict. This magnitude of turn is chosen because FLIGHT1's very low ground speed (12 knots) requires a larger heading change compared to a faster aircraft to achieve significant track divergence over the conflict timeframe. A smaller turn might not guarantee the 5 NM minimum, while a larger turn would be unnecessarily disruptive.

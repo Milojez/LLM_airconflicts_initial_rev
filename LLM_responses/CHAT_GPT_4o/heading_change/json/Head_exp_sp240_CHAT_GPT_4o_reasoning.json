@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 240,
+            "FLIGHT_1_TAS": 304,
+            "issued_command": "Change heading",
+            "heading_change": -20,
+            "new_heading_FLIGHT1": 120,
+            "reasoning": "By changing FLIGHT1's heading from 140 degrees to 120 degrees, we increase the angle between the two aircraft, which will help increase the horizontal separation and prevent a loss of separation."
+        }
+    ]
+}

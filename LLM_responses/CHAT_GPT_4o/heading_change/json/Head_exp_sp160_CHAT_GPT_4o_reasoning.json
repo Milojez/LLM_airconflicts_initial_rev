@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 159,
+            "FLIGHT_1_TAS": 204,
+            "issued_command": "FLIGHT1, turn left to a heading of 100 degrees.",
+            "heading_change": -40,
+            "new_heading_FLIGHT1": 100,
+            "reasoning": "By turning FLIGHT1 to a heading of 100 degrees, we increase the angle between the two aircraft, thereby increasing the horizontal separation at the closest point of approach. This ensures the horizontal distance remains above the minimum required 5 nautical miles, preventing a loss of separation."
+        }
+    ]
+}

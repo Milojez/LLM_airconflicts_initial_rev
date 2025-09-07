@@ -1,0 +1,27 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 12 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 24.13 nautical miles
+- **Altitude Difference**: 0 feet
+- **TLOS**: 299.5 seconds
+- **DCPA**: 27.72 meters (expected in 377.8 seconds)
+
+### Objective:
+- Avoid loss of separation by adjusting FLIGHT1's heading.
+
+### Analysis:
+1. **Current Trajectory**: FLIGHT1 is moving very slowly (12 knots) compared to FLIGHT2 (217 knots). This means FLIGHT1's position change is minimal, and a heading change will have a significant impact on its trajectory over time.
+2. **Azimuthal Direction**: The azimuthal direction from FLIGHT1 to FLIGHT2 is approximately 140 degrees, which is very close to FLIGHT1's current heading. This indicates that FLIGHT1 is moving towards FLIGHT2.
+3. **Optimal Heading Change**: To increase the horizontal separation, FLIGHT1 should turn away from FLIGHT2. Since FLIGHT2 is on a heading of 320 degrees, FLIGHT1 should adjust its heading to move away from the azimuthal direction.
+
+### Recommended Action:
+- **Change FLIGHT1's Heading**: Adjust FLIGHT1's heading to approximately 90 degrees. This will direct FLIGHT1 to move perpendicular to its current trajectory towards FLIGHT2, increasing the horizontal separation over time.
+
+### Rationale:
+- **Perpendicular Movement**: By changing the heading to 90 degrees, FLIGHT1 will move perpendicular to the line connecting the two aircraft, maximizing the rate of increase in horizontal separation.
+- **Minimal Speed Impact**: Given FLIGHT1's low speed, the heading change will have a significant impact on its trajectory without causing rapid changes that could complicate the situation.
+- **Safety Margin**: This heading change ensures that FLIGHT1 moves away from the conflict zone, maintaining a safe horizontal distance and preventing a loss of separation.
+
+By implementing this heading change, we can effectively resolve the conflict and maintain safe separation between the two aircraft.

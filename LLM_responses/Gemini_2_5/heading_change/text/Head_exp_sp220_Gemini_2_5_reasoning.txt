@@ -1,0 +1,34 @@
+Okay, acknowledging the conflict alert. FLIGHT1 and FLIGHT2 are at the same altitude (16200 ft) and on near-reciprocal headings (140 vs 320), indicating a head-on conflict scenario. The predicted DCPA is extremely small (101.95 meters), confirming a high-risk situation if no action is taken.
+
+**Analysis:**
+
+1.  **Conflict Type:** Head-on conflict at the same altitude. Vertical separation is 0 ft, meeting one LOS criterion. Horizontal separation is decreasing and predicted to be well below 5 NM.
+2.  **Constraint:** Only change FLIGHT1's heading.
+3.  **Objective:** Increase the predicted horizontal separation (DCPA) to be greater than 5 NM by adjusting FLIGHT1's heading.
+4.  **Optimality:** Choose the minimum heading change for FLIGHT1 that safely resolves the conflict. Standard procedure in head-on situations often involves turning aircraft to the right.
+
+**Decision Process:**
+
+*   The aircraft are closing head-on (140 vs 320 degrees).
+*   Turning FLIGHT1 right will increase its heading value and create lateral separation from FLIGHT2's track.
+*   A small turn might not be sufficient given the very small DCPA.
+*   A moderate turn (e.g., 30-45 degrees) is typically effective in head-on scenarios.
+*   Let's select a 40-degree right turn for FLIGHT1. This is a significant enough deviation to quickly establish safe separation but not excessively large.
+
+**New Heading Calculation:**
+*   Current Heading FLIGHT1: 140 degrees
+*   Turn Magnitude: +40 degrees (Right turn)
+*   New Heading FLIGHT1: 140 + 40 = 180 degrees
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one eight zero, vector for traffic.**"
+
+**Rationale:**
+
+1.  **Conflict Identification:** A loss of separation is predicted between FLIGHT1 and FLIGHT2. Both aircraft are at the same altitude (16200 ft) on converging, near head-on courses (140 degrees vs 320 degrees). The predicted closest point of approach (DCPA) is 101.95 meters, which is significantly less than the 5 NM minimum horizontal separation required when vertical separation is less than 1000 ft.
+2.  **Action Taken:** FLIGHT1 is instructed to turn right by 40 degrees, from its current heading of 140 degrees to a new heading of 180 degrees.
+3.  **Reasoning for Action:**
+    *   **Effectiveness:** This turn creates immediate lateral divergence from FLIGHT2's track. As FLIGHT1 turns south (180) and FLIGHT2 continues northwest (320), the horizontal distance between them at the point of closest approach will increase significantly.
+    *   **Optimality/Standard Practice:** A right turn is often standard procedure for head-on conflicts. A 40-degree heading change is judged sufficient to ensure the 5 NM horizontal separation minimum is maintained without requiring an excessive deviation from FLIGHT1's original course.
+    *   **Constraint Compliance:** This command adheres to the requirement of resolving the conflict solely by changing FLIGHT1's heading.

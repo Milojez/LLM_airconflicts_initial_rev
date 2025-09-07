@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 49,
+            "FLIGHT_1_TAS": 64,
+            "issued_command": "FLIGHT1, turn right heading one niner zero.",
+            "heading_change": 50,
+            "new_heading_FLIGHT1": 190,
+            "reasoning": "Turn FLIGHT1 right by 50 degrees (to 190°) to immediately diverge from FLIGHT2's track, creating sufficient lateral separation given the head-on geometry and FLIGHT1's slow speed."
+        }
+    ]
+}

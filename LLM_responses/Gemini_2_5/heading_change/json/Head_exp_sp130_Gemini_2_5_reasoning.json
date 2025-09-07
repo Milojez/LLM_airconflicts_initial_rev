@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 130,
+            "FLIGHT_1_TAS": 166,
+            "issued_command": "FLIGHT1, turn right heading one seven zero, traffic is opposite direction Boeing 777 at your altitude, report clear of conflict.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "A 30-degree right turn for FLIGHT1 was chosen to resolve the head-on conflict by creating diverging tracks, as only FLIGHT1's heading could be changed."
+        }
+    ]
+}

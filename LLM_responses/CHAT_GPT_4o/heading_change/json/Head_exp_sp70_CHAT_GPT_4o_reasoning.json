@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 70,
+            "FLIGHT_1_TAS": 89,
+            "issued_command": "FLIGHT1, turn left heading 100 degrees immediately to resolve conflict with FLIGHT2.",
+            "heading_change": 40,
+            "new_heading_FLIGHT1": 100,
+            "reasoning": "Changing FLIGHT1's heading to 100 degrees will increase horizontal separation at the closest point of approach, ensuring it remains greater than 5 nautical miles."
+        }
+    ]
+}

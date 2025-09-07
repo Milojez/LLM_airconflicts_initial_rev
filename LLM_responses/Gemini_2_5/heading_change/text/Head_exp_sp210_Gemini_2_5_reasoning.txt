@@ -1,0 +1,25 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict:** FLIGHT1 and FLIGHT2 are at the same altitude (FL162) with 0 ft vertical separation.
+2.  **Geometry:** They are on nearly reciprocal headings (140° vs 320°), indicating a head-on convergence. The QDR confirms FLIGHT2 is almost directly ahead of FLIGHT1.
+3.  **Prediction:** A loss of separation (horizontal distance < 5 NM) is predicted in ~5 minutes (299.6s), with the closest point of approach being extremely small (97.45m) shortly after (~5.6 minutes).
+4.  **Constraint:** Only FLIGHT1's heading can be changed.
+5.  **Required Action:** A heading change for FLIGHT1 is necessary to increase horizontal separation and prevent the predicted LOS.
+6.  **Optimal Solution:**
+    *   **Direction:** To increase separation in a head-on scenario, a turn is required. Standard procedure and the most intuitive action when only controlling one aircraft in a head-on situation is to turn it to the *right*.
+    *   **Magnitude:** A standard vectoring turn for traffic separation is typically 30-45 degrees. A 30-degree turn is often sufficient and minimally disruptive. Turning FLIGHT1 right by 30 degrees results in a new heading of 140° + 30° = 170°. This action will immediately start increasing the predicted horizontal separation at the CPA.
+
+**ATC Command:**
+
+"**FLIGHT1, turn right heading one seven zero, vector for traffic.**"
+
+**Rationale:**
+
+1.  **Conflict Identification:** FLIGHT1 and FLIGHT2 are converging on reciprocal tracks at the same altitude (FL162), with a predicted loss of separation (horizontal separation < 5 NM) and a very close CPA (97.45m).
+2.  **Action Taken:** FLIGHT1 has been issued a 30-degree right turn to a heading of 170 degrees.
+3.  **Reasoning for Action:**
+    *   Turning FLIGHT1 right follows standard practice for resolving head-on encounters and directs the aircraft away from FLIGHT2's conflicting track.
+    *   A 30-degree heading change is a standard, effective maneuver sufficient to increase the horizontal distance at the CPA well above the 5 NM minimum separation standard, thereby resolving the predicted loss of separation.
+    *   This action directly addresses the conflict using the only permitted parameter (FLIGHT1 heading change) and is considered optimal as it resolves the conflict efficiently with a standard vectoring turn.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.5,
+            "FLIGHT_1_CAS": 40,
+            "FLIGHT_1_TAS": 51,
+            "issued_command": "FLIGHT1, turn right heading 170, vectoring for traffic.",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 170,
+            "reasoning": "Turn FLIGHT1 right 30 degrees (to 170) to create lateral separation from FLIGHT2, resolving the predicted head-on conflict at the same altitude (16200 ft) and preventing loss of separation (<5 NM)."
+        }
+    ]
+}

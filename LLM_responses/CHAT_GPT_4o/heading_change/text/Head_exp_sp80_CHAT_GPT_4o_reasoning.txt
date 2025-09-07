@@ -1,0 +1,24 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2, we need to adjust the heading of FLIGHT1 to ensure that the aircraft maintain the required minimum separation criteria. The goal is to prevent the horizontal distance from dropping below 5 nautical miles while keeping the vertical distance unchanged, as both aircraft are at the same altitude and have a vertical rate of 0 feet/min.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 102 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 31.61 nautical miles
+- **Predicted DCPA**: 47.51 meters (which is less than 5 nautical miles)
+
+### Strategy:
+To increase the horizontal separation at the closest point of approach, we can adjust the heading of FLIGHT1. Since FLIGHT2 is on a heading of 320 degrees, moving FLIGHT1 away from the azimuthal direction of 139.95 degrees (the direction from FLIGHT1 to FLIGHT2) will help increase the separation.
+
+### Recommended Action:
+- **Change FLIGHT1's heading to 110 degrees.**
+
+### Rationale:
+1. **Direction Away from Conflict**: By changing FLIGHT1's heading to 110 degrees, we are directing it away from the azimuthal line towards FLIGHT2, which is approximately 139.95 degrees. This change will increase the lateral separation between the two aircraft.
+
+2. **Maintaining Safe Separation**: The new heading will help ensure that the horizontal distance does not fall below the 5 nautical mile threshold, thus preventing a loss of separation.
+
+3. **Minimal Disruption**: A heading change of 30 degrees is a moderate adjustment that should be manageable for the aircraft without causing significant disruption to its flight path or requiring excessive maneuvering.
+
+4. **Time to Implement**: With an estimated time to loss of separation (TLOS) of 299.5 seconds, there is sufficient time to implement this heading change and monitor its effect on the separation distance.
+
+By implementing this heading change, we aim to maintain safe separation and avoid any potential conflict between the two aircraft. It is important to continuously monitor the situation and be prepared to make further adjustments if necessary.

@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 179,
+            "FLIGHT_1_TAS": 229,
+            "issued_command": "FLIGHT1, turn left heading 090 degrees.",
+            "heading_change": -50,
+            "new_heading_FLIGHT1": 90,
+            "reasoning": "By turning FLIGHT1 to a heading of 090 degrees, the aircraft will move eastward, increasing the lateral separation from FLIGHT2, which is moving northwest (heading 320 degrees). This heading change maximizes the horizontal distance between the two aircraft, ensuring that the minimum separation criteria are not violated."
+        }
+    ]
+}

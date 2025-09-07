@@ -1,0 +1,29 @@
+To resolve the conflict between FLIGHT1 and FLIGHT2 by changing the heading of FLIGHT1, we need to ensure that the aircraft maintain the minimum separation criteria: a vertical distance of at least 1000 feet or a horizontal distance of at least 5 nautical miles.
+
+### Current Situation:
+- **FLIGHT1**: Heading 140 degrees, Ground Speed 254 knots
+- **FLIGHT2**: Heading 320 degrees, Ground Speed 217 knots
+- **Current Horizontal Distance**: 44.27 nautical miles
+- **Altitude Difference**: 0 feet
+- **TLOS**: 299.6 seconds
+- **DCPA**: 93.04 meters (approximately 0.05 nautical miles)
+
+### Objective:
+To prevent a loss of separation by adjusting the heading of FLIGHT1, ensuring the horizontal distance remains above 5 nautical miles.
+
+### Analysis:
+1. **Current Trajectory**: FLIGHT1 is on a heading of 140 degrees, and FLIGHT2 is on a heading of 320 degrees. The azimuthal direction from FLIGHT1 to FLIGHT2 is 139.93 degrees, indicating they are nearly on a direct collision course.
+
+2. **Separation Criteria**: We need to increase the horizontal distance at the closest point of approach (CPA) to be at least 5 nautical miles.
+
+3. **Optimal Heading Change**: To increase the horizontal separation, FLIGHT1 should alter its heading to move away from the direct path to FLIGHT2. Since the azimuthal direction from FLIGHT1 to FLIGHT2 is 139.93 degrees, a heading change to the left (counter-clockwise) would be optimal to increase separation.
+
+### Recommended Action:
+- **Change FLIGHT1's Heading**: Adjust FLIGHT1's heading from 140 degrees to approximately 120 degrees. This 20-degree left turn will direct FLIGHT1 away from the path of FLIGHT2, increasing the horizontal separation at the CPA.
+
+### Rationale:
+- **Increased Separation**: By turning left, FLIGHT1 will move away from the direct path to FLIGHT2, increasing the horizontal distance at the CPA.
+- **Maintaining Speed**: The speed of FLIGHT1 remains unchanged, ensuring that the aircraft can still maintain its schedule while resolving the conflict.
+- **Safety Margin**: The new heading ensures that the horizontal distance at the CPA will be greater than 5 nautical miles, thus maintaining safe separation.
+
+This heading adjustment should be communicated promptly to FLIGHT1 to ensure timely execution and resolution of the conflict.

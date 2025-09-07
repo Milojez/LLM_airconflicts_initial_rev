@@ -1,0 +1,34 @@
+Okay, here is the analysis and command to resolve the conflict:
+
+**Analysis:**
+
+1.  **Conflict Type:** The aircraft are on reciprocal headings (140° vs 320°) at the exact same altitude (FL162). This is a direct head-on conflict scenario.
+2.  **Separation Status:** Vertical separation is 0 feet, which is less than the required 1000 feet. Therefore, a loss of separation will occur if the horizontal distance drops below 5 nautical miles.
+3.  **Prediction:** The system predicts a loss of separation (TLOS) in approximately 5 minutes (299.6s) and an extremely close closest point of approach (DCPA) of only 106.54 meters shortly after (335.0s). This confirms urgent action is needed.
+4.  **Constraint:** Only the heading of FLIGHT1 can be changed.
+5.  **Objective:** Change FLIGHT1's heading to ensure horizontal separation remains above 5 NM at all times.
+
+**Optimal Solution Strategy:**
+
+*   Since the aircraft are head-on, the most efficient way to increase separation quickly is to turn one aircraft perpendicular or significantly away from the track of the other.
+*   A turn to the right is standard procedure in many regions for head-on traffic avoidance.
+*   The QDR from FLIGHT1 to FLIGHT2 is 139.93°, almost exactly FLIGHT1's heading (140°), confirming the head-on geometry. A right turn will immediately increase the angular separation between the aircraft's vectors.
+*   A turn of 30-45 degrees is typically sufficient to resolve such conflicts effectively without excessive deviation. A 40-degree turn provides a good balance.
+
+**Chosen Command:** Turn FLIGHT1 right by 40 degrees.
+
+*   Current Heading: 140°
+*   Turn: +40° (Right)
+*   New Heading: 180°
+
+**ATC Command:**
+
+**"FLIGHT1, turn right heading one eight zero."**
+
+**Rationale:**
+
+1.  **Immediate Conflict:** FLIGHT1 and FLIGHT2 are on a direct collision course at the same altitude (FL162), with zero vertical separation.
+2.  **Predicted Loss of Separation:** A loss of separation (horizontal distance < 5 NM while vertical < 1000 ft) is predicted in approximately 5 minutes, with a very close CPA (106 meters).
+3.  **Action Taken:** FLIGHT1 is instructed to turn right 40 degrees to a heading of 180°.
+4.  **Effectiveness:** This turn immediately changes the geometry from head-on converging to diverging. A 40-degree heading change creates significant track separation quickly, ensuring the horizontal distance will now increase and remain well above the 5 NM minimum required to prevent a loss of separation.
+5.  **Optimality:** Turning right aligns with standard practices and immediately moves FLIGHT1's track away from FLIGHT2's relative bearing (QDR 139.93°). A 40-degree turn is substantial enough to guarantee resolution while minimizing excessive deviation from FLIGHT1's original general direction of flight compared to, for example, a 90-degree turn.

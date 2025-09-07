@@ -1,0 +1,16 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict": 299.6,
+            "FLIGHT_1_CAS": 140,
+            "FLIGHT_1_TAS": 179,
+            "issued_command": "Change FLIGHT1's heading to 110 degrees",
+            "heading_change": 30,
+            "new_heading_FLIGHT1": 110,
+            "reasoning": "By turning FLIGHT1 to a heading of 110 degrees, it will move more towards the east, increasing the horizontal separation from FLIGHT2 and ensuring the horizontal distance at the closest point of approach remains greater than 5 nautical miles."
+        }
+    ]
+}
