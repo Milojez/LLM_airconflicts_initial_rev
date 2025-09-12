@@ -41,8 +41,10 @@ Below is a brief explanation of the scripts included in this repository:
 - **`prompt_generator.py`** – Defines all prompts used for testing, including difficulty levels (case_1, case_2, case_3) for both conflict detection and heading change experiments.  
 - **`saving_json_aircraft.py`** – Saves information on conflicting aircraft to create a JSON file once the BlueSky simulation is started.  
 - **`saving_json_conflicts.py`** – Saves information on conflicts to create a JSON file once the BlueSky simulation is started.  
-
+- **`Min_head_change.py`** - Calculating the minimal heading change between 2 aircraft in conflict.
+- **`Min_head_plot.py`** - Creating the plot for heading change experiment. 
 ---
+
 
 
 
