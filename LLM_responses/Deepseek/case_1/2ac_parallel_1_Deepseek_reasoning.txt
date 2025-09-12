@@ -1,0 +1,71 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+### Step 1: Calculate Current Distance Between Aircraft
+
+First, we calculate the horizontal distance between the two aircraft using their latitude and longitude coordinates. We'll use the Haversine formula for this, which gives the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Given:
+- Latitude and longitude of FLIGHT1: (22.939380416404312, 105.14787450767882)
+- Latitude and longitude of FLIGHT2: (23.193672402978535, 105.34849294191797)
+
+The Haversine formula is:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right) \times R\]
+
+where:
+- \(d\) is the distance between the two points,
+- \(\phi_1\) and \(\phi_2\) are the latitudes of the two points,
+- \(\lambda_1\) and \(\lambda_2\) are the longitudes of the two points,
+- \(R\) is the radius of the Earth, approximately 6371 kilometers.
+
+Let's convert the formula to use nautical miles (1 nautical mile = 1.852 kilometers):
+\[R \approx 6371 \, \text{km} \times \frac{1 \, \text{nautical mile}}{1.852 \, \text{km}} \approx 3440 \, \text{nautical miles}\]
+
+Now, calculating the differences in latitude and longitude in radians:
+\[\Delta\phi = 23.193672402978535 - 22.939380416404312 = 0.254291986574223 \, \text{degrees}\]
+\[\Delta\lambda = 105.34849294191797 - 105.14787450767882 = 0.20061843423915 \, \text{degrees}\]
+
+Convert degrees to radians:
+\[\Delta\phi \approx 0.254291986574223 \times \frac{\pi}{180} \approx 0.004433 \, \text{radians}\]
+\[\Delta\lambda \approx 0.20061843423915 \times \frac{\pi}{180} \approx 0.003503 \, \text{radians}\]
+\[\phi_1 \approx 22.939380416404312 \times \frac{\pi}{180} \approx 0.4004 \, \text{radians}\]
+\[\phi_2 \approx 23.193672402978535 \times \frac{\pi}{180} \approx 0.4051 \, \text{radians}\]
+
+Plugging these into the Haversine formula:
+\[d = 2 \times \arcsin\left(\sqrt{\sin^2\left(\frac{0.4051 - 0.4004}{2}\right) + \cos(0.4004) \cos(0.4051) \sin^2\left(\frac{0.003503}{2}\right)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{\sin^2(0.00235) + \cos(0.4004) \cos(0.4051) \sin^2(0.0017515)}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0000033 + 0.7648 \times 0.7663 \times 0.00000095}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.0000033 + 0.0000007}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin\left(\sqrt{0.000004}\right) \times 3440\]
+
+\[d \approx 2 \times \arcsin(0.002) \times 3440\]
+
+\[d \approx 2 \times 0.002 \times 3440\]
+
+\[d \approx 13.76 \, \text{nautical miles}\]
+
+The current horizontal distance is approximately 13.76 nautical miles.
+
+### Step 2: Determine Vertical Separation
+
+Both aircraft are flying at the same altitude (25200 feet), so the vertical separation is 0 feet, which is less than 1000 feet. However, since they are at the same altitude and not changing (vertical rate = 0 feet/min), we need to focus on the horizontal separation to avoid loss of separation.
+
+### Step 3: Predict Future Positions
+
+Given the heading and speed of both aircraft, we can predict their future positions. Both aircraft are heading in the same direction (216 degrees), which means they are flying parallel to each other. 
+
+Since they are flying at the same altitude and in the same direction, the critical factor is their speed and the distance between them. 
+
+FLIGHT1 speed: 245 knots
+FLIGHT2 speed: 412 knots
+
+The difference in speed is 167 knots. Since they are flying in the same direction, the faster aircraft (FLIGHT2) will increase the distance between them over time, not decrease it.
+
+### Conclusion
+
+Given that the aircraft are currently more than 5 nautical miles apart horizontally and are flying in the same direction with the faster aircraft increasing the distance between them, there is no immediate risk of loss of separation based on the provided data. The vertical separation condition is met (less than 1000 feet) because they are at the same altitude, but the horizontal distance condition for loss of separation (less than 5 nautical miles) is not met and will not be met given their current trajectories.
+
+Therefore, no commands to adjust altitude, heading, or speed are necessary at this time to maintain safe separation. However, continuous monitoring of air traffic is essential to respond to any changes in flight paths or other factors that could affect separation.

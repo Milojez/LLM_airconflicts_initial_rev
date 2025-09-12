@@ -1,0 +1,90 @@
+To determine if there will be a loss of separation, we need to calculate the current distance between the two aircraft and then predict their future positions to see if they will meet the conditions for loss of separation.
+
+**Step 1: Calculate the current distance between the two aircraft**
+
+We can use the Haversine formula to calculate the distance between two points on a sphere (such as the Earth) given their longitudes and latitudes.
+
+Let's denote the latitude and longitude of FLIGHT1 as (lat1, lon1) and FLIGHT2 as (lat2, lon2).
+
+lat1 = -55.513395271749374
+lon1 = 13.064975933954887
+lat2 = -54.79878387242545
+lon2 = 13.41314403634625
+
+Using the Haversine formula:
+
+distance = 2 \* arcsin(sqrt(haversin(lat2 - lat1) + cos(lat1) \* cos(lat2) \* haversin(lon2 - lon1)))
+
+where haversin(x) = sin^2(x/2)
+
+Plugging in the values, we get:
+
+distance ≈ 43.35 nautical miles
+
+Since the horizontal distance is greater than 5 nautical miles, we don't have a loss of separation currently.
+
+**Step 2: Predict the future positions of the aircraft**
+
+To predict the future positions, we need to calculate the velocity components of each aircraft in the north and east directions.
+
+FLIGHT1:
+- Ground speed: 268 knots
+- Heading: 71 degrees
+
+Velocity components:
+- North: 268 \* cos(71) ≈ 94.35 knots
+- East: 268 \* sin(71) ≈ 252.19 knots
+
+FLIGHT2:
+- Ground speed: 392 knots
+- Heading: 161 degrees
+
+Velocity components:
+- North: 392 \* cos(161) ≈ -378.55 knots
+- East: 392 \* sin(161) ≈ 104.19 knots
+
+**Step 3: Calculate the relative velocity between the two aircraft**
+
+Relative velocity components:
+- North: -378.55 - 94.35 ≈ -472.9 knots
+- East: 104.19 - 252.19 ≈ -148 knots
+
+**Step 4: Calculate the time to closest approach**
+
+We can use the concept of relative motion to calculate the time to closest approach.
+
+First, calculate the relative position vector:
+- North: (lat2 - lat1) \* 60 ≈ 43.35 \* cos(13.41314403634625 - 13.064975933954887) ≈ 42.95 nautical miles
+- East: (lon2 - lon1) \* 60 \* cos((lat1 + lat2) / 2) ≈ 20.55 nautical miles
+
+Then, calculate the relative velocity vector:
+- North: -472.9 knots
+- East: -148 knots
+
+Now, calculate the time to closest approach (t):
+t = - (relative position vector \* relative velocity vector) / (relative velocity vector \* relative velocity vector)
+
+t ≈ - (-42.95 \* -472.9 - 20.55 \* -148) / (-472.9^2 + (-148)^2) ≈ 0.094 hours or approximately 5.64 minutes
+
+**Step 5: Calculate the distance at the time of closest approach**
+
+Using the relative velocity components, calculate the distance at the time of closest approach:
+distance_at_closest_approach = sqrt((42.95 + 472.9 \* 0.094)^2 + (20.55 + 148 \* 0.094)^2) ≈ 4.23 nautical miles
+
+Since the distance at the time of closest approach (4.23 nautical miles) is less than 5 nautical miles, and assuming the vertical distance remains the same (0 feet difference), we have a potential loss of separation.
+
+**Loss of separation:**
+
+Yes, there will be a loss of separation in approximately 5.64 minutes.
+
+**Necessary commands to maintain safe separation:**
+
+To maintain safe separation, we can issue a command to one or both of the aircraft. Considering the current situation, we can issue a command to FLIGHT2 to change its heading to increase the horizontal distance.
+
+Command: FLIGHT2, turn right heading 180 degrees.
+
+Alternatively, we can also issue a command to FLIGHT1 to climb or descend to increase the vertical distance.
+
+Command: FLIGHT1, climb and maintain 22000 feet.
+
+Note: The actual command will depend on various factors, including air traffic, weather, and aircraft performance. The commands provided above are for illustration purposes only.

@@ -1,0 +1,12 @@
+{
+    "conflict_detected": true,
+    "conflicting_pairs": [
+        {
+            "aircraft_1": "FLIGHT1",
+            "aircraft_2": "FLIGHT2",
+            "time_to_conflict_seconds": 338,
+            "reasoning": "Distance at closest approach is less than 5 nautical miles",
+            "issued_command": "FLIGHT2, turn right heading 180 degrees or FLIGHT1, climb and maintain 22000 feet"
+        }
+    ]
+}

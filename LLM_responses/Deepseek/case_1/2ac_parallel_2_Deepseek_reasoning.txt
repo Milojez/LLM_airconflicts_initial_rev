@@ -1,0 +1,73 @@
+To determine if there will be a loss of separation between FLIGHT1 and FLIGHT2, we need to calculate their current distance (both horizontal and vertical) and then predict their future positions based on their current speeds, headings, and vertical rates.
+
+### Step 1: Calculate Current Horizontal Distance
+
+First, we calculate the horizontal distance between the two aircraft using their latitudes and longitudes. The formula to calculate the distance between two points on the Earth's surface given their longitudes and latitudes is:
+
+\[d = \sqrt{(lat_2 - lat_1)^2 + (lon_2 - lon_1)^2}\]
+
+However, for more accurate calculations over long distances, we should use the Haversine formula. But given the relatively close proximity of these aircraft, the simplified formula will suffice for an initial estimation. 
+
+\[d = \sqrt{(23.105184605643952 - 22.93942528778623)^2 + (105.27868248803264 - 105.14790990819345)^2}\]
+
+\[d = \sqrt{(0.165759317857719)^2 + (0.13077257983919)^2}\]
+
+\[d = \sqrt{0.0275 + 0.0171}\]
+
+\[d = \sqrt{0.0446}\]
+
+\[d \approx 0.211 \, \text{degrees}\]
+
+To convert degrees to nautical miles, we use the fact that 1 degree of latitude or longitude at the Earth's equator is approximately equal to 60 nautical miles. However, since the aircraft are not at the equator, and longitude degrees vary with latitude, we'll use an approximation suitable for the given latitudes.
+
+\[d \approx 0.211 \times 60 \approx 12.66 \, \text{nautical miles}\]
+
+This is a rough estimate and does not take into account the Earth's slightly ellipsoidal shape or the variation in distance per degree of longitude with latitude. For precise calculations, especially over larger distances or near the poles, more complex formulas should be used.
+
+### Step 2: Calculate Current Vertical Distance
+
+The vertical distance is simply the difference in their altitudes.
+
+\[Vertical \, distance = |24196 - 22200| = 1996 \, \text{feet}\]
+
+### Step 3: Predict Future Positions
+
+To predict if they will reach a loss of separation, we need to consider their movements.
+
+- **Horizontal Movement**: Both aircraft are heading in similar directions (216 degrees for FLIGHT1 and 215 degrees for FLIGHT2), which means they are essentially flying parallel to each other. Their ground speeds are 233 knots and 365 knots, respectively. 
+
+- **Vertical Movement**: FLIGHT2 is descending at a rate of -200 feet/min.
+
+Given their current configurations, the critical factor is whether their horizontal distance will decrease to less than 5 nautical miles and if their vertical distance will decrease to less than 1000 feet at the same time.
+
+### Step 4: Analyze Potential for Loss of Separation
+
+- **Horizontal Distance Reduction**: Given their parallel trajectories, the primary concern is if their speed difference will cause one to overtake the other, potentially reducing their horizontal distance. However, since they are flying in nearly the same direction, the overtaking will not significantly reduce their lateral separation in the short term.
+
+- **Vertical Distance Reduction**: FLIGHT2 is descending. To reach a vertical distance of less than 1000 feet, considering FLIGHT1 is not changing altitude, FLIGHT2 needs to descend to an altitude where the difference is less than 1000 feet. Given FLIGHT2's current altitude is 24196 feet and FLIGHT1's is 22200 feet, FLIGHT2 would need to descend to at least 23200 feet to be within 1000 feet vertically of FLIGHT1.
+
+### Step 5: Determine Time to Potential Loss of Separation
+
+To calculate the time it would take for FLIGHT2 to descend to within 1000 feet of FLIGHT1:
+
+\[Time = \frac{Altitude \, difference}{Descent \, rate}\]
+
+\[Time = \frac{24196 - 23200}{200 \, \text{feet/min}} = \frac{996}{200} \approx 4.98 \, \text{minutes}\]
+
+However, this calculation only considers the vertical aspect. The horizontal distance, as estimated, is currently not a concern for loss of separation given their parallel flight paths.
+
+### Conclusion
+
+Based on the provided data, there is no immediate indication that both conditions for loss of separation (horizontal distance < 5 nautical miles and vertical distance < 1000 feet) will be met simultaneously in the near future, primarily because their flight paths are parallel, and the horizontal distance is not decreasing significantly.
+
+However, to maintain safe separation, it's crucial to continue monitoring their positions and adjust as necessary. If FLIGHT2 continues its descent and their horizontal paths were to converge, adjustments might be necessary.
+
+### Commands to Maintain Safe Separation
+
+Given the current scenario, no immediate commands are necessary based on the simplified calculations provided. However, air traffic control should continue to monitor the situation closely. If the aircraft were to begin approaching each other horizontally, or if other factors such as weather or additional air traffic come into play, commands might include:
+
+- **Altitude Adjustments**: If FLIGHT2's descent brings it too close to FLIGHT1 vertically, FLIGHT2 could be instructed to level off or ascend.
+- **Heading Changes**: If their paths begin to converge horizontally, a heading change for one or both aircraft could be necessary to increase their lateral separation.
+- **Speed Modifications**: Adjusting the speed of one or both aircraft could also help maintain or increase their separation, though this would depend on their specific flight plans and constraints.
+
+These decisions would be made with more precise calculations and considerations of all factors affecting air traffic in the area.
