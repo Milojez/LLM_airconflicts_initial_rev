@@ -136,6 +136,32 @@ def gen_prompt_lvl_3(aircraft_data, conflict_data):
 
     return reasoning_prompt
 
+def gen_json_prompt(reasoning_text):
+
+    json_prompt = json_prompt = f"""
+    Based on the following reasoning, provide only a VALID JSON response describing if there is a loss of separation.
+
+    Reasoning:
+    {reasoning_text}
+
+    The JSON format should look like:
+    {{
+    "conflict_detected": true/false,
+    "conflicting_pairs": [
+        {{
+        "aircraft_1": "CALLSIGN_1",
+        "aircraft_2": "CALLSIGN_2",
+        "time_to_conflict_seconds": TIME_VALUE,
+        "reasoning": "Short explanation"
+        "issued command" : "command issued to avoid loss of seperation"
+        }}
+    ]
+    }}
+
+    If there is no conflict, return:
+    {{ "conflict_detected": false, "message": "No conflicts detected." }}
+    """
+    return json_prompt
 
 
 #####################################---CHEADING CHANGE-----############################################################
@@ -238,6 +264,7 @@ prompt_fun_dict = {
     1: gen_prompt_lvl_1,
     2: gen_prompt_lvl_2,
     3: gen_prompt_lvl_3,
+    "gen_json_prompt" : gen_json_prompt,
     "Head_exp" : gen_prompt_lvl_head_exp,
     "Head_exp_json":gen_json_prompt_head_exp,
 }
