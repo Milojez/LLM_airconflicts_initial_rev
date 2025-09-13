@@ -46,6 +46,19 @@ Below is a brief explanation of the scripts included in this repository:
 ---
 
 
+| file | chat gpt-4o command | deepseek command | gemini-2.5 command | llama-70b command | sonnet-3.7 command |
+| --- | --- | --- | --- | --- | --- |
+| 2ac_converging_dh_1 | - | - | FLIGHT2, stop descent immediatel...l one niner zero. | - | FLIGHT2, maintain FL190, stop descent. |
+| 2ac_converging_dh_2 | FLIGHT2: Climb immediately to maintain 2...| - | FLIGHT2, maintain altitude at 18,000 feet, stop descent. |
+| 2ac_head_1 | FLIGHT1: Adjust heading to 130 degrees. FLIGHT2: ... 12 o'clock, 47 miles, opposite direction at flight level 162. |
+| 2ac_head_2 | - | - | FLIGHT2, MAINTAIN ALTITUDE ONE EIGHT THOU... | - | FLIGHT2, maintain altitude at 18000 feet, stop descent. |
+| 2ac_parallel_1 | Instruct FLIGHT1 to change altitude to maintain vertical separation. | - | - | - | - |
+| 2ac_parallel_2 | - | - | - | Command FLIGHT2 to level off or c...ht level 240. Maintain current heading and speed. Acknowledge. |
+| 2ac_t_formation_1 | Instruct FLIGHT1 to climb 1000 feet to mai...aration, climb and maintain flight level 230. Report reaching. |
+| 2ac_t_formation_2 | - | FLIGHT2, descend and maintain 20000 fe...l off immediately, maintain Flight Level Two Two Zero. | - | - |
+
+
+
 
 
 
