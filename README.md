@@ -46,6 +46,9 @@ Below is a brief explanation of the scripts included in this repository:
 ---
 
 
+## LMMs' Responses
+### Case 1
+
 
 
 | file                | chat gpt-4o command                                                                 | deepseek command                        | gemini-2.5 command                                                                 | llama-70b command                                                                 | sonnet-3.7 command                                                                                                                                                  |
@@ -58,6 +61,7 @@ Below is a brief explanation of the scripts included in this repository:
 | 2ac_parallel_2      | -                                                                                    | -                                        | -                                                                                  | Command FLIGHT2 to level off or climb to prevent reduction in vertical separation. | FLIGHT2, Air Traffic Control. To maintain separation, level off at flight level 240. Maintain current heading and speed. Acknowledge.                              |
 | 2ac_t_formation_1   | Instruct FLIGHT1 to climb 1000 feet to maintain vertical separation.                  | -                                        | FLIGHT1, climb and maintain flight level two two zero.                             | -                                                                                  | FLIGHT1, for traffic separation, climb and maintain flight level 230. Report reaching.                                                                             |
 | 2ac_t_formation_2   | -                                                                                    | FLIGHT2, descend and maintain 20000 feet. | FLIGHT2, level off immediately, maintain Flight Level Two Two Zero.                 | -                                                                                  | -                                                                                                                                                                  |
+
 
 
 
